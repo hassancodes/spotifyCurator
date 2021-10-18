@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 
-with open("index.html") as fp:
-    soup = BeautifulSoup(fp, "html.parser")
-    print(soup.head)
+file = open("index.html","r")
+soup = BeautifulSoup(file, 'lxml')
+
+print(soup.prettify())
