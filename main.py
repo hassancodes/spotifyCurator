@@ -43,14 +43,35 @@ time.sleep(4)
 # working download
 # downloadcsv = driver.get("https://artistinsights-downloads.spotify.com/v1/artist/7KzG8dszzwlSDGEsCbzANz/downloads/playlists.csv?time-filter=28day")
 
-res = requests.get("https://generic.wg.spotify.com/s4x-insights-api/v1/artist/7KzG8dszzwlSDGEsCbzANz/playlists/listener?time-filter=28day")
-# res = requests.get("https://artists.spotify.com/c/artist/7KzG8dszzwlSDGEsCbzANz/music/playlists/listener?time-filter=28day")
 
-# print(type(res.json()))
-print(res.status_code)
-pprint.pprint(res.content)
-# str(res.content)
 
+
+
+
+#####################################################################################
+
+driver.get("https://artists.spotify.com/c/artist/7KzG8dszzwlSDGEsCbzANz/music/songs/playlists")
+
+html = driver.page_source
+time.sleep(2)
+pprint.pprint(html)
+# res = requests.get("")
+# print(res.content)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#####################################################################################
 # with open("test.html","w") as fp:
 #     fp.write(a)
 #     print("saved")
