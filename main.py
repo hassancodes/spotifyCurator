@@ -5,6 +5,13 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import pprint
 
+# useless function
+def func():
+    print("\n")
+    print("\n")
+    print("\n")
+    print("\n")
+
 fb = "hassanhanjra900@gmail.com"
 pw = 9018201778
 
@@ -34,12 +41,38 @@ driver.get("https://artists.spotify.com/c/artist/7KzG8dszzwlSDGEsCbzANz/music/so
 time.sleep(4)
 # musicbtn.click()
 time.sleep(4)
-# playlist = driver.find_element_by_xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div/div[2]/section[1]/ul/li[3]/a")
-# playlist.click()
+playlist = driver.find_element_by_xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div/div[2]/section[1]/ul/li[3]/a")
+playlist.click()
+
+time.sleep(4)
 
 
-# time.sleep(4)
+# working  scroll feature
 
+
+
+# searching for show more button.
+driver.find_element_by_xpath("//*[contains(text(),'Show More')]").click()
+print("Found the button")
+time.sleep(4)
+
+scroll = driver.find_element_by_xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div/div[2]/section[2]/div[4]/a")
+scroll.send_keys(Keys.PAGE_DOWN)
+
+func()
+print(driver.get_cookies())
+func()
+
+# pprint.pprint(driver.page_source)
+bod = driver.find_element_by_tag_name("body")
+print(dir(bod))
+
+func()
+print(str(bod.text).encode())
+
+# page source
+# sourcepage = driver.getPageSource();
+# print(sourcepage)
 # working download
 # downloadcsv = driver.get("https://artistinsights-downloads.spotify.com/v1/artist/7KzG8dszzwlSDGEsCbzANz/downloads/playlists.csv?time-filter=28day")
 
@@ -49,14 +82,6 @@ time.sleep(4)
 
 
 #####################################################################################
-
-driver.get("https://artists.spotify.com/c/artist/7KzG8dszzwlSDGEsCbzANz/music/songs/playlists")
-
-html = driver.page_source
-time.sleep(2)
-pprint.pprint(html)
-# res = requests.get("")
-# print(res.content)
 
 
 
