@@ -2,6 +2,8 @@ import time
 import requests
 import selenium
 from selenium import webdriver
+import bs4
+from bs4 import BeautifulSoup
 from selenium.webdriver.common.keys import Keys
 import pprint
 
@@ -64,11 +66,25 @@ print(driver.get_cookies())
 func()
 
 # pprint.pprint(driver.page_source)
-bod = driver.find_element_by_tag_name("body")
-print(dir(bod))
+# bod = driver.find_element_by_tag_name("body").get
+# print(dir(bod))
+#
+# func()
+# print(type(bod.text))
+#
+# print(bod)
+
+a = driver.find_element_by_tag_name("html")
+soup = BeautifulSoup(str(a), "html.parser")
+print(soup)
 
 func()
-print(str(bod.text).encode())
+
+print(soup.body)
+
+func()
+
+
 
 # page source
 # sourcepage = driver.getPageSource();
