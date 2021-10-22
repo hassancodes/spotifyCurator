@@ -85,12 +85,28 @@ bod = soup.body
 # func()
 fd = bod.find("div", {"id":"__next"})
 
+
+# there are total three divs with the class name
 MainDataDiv = fd.find_all("div", {"class": "styled__StyledSection-sc-1sttek1-0 dFCiJU"})
+
+# varifying the length of divs
 print("LIST LENGTH : " ,len(MainDataDiv))
 func()
+
+
 tbody  = MainDataDiv[2].find("tbody")
-# with open("index.html", "w", encoding="utf-8") as fp:
-#     fp.write(fd)
+
+# listeners, streams and are stored in
+
+trList = tbody.find("tr")
+print(trList)
+
+func()
+
+
+print("Length of playlists: ", len("tr"))
+
+
 
 
 
