@@ -88,7 +88,7 @@ fd = bod.find("div", {"id":"__next"})
 MainDataDiv = fd.find_all("div", {"class": "styled__StyledSection-sc-1sttek1-0 dFCiJU"})
 print("LIST LENGTH : " ,len(MainDataDiv))
 func()
-print(MainDataDiv[2].prettify())
+tbody  = MainDataDiv[2].find("tbody")
 # with open("index.html", "w", encoding="utf-8") as fp:
 #     fp.write(fd)
 
