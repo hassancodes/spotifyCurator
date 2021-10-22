@@ -1,8 +1,9 @@
 from bs4 import BeautifulSoup
 
 
-# working file.
-file = open("index.html","r", encoding="utf-8")
-soup = BeautifulSoup(file,"lxml")
-
-print(soup.prettify())
+# working f
+a  = open("index.html","r", encoding="cp1252")
+a  = open("hack.txt","r")
+# a.decode("cp1252")
+b = a.read()
+print(b)

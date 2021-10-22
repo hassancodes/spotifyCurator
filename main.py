@@ -46,7 +46,7 @@ time.sleep(4)
 playlist = driver.find_element_by_xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div/div[2]/section[1]/ul/li[3]/a")
 playlist.click()
 
-time.sleep(4)
+driver.implicitly_wait(3)
 
 
 # working  scroll feature
@@ -56,31 +56,49 @@ time.sleep(4)
 # searching for show more button.
 driver.find_element_by_xpath("//*[contains(text(),'Show More')]").click()
 print("Found the button")
-time.sleep(4)
+driver.implicitly_wait(3)
 
 scroll = driver.find_element_by_xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div/div[2]/section[2]/div[4]/a")
 scroll.send_keys(Keys.PAGE_DOWN)
-
+driver.implicitly_wait(3)
 func()
 print(driver.get_cookies())
 func()
 
-# pprint.pprint(driver.page_source)
-# bod = driver.find_element_by_tag_name("body").get
-# print(dir(bod))
-#
-# func()
-# print(type(bod.text))
-#
-# print(bod)
 
-a = driver.find_element_by_tag_name("html")
-soup = BeautifulSoup(str(a), "html.parser")
-print(soup)
+
+
+
+driver.implicitly_wait(4)
 
 func()
+a = driver.find_element_by_tag_name("body")
+soup  =BeautifulSoup(a.get_attribute("innerHTML"))
+func()
+print(type(soup))
+func()
+bod = soup.body
 
-print(soup.body)
+# bod.find_all("div")
+# print(soup.body.find_all('div'))
+
+# func()
+fd = bod.find("div", {"id":"__next"})
+
+MainDataDiv = fd.find_all("div", {"class": "styled__StyledSection-sc-1sttek1-0 dFCiJU"})
+print("LIST LENGTH : " ,len(MainDataDiv))
+func()
+print(MainDataDiv[2].prettify())
+# with open("index.html", "w", encoding="utf-8") as fp:
+#     fp.write(fd)
+
+
+
+
+
+
+
+# print(dir(a))
 
 func()
 
