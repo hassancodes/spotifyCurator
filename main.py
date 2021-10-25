@@ -75,7 +75,7 @@ func()
 a = driver.find_element_by_tag_name("body")
 soup  =BeautifulSoup(a.get_attribute("innerHTML"))
 func()
-print(type(soup))
+# print(type(soup))
 func()
 bod = soup.body
 
@@ -90,7 +90,7 @@ fd = bod.find("div", {"id":"__next"})
 MainDataDiv = fd.find_all("div", {"class": "styled__StyledSection-sc-1sttek1-0 dFCiJU"})
 
 # varifying the length of divs
-print("LIST LENGTH : " ,len(MainDataDiv))
+# print("LIST LENGTH : " ,len(MainDataDiv))
 func()
 
 
@@ -98,13 +98,57 @@ tbody  = MainDataDiv[2].find("tbody")
 
 # listeners, streams and are stored in
 
-trList = tbody.find("tr")
-print(trList)
+trList = tbody.find_all("tr")
 
-func()
+# print("tr List:" , trList)
+
+# trList[0].find_all("td")
+
+# GOD FUNCTION
+dictionary = {}
+def createDict(ls):
+    maindata = {"rank": "",
+    "playlist Name": "",
+    "Curator" : "",
+    "Listeners" : "",
+    "Streams ":""}
 
 
-print("Length of playlists: ", len("tr"))
+    counter = 0
+    for k,v in maindata.items():
+        maindata[k] =ls[counter]
+        counter +=1
+
+    dictionary.update({maindata["playlist Name"] : maindata})
+
+for i in trList:
+    dataList = []
+    for x in i.find_all("td"):
+
+        print(x)
+
+        # dataList.append(x.get_text())
+
+    func()
+
+    # createDict(dataList)
+
+
+
+
+pprint.pprint(dictionary)
+
+
+
+
+
+
+
+
+
+
+
+# print("Length of playlists: ", len("tr"))
 
 
 
