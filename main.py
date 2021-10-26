@@ -6,6 +6,7 @@ import bs4
 from bs4 import BeautifulSoup
 from selenium.webdriver.common.keys import Keys
 import pprint
+import json
 
 # useless function
 def func():
@@ -109,6 +110,7 @@ dictionary = {}
 def createDict(ls):
     maindata = {"rank": "",
     "playlist Name": "",
+    "No of Songs":"",
     "Curator" : "",
     "Listeners" : "",
     "Streams ":""}
@@ -121,17 +123,40 @@ def createDict(ls):
 
     dictionary.update({maindata["playlist Name"] : maindata})
 
+
+# function ends Here
+
+# JSON DUMP function
+def dumpjson(dict):
+    with open("dump.json", 'w') as dj:
+        # adding the generated data to json file
+        json.dump(dict,dj)
+
+# seperating title and
+
 for i in trList:
+    tdcounter = 0
+    # [rank , PlaylistName , Number of songs, "curator" , "listeners" , "streams"]
     dataList = []
     for x in i.find_all("td"):
 
-        print(x)
+        if tdcounter == 1:
 
-        # dataList.append(x.get_text())
+            print("test: ",x)
+            pn = x.find("span").get_text()
+            nos = x.find("h4").get_text()
+            dataList.append(pn)
+            dataList.append(nos)
+        else:
+            # the rest three data
+            dataList.append(x.get_text())
 
+
+        tdcounter+=1
+        print("Data List: ", dataList)
     func()
 
-    # createDict(dataList)
+    createDict(dataList)
 
 
 
