@@ -15,6 +15,8 @@ def func():
     print("\n")
     print("\n")
 
+
+
 fb = "hassanhanjra900@gmail.com"
 pw = 9018201778
 
@@ -80,10 +82,7 @@ func()
 func()
 bod = soup.body
 
-# bod.find_all("div")
-# print(soup.body.find_all('div'))
 
-# func()
 fd = bod.find("div", {"id":"__next"})
 
 
@@ -95,11 +94,23 @@ MainDataDiv = fd.find_all("div", {"class": "styled__StyledSection-sc-1sttek1-0 d
 func()
 
 
-tbody  = MainDataDiv[2].find("tbody")
 
+tbody  = MainDataDiv[2].find("tbody")
 # listeners, streams and are stored in
 
 trList = tbody.find_all("tr")
+
+dateList = tbody.find_all("td",{"class": "TableCell__TableCellElement-sc-1do596v-0 jdhnTQ SortTable__StyledTableCell-sc-4bygm5-1 jcBPas"})
+
+
+func()
+print(dateList)
+func()
+
+
+print(len(dateList))
+
+
 
 # print("tr List:" , trList)
 
@@ -118,7 +129,7 @@ def createDict(ls):
 
     counter = 0
     for k,v in maindata.items():
-        maindata[k] =ls[counter]
+        maindata[k] ="".join(ls[counter])
         counter +=1
 
     dictionary.update({maindata["playlist Name"] : maindata})
@@ -147,6 +158,9 @@ for i in trList:
             nos = x.find("h4").get_text()
             dataList.append(pn)
             dataList.append(nos)
+        elif tdcounter == 2:
+            curatorName  = "".join(x.get_text())
+            dataList.append(curatorName)
         else:
             # the rest three data
             dataList.append(x.get_text())
