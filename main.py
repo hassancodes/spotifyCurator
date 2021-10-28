@@ -5,6 +5,7 @@ from selenium import webdriver
 import bs4
 from bs4 import BeautifulSoup
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.options import Options
 import pprint
 import json
 
@@ -20,7 +21,15 @@ def func():
 fb = "hassanhanjra900@gmail.com"
 pw = 9018201778
 
-driver = webdriver.Chrome('./chromedriver', keep_alive=True)
+
+
+op = Options()
+op.add_experimental_option("excludeSwitches", ["enable-automation"])
+op.add_experimental_option('useAutomationExtension', False)
+op.add_argument("start-maximized")
+
+
+driver = webdriver.Chrome('./chromedriver', keep_alive=True, options=op)
 driver.get("https://accounts.spotify.com/en/login?continue=https:%2F%2Fartists.spotify.com%2F")
 time.sleep(4)
 
@@ -92,7 +101,7 @@ MainDataDiv = fd.find_all("div", {"class": "styled__StyledSection-sc-1sttek1-0 d
 # varifying the length of divs
 # print("LIST LENGTH : " ,len(MainDataDiv))
 func()
-
+# print(MainDataDiv)
 
 
 tbody  = MainDataDiv[2].find("tbody")
@@ -124,7 +133,8 @@ def createDict(ls):
     "No of Songs":"",
     "Curator" : "",
     "Listeners" : "",
-    "Streams ":""}
+    "Streams ":"",
+    "Date": ""}
 
 
     counter = 0
@@ -156,7 +166,7 @@ for i in trList:
             print("test: ",x)
             pn = x.find("span").get_text()
             nos = x.find("h4").get_text()
-            dataList.append(pn)
+            dataList.append("".join(pn))
             dataList.append(nos)
         elif tdcounter == 2:
             curatorName  = "".join(x.get_text())
