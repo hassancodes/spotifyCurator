@@ -73,9 +73,9 @@ driver.implicitly_wait(3)
 scroll = driver.find_element_by_xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div/div[2]/section[2]/div[4]/a")
 scroll.send_keys(Keys.PAGE_DOWN)
 driver.implicitly_wait(3)
-func()
-print(driver.get_cookies())
-func()
+# func()
+# print(driver.get_cookies())
+# func()
 
 
 
@@ -85,23 +85,26 @@ driver.implicitly_wait(4)
 
 func()
 a = driver.find_element_by_tag_name("body")
+
+# print(a)
 soup  =BeautifulSoup(a.get_attribute("innerHTML"))
 func()
 # print(type(soup))
-func()
 bod = soup.body
 
 
 fd = bod.find("div", {"id":"__next"})
-
+# print("fd : ",fd)
 
 # there are total three divs with the class name
-MainDataDiv = fd.find_all("div", {"class": "styled__StyledSection-sc-1sttek1-0 dFCiJU"})
-
+################# Needs to be updated (spotify for artists changes classes over time)
+MainDataDiv = fd.find_all("div", {"class": "styled__StyledSection-sc-1sttek1-0 fCPWQo"})
+print("Main Data Div: ", len(MainDataDiv))
 # varifying the length of divs
 # print("LIST LENGTH : " ,len(MainDataDiv))
 func()
 # print(MainDataDiv)
+
 
 
 tbody  = MainDataDiv[2].find("tbody")
@@ -109,11 +112,14 @@ tbody  = MainDataDiv[2].find("tbody")
 
 trList = tbody.find_all("tr")
 
-dateList = tbody.find_all("td",{"class": "TableCell__TableCellElement-sc-1do596v-0 jdhnTQ SortTable__StyledTableCell-sc-4bygm5-1 jcBPas"})
+############### Needs to be updated (spotify for artists changes classes over time)
+dateList = tbody.find_all("td",{"class": "TableCell__TableCellElement-sc-1do596v-0 huXJQd SortTable__StyledTableCell-sc-4bygm5-1 XvWyE"})
 
 
 func()
+
 print(dateList)
+
 func()
 
 
@@ -160,9 +166,7 @@ for i in trList:
     # [rank , PlaylistName , Number of songs, "curator" , "listeners" , "streams"]
     dataList = []
     for x in i.find_all("td"):
-
         if tdcounter == 1:
-
             print("test: ",x)
             pn = x.find("span").get_text()
             nos = x.find("h4").get_text()
@@ -184,8 +188,7 @@ for i in trList:
 
 
 
-
-pprint.pprint(dictionary)
+dumpjson(dictionary)
 
 
 
