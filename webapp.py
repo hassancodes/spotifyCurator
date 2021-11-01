@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return send_file("Static\HTML\index.html")
+    return send_file("static\HTML\index.html")
 
 @app.route("/main")
 def main():
