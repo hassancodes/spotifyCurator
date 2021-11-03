@@ -1,0 +1,50 @@
+
+.btn{
+
+    border: 2px solid black !important;
+    /* background-color: lightblue; */
+    text-align: "right" !important;
+
+}
+
+#addplaybtn{
+    text-align: right !important;
+}
+
+#addplaybtn a{
+    border: 2px solid grey;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 8px 10px 8px 10px;
+    background-color: lightblue;
+
+}
+
+div{
+    display:block;
+    /* border:1px solid green; */
+    padding: 10px 5px 10px 5px;
+    margin-top: 20px;
+     margin-bottom: 20px;
+}
+
+div ul{
+    list-style-type:none;
+    display: inline-block;
+    border:1px yellow solid;
+    display:flex;
+
+
+}
+
+div ul li{
+    display:inline;
+    border: 2px solid grey;
+    padding: 2px 10px 2px 10px;
+    /* padding: 2px 10px 2px 10px; */
+    border-radius: 10px;
+    margin-left:10px;
+    margin-right: 10px;
+    flex-grow: 1;
+
+}
