@@ -150,7 +150,6 @@ def createDict(ls):
 
     dictionary.update({maindata["playlist Name"] : maindata})
 
-
 # function ends Here
 
 # JSON DUMP function
