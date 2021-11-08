@@ -135,20 +135,26 @@ print(len(dateList))
 dictionary = {}
 def createDict(ls):
     maindata = {"rank": "",
-    "playlist Name": "",
-    "No of Songs":"",
-    "Curator" : "",
-    "Listeners" : "",
-    "Streams ":"",
-    "Date": ""}
+    "playlistname": "",
+    "noofsongs":"",
+    "curator" : "",
+    "listeners" : "",
+    "streams":"",
+    "date": "",
+    "revenue" : ""
+    }
 
 
-    counter = 0
+    counter = -1
     for k,v in maindata.items():
-        maindata[k] ="".join(ls[counter])
         counter +=1
+        if counter ==7:
+            maindata[k] = round(int(str(maindata["streams"]).replace(',','')) * 0.006,2)
+        else:
+            maindata[k] ="".join(ls[counter])
 
-    dictionary.update({maindata["playlist Name"] : maindata})
+
+    dictionary.update({maindata["playlistname"] : maindata})
 
 # function ends Here
 
@@ -187,8 +193,11 @@ for i in trList:
 
 
 
+# dumping the end json into the file
 dumpjson(dictionary)
-
+print("exiting... chrome")
+time.sleep(3)
+driver.quit()
 
 
 

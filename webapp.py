@@ -6,22 +6,14 @@ from flask import send_file
 
 app = Flask(__name__)
 
-file = open("dump.json", "r")
-a = json.load(file)
-# print(a)
-@app.route("/")
-def hello_world():
-    # return send_file("templates/index.html")
-    return send_file("templates/index.html")
+file = open("dump.json", "r", encoding="utf-8")
+jData = json.load(file)
+print(jData)
 
-
-
-
-
-
+# Home Route
 @app.route("/main")
 def main():
-    return "very good"
+    return render_template("base.html" , jData=jData)
 
 
 
