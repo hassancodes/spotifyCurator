@@ -8,10 +8,11 @@ app = Flask(__name__)
 
 file = open("dump.json", "r")
 a = json.load(file)
-print(a)
+# print(a)
 @app.route("/")
 def hello_world():
     # return send_file("templates/index.html")
+    return send_file("templates/index.html")
 
 
 
