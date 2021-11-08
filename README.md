@@ -5,4 +5,8 @@
 
 
 # week2
-Create plan for implementing frontend. (Working)
+* Create plan for implementing frontend. (Working)
+* build frontend design
+
+
+# week3

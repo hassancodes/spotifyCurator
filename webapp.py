@@ -12,7 +12,7 @@ print(a)
 @app.route("/")
 def hello_world():
     # return send_file("templates/index.html")
-    return f"<p>Hello {json.loads(a)}</p>"
+
 
 
 
