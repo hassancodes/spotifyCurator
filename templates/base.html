@@ -44,14 +44,14 @@
 
 
         {% for key,value in jData.items() %}
-          <tr>
-            <td>{{jData[key]["rank"]}}</td>
-            <td>{{jData[key]["Amountpaid"]}}</td>
-            <td>{{jData[key]["playlistname"]}}</td>
-            <td>{{jData[key]["streams"]}}</td>
-            <td><span class="label label-danger">{{jData[key]["revenue"]}}</span> </td>
-          </tr>
-{% endfor %}
+        <tr>
+          <td>{{jData[key]["rank"]}}</td>
+          <td>{{jData[key]["Amountpaid"]}}</td>
+          <td>{{jData[key]["playlistname"]}}</td>
+          <td>{{jData[key]["streams"]}}</td>
+          <td><span class="label label-danger">{{jData[key]["revenue"]}}</span> </td>
+        </tr>
+        {% endfor %}
 
 
       </tbody>

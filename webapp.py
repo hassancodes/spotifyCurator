@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 file = open("dump.json", "r", encoding="utf-8")
 jData = json.load(file)
-print(jData)
+# print(jData)
 
 # Home Route
 @app.route("/main")
