@@ -1,12 +1,18 @@
 # Working on Spotify Curator
-# Week1
+# Required
 * create a file with all the clean data. ✅
 * Convert the existing code to functional paradigm (working)
-
-
-# week2
 * Create plan for implementing frontend. (Working)
-* build frontend design
+* build front-end design
+* Host selenium script on the server
 
 
-# week3
+# Extra:
+* add a page for potential playlists to target.
+* Dash board for Songs
+* Grab all the data from spotify.
+
+
+# Advance improvements
+* add "login and logout" functionality
+* If I stay persistent, create it a commercial webapp.
