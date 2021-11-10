@@ -30,13 +30,13 @@ def createDict(ls):
     }
 
 
-    counter = -1
+    counter =0
     for k,v in maindata.items():
-        counter +=1
         if counter ==7:
             maindata[k] = round((int(maindata["streams"].replace(",",'')) * 0.006),2)
         else:
             maindata[k] ="".join(ls[counter])
+        counter +=1
 
     dictionary.update({maindata["playlistname"] : maindata})
 
@@ -130,12 +130,12 @@ def parsefunc():
         print(len(trList))
         for i in trList:
             tdcounter = 0
-            # [rank , PlaylistName , Number of songs, "curator" , "listeners" , "streams"]
+            # [rank , PlaylistName , Number of songs, "curator" , "listeners" , "streams", "date"]
             dataList = []
             for x in i.find_all("td"):
                 if tdcounter == 1:
                     # print("test: ",x)
-                    pn = x.find("span").get_text()
+                    pn = "Unknown"  if x.find("span").get_text()=="" else x.find("span").get_text()
                     nos = x.find("h4").get_text()
                     dataList.append("".join(pn))
                     dataList.append("".join(nos))
