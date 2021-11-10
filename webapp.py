@@ -13,7 +13,7 @@ jData = json.load(file)
 # Home Route
 @app.route("/main")
 def main():
-    return render_template("base.html" , jData=jData)
+    return render_template("index.html" , jData=jData)
 
 
 
