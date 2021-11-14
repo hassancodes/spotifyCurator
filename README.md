@@ -6,6 +6,11 @@
 * build front-end design.
 * Host selenium script on the server.
 
+# potential Pages:
+* 28 days playlist data.
+* 7 days playlist data.
+*
+* Potential playlist.
 
 # Extra:
 

@@ -15,4 +15,7 @@ jData = json.load(file)
 def main():
     return render_template("index.html" , jData=jData)
 
+# potential pages
+
+
 app.run("127.0.0.1",port=8080 ,debug=True)

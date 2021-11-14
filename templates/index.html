@@ -1,29 +1,18 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>-->
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Spotify Curator</title>
-  <link rel="stylesheet" href="/static/style.css">
+  <title>Spotify Curator🎸 | Effortlessly handle your artists profile</title>
+  <!-- <link rel="stylesheet" href="/static/style.css"> -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 
 <body>
-
-
-  <nav class="navbar navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand">
-        <h2>🎶Spotify Curator🎸</h2>
-      </a>
-    </div>
-  </nav>
-
-
+  {% include "header.html" %}
   <hr>
   <div id="addplaybtn">
     <a href="">Add Playlist</a>
@@ -46,19 +35,18 @@
         {% for key,value in jData.items() %}
         <tr>
           <td>{{jData[key]["rank"]}}</td>
-          <td>{{jData[key]["Amountpaid"]}}</td>
-          <td>{{jData[key]["playlistname"]}}</td>
+          <td><input name="moneyGiven" placeholder="input Money" type=text></td>
+          <td id="playlist-name">{{jData[key]["playlistname"]}}</td>
           <td>{{jData[key]["streams"]}}</td>
-          <td><span class="label label-danger">{{jData[key]["revenue"]}}</span> </td>
+          <td><span class="label label-danger">${{jData[key]["revenue"]}}</span> </td>
         </tr>
         {% endfor %}
-
 
       </tbody>
     </table>
     <!-- ################################################################################ -->
   </div>
-
+  {% include "footer.html" %}
 </body>
 
 </html>
