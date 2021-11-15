@@ -23,3 +23,10 @@
 
 * add "login and logout" functionality.
 * If I stay persistent, create it a commercial webapp.
+
+
+
+# Currently Working
+
+* Add a drop down to select 7 days or 28 days for the streams.
+* Add a separate page to show potential lists
