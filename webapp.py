@@ -22,6 +22,13 @@ def seven_days():
     return render_template("sevendays.html")
 
 
+# Seperate script for checking playlist
+@app.route("/potentialplaylists")
+
+def pplaylists():
+    return render_template("potentialplaylists.html")
+
+
 # potential pages
 
 
