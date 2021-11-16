@@ -1,53 +1,103 @@
 /* #########################################HEADER########################################## */
-
-div {
-    display:block;
-    padding: 10px 5px 10px 5px;
-    margin-top: 20px;
-     margin-bottom: 20px;
+:root {
+  --primary-color: #44C594;
+  --secondary-color: #63CFA6;
+  --color3: #A1E2C9;
+  /* --color4 : ; */
 }
 
-div .nav-ul{
-    list-style-type:none;
-    display: inline-block;
-    display:flex;
+.dropdown-btn {
+  /* border: 1px yellow solid; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: right;
 }
 
-div ul .nav-li{
-    display:inline;
-    border: 2px solid grey;
-    padding: 2px 10px 2px 10px;
-    /* padding: 2px 10px 2px 10px; */
-    border-radius: 10px;
-    margin-left:10px;
-    margin-right: 10px;
-    flex-grow: 1;
+.dropdown {
+  display: inline;
+
 }
+
+
+.dropdown select{
+  padding: 8px 10px 8px 10px;
+  border-radius: 10px;
+
+}
+
+
+.addplaylist {
+  display: inline;
+  padding: 10px 5px 10px 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* border: 1px yellow solid; */
+}
+
+#addplaybtn a {
+  border: 1px solid grey;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 8px 10px 8px 10px;
+}
+
+.navbar {
+  background-color:var(--primary-color);
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+div .nav-ul {
+  list-style-type: none;
+  display: inline-block;
+  display: flex;
+  color:white;
+
+}
+
+.nav-li {
+  display: inline;
+  /* border: 1px solid grey; */
+  padding: 2px 10px 2px 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  flex-grow: 1;
+}
+
+
+.nav-li:hover{
+  background-color: var(--color3);
+}
+
 /* ################################################################################# */
-.btn{
-    border: 2px solid black !important;
-    /* background-color: lightblue; */
-    text-align: "right" !important;
-  }
-
-#addplaybtn{
+/* #addplaybtn{
     text-align: right !important;
 }
+ */
 
-
-#addplaybtn a{
-    border: 2px solid grey;
-    text-decoration: none;
-    border-radius: 10px;
-    padding: 8px 10px 8px 10px;
-    background-color: lightblue;
-}
 
 /* ########################################################### */
+#playlist-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 15ch;
+}
 
-#playlist-name{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 15ch;
+/* footer and its contents starts from here */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  color: black;
+  text-align: center;
+}
+
+.footer li {
+  list-style: none;
 }

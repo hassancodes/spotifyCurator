@@ -14,8 +14,29 @@
 <body>
   {% include "header.html" %}
   <hr>
-  <div id="addplaybtn">
-    <a href="">Add Playlist</a>
+
+  <div class="dropdown-btn">
+
+    <!-- drop down start-->
+    <div class="dropdown">
+      <!-- <form action="/action_page.php"> -->
+      <label for="timeframe"></label>
+      <!-- for is used to connect lable with id -->
+      <select name="tf" id="timeframe">
+        <option value="28days">28 Days</option>
+        <option value="7days">7 Days</option>
+        <option value="24hours">24 hours</option>
+      </select>
+      <!-- </form> -->
+    </div>
+
+    <!-- btn start -->
+    <div class="addplaylist" id="addplaybtn">
+      <a href="">Add Playlist ✏️</a>
+    </div>
+    <!-- btn end -->
+  </div>
+
   </div>
 
   <div class="table-responsive">
