@@ -15,6 +15,13 @@ jData = json.load(file)
 def main():
     return render_template("index.html" , jData=jData)
 
+
+
+@app.route("/sevendays")
+def seven_days():
+    return render_template("sevendays.html")
+
+
 # potential pages
 
 

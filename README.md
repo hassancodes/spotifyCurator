@@ -18,7 +18,6 @@
 * Dash board for Songs
 * Grab all the data from Spotify.
 
-
 # Advance improvements
 
 * add "login and logout" functionality.
@@ -26,7 +25,10 @@
 
 
 
-# Currently Working
+# Done Working
+* Add a drop down to select 7 days or 28 days for the streams.✔️
 
-* Add a drop down to select 7 days or 28 days for the streams.
-* Add a separate page to show potential lists
+# Currently working:
+
+* Make a 7 day page to display 🔃
+* get the target playlists

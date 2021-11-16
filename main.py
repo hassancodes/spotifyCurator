@@ -96,12 +96,12 @@ def main(fb,pw):
     driver.find_element_by_xpath("//*[contains(text(),'Show More')]").click()
     print("Found the button")
     driver.implicitly_wait(4)
-
     func()
-    body = driver.find_element_by_tag_name("body")
-
-    return body
-
+    # twentyeightdays = tedays
+    tedays = driver.find_element_by_tag_name("body")
+    # # I already got the 28 days data which is stored in body variables.
+    # Now I will target the 7 day link and store that body of that page
+    return tedays
 #################################### ADDing to HTML FILE ###################################
 
 def addtoHtml():
@@ -112,7 +112,7 @@ def addtoHtml():
     mbody = BeautifulSoup(body.get_attribute("innerHTML"), "lxml")
 
     # add in data to html file
-    with open("data.html", "w",encoding="utf-8") as file:
+    with open("tedays.html", "w",encoding="utf-8") as file:
         file.write(f"{mbody}")
         print("Successfully data written to data.html")
 
@@ -120,7 +120,7 @@ def addtoHtml():
 ############################### Parsing the html file ###########################################
 def parsefunc():
 
-    with open("data.html", "r", encoding="utf-8") as rfile:
+    with open("tedays.html", "r", encoding="utf-8") as rfile:
         rbody=BeautifulSoup(rfile.read() , "lxml")
 
         # there are total 3 sections in the html.  and two tbodys with the required data.
@@ -160,10 +160,6 @@ def parsefunc():
 # main logic
 addtoHtml()
 parsefunc()
-
-
-
-
 
 
 

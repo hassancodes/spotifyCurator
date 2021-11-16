@@ -15,14 +15,12 @@
 
 .dropdown {
   display: inline;
-
 }
 
 
 .dropdown select{
   padding: 8px 10px 8px 10px;
   border-radius: 10px;
-
 }
 
 
