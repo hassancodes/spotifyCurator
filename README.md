@@ -9,7 +9,6 @@
 # potential Pages:
 * 28 days playlist data.
 * 7 days playlist data.
-*
 * Potential playlist.
 
 # Extra:
@@ -21,7 +20,7 @@
 # Advance improvements
 
 * add "login and logout" functionality.
-* If I stay persistent, create it a commercial webapp.
+* If I stay persistent, create it a commercial webapp. 😂
 
 
 
@@ -31,4 +30,5 @@
 # Currently working:
 
 * Make a 7 day page to display 🔃
-* get the target playlists
+* get the target playlists 
+
