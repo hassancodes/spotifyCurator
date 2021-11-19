@@ -2,4 +2,7 @@ function alertt(){
 alert("Welcome to our website.")
 }
 
-alertt()
+// alertt()
+function generateRow(){
+
+}
