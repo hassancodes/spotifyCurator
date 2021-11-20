@@ -9,9 +9,10 @@
   <link rel="shortcut icon" type="image/jpg" href={{url_for('static', filename='favicon.ico')}}/>
 
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='index.js')}}"> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <!-- java starts from here -->
+  <!-- javascript starts from here -->
   <!-- ############################################################################################# -->
   <script type="text/javascript">
     function handleSelect(elm) {
@@ -30,8 +31,9 @@
     <div>
       <ul class="nav-ul">
         <li class="nav-li">About</li>
-        <li class="nav-li"><a href="potentialplaylists">Potential Playlist</a></li>
-        <li class="nav-li">Sign in</li>
+        <li class="nav-li"><a style="text-decoration:none; color:white;" href="addplaylists">Add playlist</a></li>
+        <li class="nav-li"><a style="text-decoration:none; color:white;" href="potentialplaylists">Potential Playlist</a></li>
+        <li class="nav-li">My Account</li>
       </ul>
     </div>
   </nav>

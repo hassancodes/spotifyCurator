@@ -39,6 +39,13 @@
   padding: 8px 10px 8px 10px;
 }
 
+#addplaybtn button {
+  border: 1px solid grey;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 8px 10px 8px 10px;
+}
+
 
 .navbar {
   background-color:var(--primary-color);

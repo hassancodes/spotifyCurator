@@ -145,19 +145,16 @@ def parsefunc():
                 else:
                     # the rest three data
                     dataList.append(x.get_text())
-
-
                 tdcounter+=1
                 # print("Data List: ", dataList)
 
             createDict(dataList)
-
         dumpjson(dictionary)
 
 
 
 
-# main logic
+# main logic starts from here
 addtoHtml()
 parsefunc()
 
