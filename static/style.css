@@ -1,12 +1,11 @@
 /* #########################################HEADER########################################## */
 :root {
   /* Potential Colors 1 */
-  --color-scheme1 : #5680E9;
-  --color-scheme2 : #84CEEB;
-  --color-scheme3 : #5AB9EA;
-  --color-scheme4 : #C1C8E4;
-  --color-scheme5 : #8860D0;
-
+  --color-scheme1: #5680E9;
+  --color-scheme2: #84CEEB;
+  --color-scheme3: #5AB9EA;
+  --color-scheme4: #C1C8E4;
+  --color-scheme5: #8860D0;
   /* testing colors */
   --primary-color: #44C594;
   --secondary-color: #63CFA6;
@@ -14,6 +13,10 @@
   /* --color4 : ; */
 }
 
+
+body{
+  padding-bottom: 50px;
+}
 .dropdown-btn {
   /* border: 1px yellow solid; */
   margin-top: 20px;
@@ -25,12 +28,10 @@
   display: inline;
 }
 
-
-.dropdown select{
+.dropdown select {
   padding: 8px 10px 8px 10px;
   border-radius: 10px;
 }
-
 
 .addplaylist {
   display: inline;
@@ -56,18 +57,18 @@
   outline: none;
 }
 
-#addplaybtn button:hover{
+#addplaybtn button:hover {
   border: 2px solid grey;
-
 }
 
 
-.tablebtn{
+.tablebtn {
   display: flex;
   border: 1px solid grey;
 }
+
 .navbar {
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
 }
@@ -76,8 +77,7 @@ div .nav-ul {
   list-style-type: none;
   display: inline-block;
   display: flex;
-  color:white;
-
+  color: white;
 }
 
 .nav-li {
@@ -90,8 +90,7 @@ div .nav-ul {
   flex-grow: 1;
 }
 
-
-.nav-li:hover{
+.nav-li:hover {
   background-color: var(--color3);
 }
 
@@ -100,8 +99,6 @@ div .nav-ul {
     text-align: right !important;
 }
  */
-
-
 /* ########################################################### */
 #playlist-name {
   white-space: nowrap;

@@ -31,4 +31,9 @@ def pplaylists():
 def addplaylist():
     return render_template("addplaylists.html")
 
+# function to display error pages
+@app.route("/<name>")
+def error(name):
+    return "error"
+
 app.run("127.0.0.1",port=8080 ,debug=True)

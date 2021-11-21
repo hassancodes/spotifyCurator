@@ -1,56 +1,64 @@
 {% include "header.html" %}
-  <hr>
+<hr>
 
-  <div class="dropdown-btn">
+<div class="dropdown-btn">
 
-    <!-- drop down start-->
-    <div class="dropdown">
-      <!-- <form action="/action_page.php"> -->
-      <label for="timeframe"></label>
-      <!-- for is used to connect lable with id -->
-      <select name="tf" id="timeframe" onchange="javascript:handleSelect(this)">
-        <option value="28days">28 Days</option>
-        <option value="sevendays">7days</option>
-        <option value="24hours">24 hours</option>
-      </select>
-      <!-- </form> -->
-    </div>
-
-    <!-- btn start -->
-    <div class="addplaylist" id="addplaybtn">
-      <a href="">Add Playlist ✏️</a>
-    </div>
-    <!-- btn end -->
+  <!-- drop down start-->
+  <div class="dropdown">
+    <!-- <form action="/action_page.php"> -->
+    <label for="timeframe"></label>
+    <!-- for is used to connect lable with id -->
+    <select name="tf" id="timeframe" onchange="javascript:handleSelect(this)">
+      <option value="28days">28 Days</option>
+      <option value="sevendays">7days</option>
+      <option value="24hours">24 hours</option>
+    </select>
+    <!-- </form> -->
   </div>
 
+  <!-- btn start -->
+  <div class="addplaylist" id="addplaybtn">
+    <a href="">Add Playlist ✏️</a>
   </div>
+  <!-- btn end -->
+</div>
 
-  <div class="table-responsive">
-    <table class="table mb-0">
-      <thead>
-        <tr>
-          <th>#ROS</th>
-          <th>Amount Paid</th>
-          <th>Playlist Name</th>
-          <th>Streams</th>
-          <th>Money Made</th>
-        </tr>
-      </thead>
-      <tbody>
+</div>
+
+<div class="table-responsive">
+  <table class="table mb-0">
+    <thead>
+      <tr>
+        <th>#ROS</th>
+        <th>Amount Paid</th>
+        <th>Playlist Name</th>
+        <th>Streams</th>
+        <th>Money Made</th>
+      </tr>
+    </thead>
+    <tbody>
 
 
-        {% for key,value in jData.items() %}
-        <tr>
-          <td>{{jData[key]["rank"]}}</td>
-          <td><input name="moneyGiven" placeholder="input Money" type=text></td>
-          <td id="playlist-name">{{jData[key]["playlistname"]}}</td>
-          <td>{{jData[key]["streams"]}}</td>
-          <td><span class="label label-danger">${{jData[key]["revenue"]}}</span> </td>
-        </tr>
-        {% endfor %}
+      {% for key,value in jData.items() %}
+      <tr>
+        <td>{{jData[key]["rank"]}}</td>
+        <td><input name="moneyGiven" placeholder="input Money" type=text></td>
+        <td id="playlist-name">{{jData[key]["playlistname"]}}</td>
+        <td>{{jData[key]["streams"]}}</td>
+        <td><span class="label label-danger">${{jData[key]["revenue"]}}</span> </td>
+      </tr>
+      {% endfor %}
 
-      </tbody>
-    </table>
-    <!-- ################################################################################ -->
-  </div>
-  {% include "footer.html" %}
+      <tr>
+        <td>hello</td>
+        <td>headfasdfadf</td>
+        <td id="playlist-name">adfasdfasdf</td>
+        <td>hiadf</td>
+        <td><span class="label label-danger">dsfasdfasdf</span> </td>
+      </tr>
+
+    </tbody>
+  </table>
+  <!-- ################################################################################ -->
+</div>
+{%include "footer.html"%}
