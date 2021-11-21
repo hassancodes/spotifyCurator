@@ -1,5 +1,13 @@
 /* #########################################HEADER########################################## */
 :root {
+  /* Potential Colors 1 */
+  --color-scheme1 : #5680E9;
+  --color-scheme2 : #84CEEB;
+  --color-scheme3 : #5AB9EA;
+  --color-scheme4 : #C1C8E4;
+  --color-scheme5 : #8860D0;
+
+  /* testing colors */
   --primary-color: #44C594;
   --secondary-color: #63CFA6;
   --color3: #A1E2C9;
@@ -39,12 +47,20 @@
   padding: 8px 10px 8px 10px;
 }
 
+/* css for the top button on the addplaylist button page. */
 #addplaybtn button {
   border: 1px solid grey;
   text-decoration: none;
   border-radius: 10px;
   padding: 8px 10px 8px 10px;
+  outline: none;
 }
+
+#addplaybtn button:hover{
+  border: 2px solid grey;
+
+}
+
 
 .tablebtn{
   display: flex;
