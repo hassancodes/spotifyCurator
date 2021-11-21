@@ -1,8 +1,10 @@
 // function for generating row to add playlist
+var indexpl =1;
 function generateRow(){
+
   data = `<tr>
 
-    <td>1</td>
+    <td>${indexpl}</td>
     <td><input></td>
     <td><input type=text></td>
     <td>
@@ -259,12 +261,9 @@ function generateRow(){
     <td><input type="date"></td>
     <td><input type="date"></td>
   </tr>
-  <div class="tablebtn">
-  <button type="button" name="button">Add</button>
-  </div>
-
 `
   var tbody = document.getElementById("addplaylisttbl");
   var readytbody = tbody.innerHTML + data;
   tbody.innerHTML = readytbody;
+  indexpl+=1;
 }

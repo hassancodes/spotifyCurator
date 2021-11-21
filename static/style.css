@@ -46,7 +46,10 @@
   padding: 8px 10px 8px 10px;
 }
 
-
+.tablebtn{
+  display: flex;
+  border: 1px solid grey;
+}
 .navbar {
   background-color:var(--primary-color);
   border-bottom-right-radius: 15px;
