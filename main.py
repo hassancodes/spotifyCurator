@@ -8,6 +8,7 @@ from selenium.webdriver.chrome.options import Options
 from collections import OrderedDict
 import pprint
 import json
+import random
 
 # useless function
 def func():
@@ -17,6 +18,7 @@ def func():
     print("\n")
 
 ################################### # GOD FUNCTION##############################
+
 dictionary = OrderedDict()
 def createDict(ls):
     maindata = {"rank": "",
@@ -38,7 +40,11 @@ def createDict(ls):
             maindata[k] ="".join(ls[counter])
         counter +=1
 
-    dictionary.update({maindata["playlistname"] : maindata})
+    if maindata["playlistname"] == "Unknown":
+        dictionary.update({maindata["playlistname"]+f"{random.randint(1,10)}" : maindata})
+    elif maindata["playlistname"] != "Unknown":
+        dictionary.update({maindata["playlistname"] : maindata})
+
 
 ################################### for dumping #############################
 
@@ -128,27 +134,31 @@ def parsefunc():
         # trList  = [x.prettify().encode('utf8').decode('ascii', 'ignore') for x in rtList]
 
         print(len(trList))
+        print(trList[0])
         for i in trList:
             tdcounter = 0
             # [rank , PlaylistName , Number of songs, "curator" , "listeners" , "streams", "date"]
             dataList = []
-            for x in i.find_all("td"):
-                if tdcounter == 1:
+            data = i.find_all("td")
+            for x in range(len(data)):
+
+                if x == 1:
                     # print("test: ",x)
-                    pn = "Unknown"  if x.find("span").get_text()=="" else x.find("span").get_text()
-                    nos = x.find("h4").get_text()
+                    pn = "Unknown"  if data[x].find("span").get_text()=="" else data[x].find("span").get_text()
+                    nos = data[x].find("h4").get_text()
                     dataList.append("".join(pn))
                     dataList.append("".join(nos))
-                elif tdcounter == 2:
-                    curatorName  = "".join(x.get_text())
+                elif x == 2:
+                    curatorName  = "".join(data[x].get_text())
                     dataList.append(curatorName)
                 else:
                     # the rest three data
-                    dataList.append(x.get_text())
-                tdcounter+=1
+                    dataList.append(data[x].get_text())
+                # tdcounter+=1
                 # print("Data List: ", dataList)
 
             createDict(dataList)
+            print("1:",dictionary)
         dumpjson(dictionary)
 
 
@@ -159,31 +169,4 @@ addtoHtml()
 parsefunc()
 
 #####################################################################################
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#####################################################################################
-# with open("test.html","w") as fp:
-#     fp.write(a)
-#     print("saved")
-# # pprint.pprint(res)
-#
-# time.sleep(5)
-#
-# driver.quit()
-
-
-# add beautifulsoup to extract the playlist data and save it in a file.
-
 print("Success you got it")
