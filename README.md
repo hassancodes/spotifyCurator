@@ -30,5 +30,4 @@
 # Currently working:
 
 * Make a 7 day page to display 🔃
-* get the target playlists 
-
+* get the target playlists (working)
