@@ -262,6 +262,7 @@ function generateRow(){
     <td><input type="date"></td>
   </tr>
 `
+// taking care of the index in Table
   var tbody = document.getElementById("addplaylisttbl");
   var readytbody = tbody.innerHTML + data;
   tbody.innerHTML = readytbody;

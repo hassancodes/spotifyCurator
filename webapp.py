@@ -11,9 +11,11 @@ jData = json.load(file)
 # print(jData)
 
 # Home Route
+ab = "tutorial"
 @app.route("/main")
 def main():
-    return render_template("index.html" , jData=jData)
+    return render_template("index.html" , jData=jData, var=ab)
+
 
 
 
@@ -27,9 +29,23 @@ def seven_days():
 def pplaylists():
     return render_template("potentialplaylists.html")
 
+
+var = "main"
 @app.route("/addplaylists")
 def addplaylist():
-    return render_template("addplaylists.html")
+    return render_template("addplaylists.html", var=var)
+
+
+
+# miscellaneous
+# about, main
+var = "main"
+@app.route("/tutorial")
+def tut():
+    return render_template("tutorial.html", var=var)
+
+
+
 
 # function to display error pages
 @app.route("/<name>")
