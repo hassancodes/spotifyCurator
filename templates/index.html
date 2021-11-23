@@ -38,23 +38,30 @@
     </thead>
     <tbody>
 
-
+      {% set totalpaid = "total Paid"%}
+      {% set totalStreams = [] %}
+      {% set totalRevenue = [] %}
       {% for key,value in jData.items() %}
       <tr>
         <td>{{jData[key]["rank"]}}</td>
         <td><input name="moneyGiven" placeholder="input Money" type=text></td>
         <td id="playlist-name">{{jData[key]["playlistname"]}}</td>
         <td>{{jData[key]["streams"]}}</td>
-        <td><span class="label label-danger">${{jData[key]["revenue"]}}</span> </td>
+        <td><span class="label label-danger">${{jData[key]["revenue"]}}</span></td>
+
+        <!-- Below I have added the streams and revenue to jinja variables so I use it at the end of the table -->
+        {% set __ = totalRevenue.append( jData[key]["revenue"]) %}
+        {% set __ = totalStreams.append( jData[key]["streams"] | replace(',','') | int) %}
+
       </tr>
       {% endfor %}
 
       <tr>
-        <td>hello</td>
-        <td>headfasdfadf</td>
-        <td id="playlist-name">adfasdfasdf</td>
-        <td>hiadf</td>
-        <td><span class="label label-danger">dsfasdfasdf</span> </td>
+        <td>Rank</td>
+        <td>TotalMoney</td>
+        <td id="playlist-name">Playlist Name</td>
+        <td>{{ totalStreams | sum }}</td>
+        <td><span class="label label-danger"></span>${{totalRevenue | sum | round(2,'floor')}}</td>
       </tr>
 
     </tbody>
