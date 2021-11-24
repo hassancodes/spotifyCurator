@@ -16,11 +16,7 @@
     <!-- </form> -->
   </div>
 
-  <!-- btn start -->
-  <!-- <div class="addplaylist" id="addplaybtn">
-    <a href="">Add Playlist ✏️</a>
-  </div> -->
-  <!-- btn end -->
+
 </div>
 
 </div>
@@ -51,8 +47,8 @@
 
         <!-- Below I have added the streams and revenue to jinja variables so I use it at the end of the table -->
         {% set __ = totalRevenue.append( jData[key]["revenue"]) %}
+        <!-- replace the commas from the string integers and then storing them into the list -->
         {% set __ = totalStreams.append( jData[key]["streams"] | replace(',','') | int) %}
-
       </tr>
       {% endfor %}
 
