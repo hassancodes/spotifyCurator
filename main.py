@@ -31,7 +31,6 @@ def createDict(ls):
     "revenue": ""
     }
 
-
     counter =0
     for k,v in maindata.items():
         if counter ==7:
@@ -41,15 +40,15 @@ def createDict(ls):
         counter +=1
 
     if maindata["playlistname"] == "Unknown":
-        dictionary.update({maindata["playlistname"]+f"{random.randint(1,10)}" : maindata})
+        dictionary.update({maindata["playlistname"]+f"{random.randint(1,100)}" : maindata})
     elif maindata["playlistname"] != "Unknown":
         dictionary.update({maindata["playlistname"] : maindata})
 
 
 ################################### for dumping #############################
 
-def dumpjson(dict):
-    with open("dump.json", 'w', encoding="utf-8") as dj:
+def dumpjson(dict,filename):
+    with open(f"{filename}.json", 'w', encoding="utf-8") as dj:
         # adding the generated data to json file
         json.dump(dict,dj)
 
@@ -89,6 +88,7 @@ def main(fb,pw):
     time.sleep(4)
     # musicbtn.click()
     # time.sleep(4)
+    # this get the 28 days data
     playlist = driver.find_element_by_xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div/div[2]/section[1]/ul/li[3]/a")
     playlist.click()
 
@@ -105,9 +105,35 @@ def main(fb,pw):
     func()
     # twentyeightdays = tedays
     tedays = driver.find_element_by_tag_name("body")
+    mbody = BeautifulSoup(tedays.get_attribute("innerHTML"), "lxml")
     # # I already got the 28 days data which is stored in body variables.
     # Now I will target the 7 day link and store that body of that page
-    return tedays
+    driver.implicitly_wait(10)
+
+############################Fetching Seven days data######################################
+    # getting the seven days data.
+    driver.get("https://artists.spotify.com/c/artist/7KzG8dszzwlSDGEsCbzANz/music/playlists?time-filter=7day")
+    driver.implicitly_wait(10)
+    time.sleep(5)
+    driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+    print("worked")
+    driver.implicitly_wait(4)
+    # searching for show more button.
+    driver.find_element_by_xpath("//*[contains(text(),'Show More')]").click()
+    print("Found the button")
+    driver.implicitly_wait(4)
+    func()
+    sevendays = driver.find_element_by_tag_name("body")
+    sebody = BeautifulSoup(sevendays.get_attribute("innerHTML"), "lxml")
+
+    # add in data to html file
+    with open("sevendays.html", "w",encoding="utf-8") as file:
+        file.write(f"{sebody}")
+        # print("Successfully data written to sevendays.html")
+###################################Seven days fetching ends here###############################
+
+    return mbody
+
 #################################### ADDing to HTML FILE ###################################
 
 def addtoHtml():
@@ -115,26 +141,26 @@ def addtoHtml():
     pw = 9018201778
 
     body = main(fb,pw)
-    mbody = BeautifulSoup(body.get_attribute("innerHTML"), "lxml")
+    # mbody = BeautifulSoup(body.get_attribute("innerHTML"), "lxml")
 
     # add in data to html file
     with open("tedays.html", "w",encoding="utf-8") as file:
-        file.write(f"{mbody}")
-        print("Successfully data written to data.html")
+        file.write(f"{body}")
+        print("Successfully data written to tedays.html")
 
 
 ############################### Parsing the html file ###########################################
-def parsefunc():
-
-    with open("tedays.html", "r", encoding="utf-8") as rfile:
+def parsefunc(filename):
+    with open(f"{filename}.html", "r", encoding="utf-8") as rfile:
         rbody=BeautifulSoup(rfile.read() , "lxml")
 
         # there are total 3 sections in the html.  and two tbodys with the required data.
         trList = rbody.find_all("section")[2].find_all("tbody")[1].find_all("tr")
         # trList  = [x.prettify().encode('utf8').decode('ascii', 'ignore') for x in rtList]
+        print(trList)
 
         print(len(trList))
-        print(trList[0])
+        # print(trList[0])
         for i in trList:
             tdcounter = 0
             # [rank , PlaylistName , Number of songs, "curator" , "listeners" , "streams", "date"]
@@ -156,17 +182,21 @@ def parsefunc():
                     dataList.append(data[x].get_text())
                 # tdcounter+=1
                 # print("Data List: ", dataList)
-
             createDict(dataList)
-            print("1:",dictionary)
-        dumpjson(dictionary)
-
-
+        dumpjson(dictionary,filename)
 
 
 # main logic starts from here
 addtoHtml()
-parsefunc()
+parsefunc("tedays")
+# print(pprint.pprint(dictionary))
+print("\n \n \n \n \n \n \n \n \n \n")
+
+# initializing the dictionary again to store the seven data from start
+dictionary = OrderedDict()
+parsefunc("sevendays")
+# print(pprint.pprint(dictionary))
+
 
 #####################################################################################
 print("Success you got it")
