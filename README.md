@@ -1,4 +1,4 @@
-# Working on Spotify Curator
+# Working on **Spotify Curator**
 # Required
 * create a file with all the clean data. ✅
 * Convert the existing code to functional paradigm (working)
