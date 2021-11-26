@@ -12,10 +12,7 @@ import random
 
 # useless function
 def func():
-    print("\n")
-    print("\n")
-    print("\n")
-    print("\n")
+    print("\n \n \n \n")
 
 ################################### # GOD FUNCTION##############################
 
@@ -190,7 +187,6 @@ def parsefunc(filename):
 addtoHtml()
 parsefunc("tedays")
 # print(pprint.pprint(dictionary))
-print("\n \n \n \n \n \n \n \n \n \n")
 
 # initializing the dictionary again to store the seven data from start
 dictionary = OrderedDict()
