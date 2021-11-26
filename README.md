@@ -1,14 +1,14 @@
 # Working on **Spotify Curator**
 # Required
 * create a file with all the clean data. ✅
-* Convert the existing code to functional paradigm (working)
+* Convert the existing code to functional paradigm (working)✅
 * Create plan for implementing front-end. (Working)
 * build front-end design.
 * Host selenium script on the server.
 
 # potential Pages:
-* 28 days playlist data.
-* 7 days playlist data.
+* 28 days playlist data.✅
+* 7 days playlist data.✅
 * Potential playlist.
 
 # Extra:
@@ -23,11 +23,10 @@
 * If I stay persistent, create it a commercial webapp. 😂
 
 
-
 # Done Working
 * Add a drop down to select 7 days or 28 days for the streams.✔️
+* Make a 7 day page to display ✔️
 
 # Currently working:
-
-* Make a 7 day page to display 🔃
-* get the target playlists (working)
+* Adding the total streams, rows ,Amount made(working)🔃
+* get the target playlists (working)🔃
