@@ -2,7 +2,9 @@
 var indexpl =1;
 function generateRow(){
 
-  data = `<tr>
+  data = `
+<tbody>
+  <tr>
 
     <td>${indexpl}</td>
     <td><input></td>
@@ -261,6 +263,7 @@ function generateRow(){
     <td><input type="date"></td>
     <td><input type="date"></td>
   </tr>
+  </tbody>
 `
 // taking care of the index in Table
   var tbody = document.getElementById("addplaylisttbl");
