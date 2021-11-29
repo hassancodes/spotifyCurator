@@ -1,14 +1,12 @@
 // function for generating row to add playlist
 var indexpl =1;
 function generateRow(){
-
   data = `
 <tbody>
   <tr>
-
-    <td>${indexpl}</td>
-    <td><input></td>
-    <td><input type=text></td>
+    <td value="id">${indexpl}</td>
+    <td><input type="number" min="10" max="10000" name="amount_paid"></td>
+    <td><input type="text" name="playlistlink"></td>
     <td>
       <select id="country" name="country">
         <option value="None">None</option>
@@ -260,8 +258,9 @@ function generateRow(){
         <option value="Zimbabwe">Zimbabwe</option>
       </select>
     </td>
-    <td><input type="date"></td>
-    <td><input type="date"></td>
+    <td><input type="date" name="start_date"></td>
+    <td><input type="date" name="end_date"></td>
+        <td><input type="submit"></td>
   </tr>
   </tbody>
 `

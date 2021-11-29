@@ -10,10 +10,11 @@ import pprint
 import json
 import random
 
+
+
 # useless function
 def func():
     print("\n \n \n \n")
-
 ################################### # GOD FUNCTION##############################
 
 dictionary = OrderedDict()
@@ -27,6 +28,7 @@ def createDict(ls):
     "date": "",
     "revenue": ""
     }
+
 
     counter =0
     for k,v in maindata.items():
@@ -59,7 +61,7 @@ def main(fb,pw):
     op.add_argument("start-maximized")
 
 
-    driver = webdriver.Chrome('./chromedriver', keep_alive=True, options=op)
+    driver = webdriver.Chrome('./chromedriver', options=op)
     driver.get("https://accounts.spotify.com/en/login?continue=https:%2F%2Fartists.spotify.com%2F")
     time.sleep(4)
 
@@ -181,7 +183,6 @@ def parsefunc(filename):
                 # print("Data List: ", dataList)
             createDict(dataList)
         dumpjson(dictionary,filename)
-
 
 # main logic starts from here
 addtoHtml()

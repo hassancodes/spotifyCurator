@@ -1,4 +1,5 @@
 import flask
+from flask import *
 import json
 from flask import Flask,escape
 from flask import render_template
@@ -21,6 +22,24 @@ def main():
     return render_template("index.html" , jData=jData, var=ab)
 
 
+# handling the add playlist submission data
+
+@app.route('/handle_data', methods=['POST'])
+def handle_data():
+
+    amount_paid = request.form["amount_paid"]
+    playlistlink = request.form["playlistlink"]
+    country = request.form['country']
+    start_date = request.form["start_date"]
+    end_date= request.form["end_date"]
+
+    return {
+    "amount_paid":request.form["amount_paid"],
+    "playlistlink":request.form["playlistlink"],
+    "country":request.form['country'],
+    "start_date":request.form["start_date"],
+    "end_date":request.form["end_date"]
+    }
 
 
 @app.route("/sevendays")

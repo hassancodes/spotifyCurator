@@ -91,10 +91,12 @@ div .nav-ul {
 }
 
 /* ################################################################################# */
-/* #addplaybtn{
-    text-align: right !important;
+.addbtn{
+  display:block;
+
+    border : 1px solid black;
 }
- */
+
 /* ########################################################### */
 #playlist-name {
   white-space: nowrap;

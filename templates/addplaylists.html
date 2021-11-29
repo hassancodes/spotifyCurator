@@ -11,25 +11,27 @@
 </div>
 
 </div>
+<form action="{{ url_for('handle_data') }}" method="post">
 
-<div class="table-bordered">
-  <!-- table-responsive -->
-  <!-- table mb-0 -->
-  <table class="table mb-0">
-    <thead>
-      <tr>
-        <th>Index</th>
-        <th>Amount Paid</th>
-        <th>Playlist Link</th>
-        <th>Country(Optional)</th>
-        <th>Start Date</th>
-        <th>End Date</th>
-      </tr>
-    </thead>
-    <tbody id='addplaylisttbl'>
-      <!-- the table will  be added here by javascript -->
-    <!-- </tbody> -->
-  </table>
-  <!-- ################################################################################ -->
-</div>
+  <div class="table-bordered">
+    <!-- table-responsive -->
+    <!-- table mb-0 -->
+    <table class="table mb-0">
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>Amount Paid</th>
+          <th>Playlist Link</th>
+          <th>Country(Optional)</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+        </tr>
+      </thead>
+      <tbody id='addplaylisttbl'>
+        <!-- the table will  be added here by javascript -->
+        <!-- </tbody> -->
+    </table>
+    <!-- ################################################################################ -->
+  </div>
+</form>
 {% include "footer.html" %}
