@@ -4,7 +4,7 @@ function generateRow(){
   data = `
 <tbody>
   <tr>
-    <td value="id">${indexpl}</td>
+    <td><input type="hidden" name="id" value="${indexpl}"/>${indexpl}</td>
     <td><input type="number" min="10" max="10000" name="amount_paid"></td>
     <td><input type="text" name="playlistlink"></td>
     <td>

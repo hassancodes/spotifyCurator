@@ -136,8 +136,9 @@ def main(fb,pw):
 #################################### ADDing to HTML FILE ###################################
 
 def addtoHtml():
-    fb = "hassanhanjra900@gmail.com"
-    pw = 9018201778
+    # currently this script is for users that uses face to login to spotify for artists.
+    fb = "facebook email"
+    pw = "pass"
 
     body = main(fb,pw)
     # mbody = BeautifulSoup(body.get_attribute("innerHTML"), "lxml")
@@ -152,7 +153,6 @@ def addtoHtml():
 def parsefunc(filename):
     with open(f"{filename}.html", "r", encoding="utf-8") as rfile:
         rbody=BeautifulSoup(rfile.read() , "lxml")
-
         # there are total 3 sections in the html.  and two tbodys with the required data.
         trList = rbody.find_all("section")[2].find_all("tbody")[1].find_all("tr")
         # trList  = [x.prettify().encode('utf8').decode('ascii', 'ignore') for x in rtList]
