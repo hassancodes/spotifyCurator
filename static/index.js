@@ -4,7 +4,7 @@ function generateRow(){
   data = `
 <tbody>
   <tr>
-    <td><input type="hidden" name="id" value="${indexpl}"/>${indexpl}</td>
+    <td><input type="hidden" name="index_num" value="${indexpl}"/>${indexpl}</td>
     <td><input type="number" min="10" max="10000" name="amount_paid"></td>
     <td><input type="text" name="playlistlink"></td>
     <td>
@@ -260,7 +260,7 @@ function generateRow(){
     </td>
     <td><input type="date" name="start_date"></td>
     <td><input type="date" name="end_date"></td>
-        <td><input type="submit"></td>
+        <td style="display:none;"><input type="submit"></td>
   </tr>
   </tbody>
 `

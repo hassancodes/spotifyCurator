@@ -1,9 +1,3 @@
-# this contains all the functions that are used in the webapp.py
-def sortJson(jsonfile):
-    with open(jsonfile, "r") as fl:
-        for i in dict(fl).items():
-            print(i)
-            break
-
-
-sortJson("sevendays.json")
+import requests
+r = requests.get("https://open.spotify.com/playlist/0SRdjSDz4RsuozwHv1zhvr")
+print(r.content)

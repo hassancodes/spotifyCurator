@@ -28,7 +28,7 @@ def main():
 def handle_data():
     # this is the current data the user will input
     data = {
-    "id" : request.form["id"],
+    "id" : request.form["index_num"],
     "amount_paid":request.form["amount_paid"],
     "playlistlink":request.form["playlistlink"],
     "country":request.form['country'],
@@ -39,25 +39,21 @@ def handle_data():
     with open("addplaylist.json" , "r+") as file:
 
         # working on presistent data in add playlist.json
-        # mydict = OrderedDict()
-        # ls = []
-        # jsonsize = os.path.getsize("addplaylist.json")
-        # if jsonsize ==0:
-        #     ls.append(data)
-        #     mydict["PlayList Data"] = ls
-        #     json.dump(mydict,file)
-        #     return "Entry one added"
-        # elif jsonsize!=0:
-        #     per = OrderedDict()
-        #
-        #     aldata = json.load(file)
-        #     dic = data
-        #     aldata['PlayList Data'].append(dic)
-        #     per = aldata
-        #
-        #     # file.truncate(0)
-        #     json.dump(per,file)
-        #     return "another entry added"
+        mydict = OrderedDict()
+        ls = []
+        jsonsize = os.path.getsize("addplaylist.json")
+        if jsonsize ==0:
+            ls.append(data)
+            mydict["PlayList Data"] = ls
+            json.dump(mydict,file)
+            return "Entry one added"
+        elif jsonsize!=0:
+
+            file_data = json.load(file)
+            file_data["PlayList Data"].append(data)
+            file.seek(0)
+            json.dump(file_data, file, indent = 4)
+            return f"added {data}"
 
 
 
