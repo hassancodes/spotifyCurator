@@ -8,11 +8,11 @@ from collections import OrderedDict
 import os
 app = Flask(__name__)
 
-file = open("tedays.json", "r", encoding="utf-8")
+file = open("scrapejson/tedays.json", "r", encoding="utf-8")
 jData = json.load(file)
 
 # sd is sevenday file
-sdfile = open("sevendays.json", "r", encoding="utf-8")
+sdfile = open("scrapejson/sevendays.json", "r", encoding="utf-8")
 sdData = json.load(sdfile)
 # print(jData)
 

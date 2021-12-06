@@ -11,7 +11,7 @@ import json
 import random
 
 
-
+driver=None
 # useless function
 def func():
     print("\n \n \n \n")
@@ -47,7 +47,7 @@ def createDict(ls):
 ################################### for dumping #############################
 
 def dumpjson(dict,filename):
-    with open(f"{filename}.json", 'w', encoding="utf-8") as dj:
+    with open(f"scrapejson/{filename}.json", 'w', encoding="utf-8") as dj:
         # adding the generated data to json file
         json.dump(dict,dj)
 
@@ -61,7 +61,7 @@ def main(email,pw,loginOpt):
     op.add_experimental_option('useAutomationExtension', False)
     op.add_argument("start-maximized")
 
-
+    global driver
     driver = webdriver.Chrome('./chromedriver', options=op)
     driver.get("https://accounts.spotify.com/en/login?continue=https:%2F%2Fartists.spotify.com%2F")
     time.sleep(4)
@@ -88,72 +88,71 @@ def main(email,pw,loginOpt):
     elif loginOpt ==3:
         print("APPLE")
     elif loginOpt==4:
-        while(True):
-            driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
-            driver.implicitly_wait(4)
-            identer = driver.find_element_by_xpath('//*[@id="login-username"]')
-            identer.send_keys(email)
-            driver.implicitly_wait(3)
-            passenter = driver.find_element_by_xpath('//*[@id="login-password"]')
-            passenter.send_keys(pw)
-            driver.implicitly_wait(3)
-            login = driver.find_element_by_xpath('//*[@id="login-button"]')
-            login.click();
+        driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+        driver.implicitly_wait(4)
+        identer = driver.find_element_by_xpath('//*[@id="login-username"]')
+        identer.send_keys(email)
+        driver.implicitly_wait(3)
+        passenter = driver.find_element_by_xpath('//*[@id="login-password"]')
+        passenter.send_keys(pw)
+        driver.implicitly_wait(3)
+        login = driver.find_element_by_xpath('//*[@id="login-button"]')
+        login.click();
 
 
 
-#     time.sleep(10)
-# # from here the process is same for all login
-#     driver.get("https://artists.spotify.com/c/artist/7KzG8dszzwlSDGEsCbzANz/music/songs")
-#     # musicbtn = driver.find_element_by_xpath("//a[@title='Music']")
-#     time.sleep(4)
-#     # musicbtn.click()
-#     # time.sleep(4)
-#     # this get the 28 days data
-#     playlist = driver.find_element_by_xpath("/html/body/div[1]/div/div/div/div/div/main/div/div/div/div[2]/section[1]/ul/li[3]/a")
-#     playlist.click()
-#
-#     driver.implicitly_wait(4)
-#
-#     # working  scroll featur
-#     driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
-#     driver.implicitly_wait(4)
-#
-#     # searching for show more button.
-#     driver.find_element_by_xpath("//*[contains(text(),'Show More')]").click()
-#     print("Found the button")
-#     driver.implicitly_wait(4)
-#     func()
-#     # twentyeightdays = tedays
-#     tedays = driver.find_element_by_tag_name("body")
-#     mbody = BeautifulSoup(tedays.get_attribute("innerHTML"), "lxml")
-#     # # I already got the 28 days data which is stored in body variables.
-#     # Now I will target the 7 day link and store that body of that page
-#     driver.implicitly_wait(10)
-#
-# ############################Fetching Seven days data######################################
-#     # getting the seven days data.
-#     driver.get("https://artists.spotify.com/c/artist/7KzG8dszzwlSDGEsCbzANz/music/playlists?time-filter=7day")
-#     driver.implicitly_wait(10)
-#     time.sleep(5)
-#     driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
-#     print("worked")
-#     driver.implicitly_wait(4)
-#     # searching for show more button.
-#     driver.find_element_by_xpath("//*[contains(text(),'Show More')]").click()
-#     print("Found the button")
-#     driver.implicitly_wait(4)
-#     func()
-#     sevendays = driver.find_element_by_tag_name("body")
-#     sebody = BeautifulSoup(sevendays.get_attribute("innerHTML"), "lxml")
-#
-#     # add in data to html file
-#     with open("sevendays.html", "w",encoding="utf-8") as file:
-#         file.write(f"{sebody}")
-#         # print("Successfully data written to sevendays.html")
+    time.sleep(10)
+# from here the process is same for all login
+    driver.get("https://artists.spotify.com/c/artist/7KzG8dszzwlSDGEsCbzANz/music/songs")
+    # musicbtn = driver.find_element_by_xpath("//a[@title='Music']")
+    time.sleep(4)
+
+    # this get the 28 days data
+    # /html/body/div[2]/div/div/div/div/div/main/div/div/div/div[2]/section[1]/ul/li[3]/a
+    playlist = driver.find_element_by_xpath("/html/body/div[2]/div/div/div/div/div/main/div/div/div/div[2]/section[1]/ul/li[3]/a")
+    playlist.click()
+
+    driver.implicitly_wait(4)
+
+    # working  scroll featur
+    driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+    driver.implicitly_wait(4)
+
+    # searching for show more button.
+    driver.find_element_by_xpath("//*[contains(text(),'Show More')]").click()
+    print("Found the button")
+    driver.implicitly_wait(4)
+    func()
+    # twentyeightdays = tedays
+    tedays = driver.find_element_by_tag_name("body")
+    mbody = BeautifulSoup(tedays.get_attribute("innerHTML"), "lxml")
+    # # I already got the 28 days data which is stored in body variables.
+    # Now I will target the 7 day link and store that body of that page
+    driver.implicitly_wait(10)
+
+############################Fetching Seven days data######################################
+    # getting the seven days data.
+    driver.get("https://artists.spotify.com/c/artist/7KzG8dszzwlSDGEsCbzANz/music/playlists?time-filter=7day")
+    driver.implicitly_wait(10)
+    time.sleep(5)
+    driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+    print("worked")
+    driver.implicitly_wait(4)
+    # searching for show more button.
+    driver.find_element_by_xpath("//*[contains(text(),'Show More')]").click()
+    print("Found the button")
+    driver.implicitly_wait(4)
+    func()
+    sevendays = driver.find_element_by_tag_name("body")
+    sebody = BeautifulSoup(sevendays.get_attribute("innerHTML"), "lxml")
+
+    # add in data to html file
+    with open("scrapehtml/sevendays.html", "w",encoding="utf-8") as file:
+        file.write(f"{sebody}")
+        # print("Successfully data written to sevendays.html")
 # ###################################Seven days fetching ends here###############################
 #
-#     return mbody
+    return mbody
 
 #################################### ADDing to HTML FILE ###################################
 
@@ -171,19 +170,19 @@ def addtoHtml():
     # mbody = BeautifulSoup(body.get_attribute("innerHTML"), "lxml")
 
     # add in data to html file
-    with open("tedays.html", "w",encoding="utf-8") as file:
+    with open("scrapehtml/tedays.html", "w",encoding="utf-8") as file:
         file.write(f"{body}")
         print("Successfully data written to tedays.html")
 
 
 ############################### Parsing the html file ###########################################
 def parsefunc(filename):
-    with open(f"{filename}.html", "r", encoding="utf-8") as rfile:
+    with open(f"scrapehtml/{filename}.html", "r", encoding="utf-8") as rfile:
         rbody=BeautifulSoup(rfile.read() , "lxml")
         # there are total 3 sections in the html.  and two tbodys with the required data.
         trList = rbody.find_all("section")[2].find_all("tbody")[1].find_all("tr")
         # trList  = [x.prettify().encode('utf8').decode('ascii', 'ignore') for x in rtList]
-        print(trList)
+        # print(trList)
 
         print(len(trList))
         # print(trList[0])
@@ -213,14 +212,16 @@ def parsefunc(filename):
 
 # main logic starts from here
 addtoHtml()
-# parsefunc("tedays")
+parsefunc("tedays")
 # print(pprint.pprint(dictionary))
 
 # initializing the dictionary again to store the seven data from start
-# dictionary = OrderedDict()
-# parsefunc("sevendays")
+dictionary = OrderedDict()
+parsefunc("sevendays")
 # print(pprint.pprint(dictionary))
 
 
 #####################################################################################
 print("Success you got it")
+time.sleep(10)
+driver.close()
