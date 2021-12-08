@@ -31,6 +31,7 @@ def handle_data():
     "id" : request.form["index_num"],
     "amount_paid":request.form["amount_paid"],
     "playlistlink":request.form["playlistlink"],
+    "insta": request.form["insta"],
     "country":request.form['country'],
     "start_date":request.form["start_date"],
     "end_date":request.form["end_date"]

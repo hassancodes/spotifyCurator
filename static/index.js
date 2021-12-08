@@ -1,12 +1,13 @@
 // function for generating row to add playlist
 var indexpl =1;
 function generateRow(){
+  // <tbody  id='addplaylisttbl'>
   data = `
-<tbody>
   <tr>
     <td><input type="hidden" name="index_num" value="${indexpl}"/>${indexpl}</td>
     <td><input type="number" min="10" max="10000" name="amount_paid"></td>
     <td><input type="text" name="playlistlink"></td>
+    <td><input type="text" name="insta"></td>
     <td>
       <select id="country" name="country">
         <option value="None">None</option>

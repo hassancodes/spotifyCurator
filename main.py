@@ -83,6 +83,7 @@ def main(email,pw,loginOpt):
         login.click();
     # for users that uses email to login to spotify for artists.
     elif loginOpt ==2:
+        # Still need to figure this out
         print("GOOGLE")
 
     elif loginOpt ==3:

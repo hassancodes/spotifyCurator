@@ -105,6 +105,9 @@ div .nav-ul {
   max-width: 15ch;
 }
 
+.tableheadcenter th{
+  text-align:center;
+}
 /* footer and its contents starts from here */
 .footer {
   position: fixed;
