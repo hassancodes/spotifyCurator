@@ -1,7 +1,30 @@
+// imports
+
 // function for generating row to add playlist
+// function readTextFile(file)
+// {
+//     var rawFile = new XMLHttpRequest();
+//     rawFile.open("GET", file, false);
+//     rawFile.onreadystatechange = function ()
+//     {
+//         if(rawFile.readyState === 4)
+//         {
+//             if(rawFile.status === 200 || rawFile.status == 0)
+//             {
+//                 var allText = rawFile.responseText;
+//                 console.log(allText);
+//             }
+//         }
+//     }
+//     rawFile.send(null);
+// }
+
+
+
+
 var indexpl =1;
 function generateRow(){
-  // <tbody  id='addplaylisttbl'>
+  // readTextFile("./addplaylist.json")
   data = `
   <tr>
     <td><input type="hidden" name="index_num" value="${indexpl}"/>${indexpl}</td>

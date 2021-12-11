@@ -54,7 +54,10 @@ def handle_data():
             file_data["PlayList Data"].append(data)
             file.seek(0)
             json.dump(file_data, file, indent = 4)
-            return f"added {data}"
+
+    with open("addplaylist.json" , "r") as file:
+        a = json.load(file)
+        return a
 
 
 
