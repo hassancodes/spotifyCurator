@@ -26,9 +26,11 @@
 # Done Working
 * Add a drop down to select 7 days or 28 days for the streams.✔️
 * Make a 7 day page to display ✔️
+* Adding the total streams, rows ,Amount made(working✔️
 
 # Currently working:
-* Adding the total streams, rows ,Amount made(working)🔃
+* Connecting with mongodb🔃
+* Working with tables to show the db data🔃
 * get the target playlists (working)🔃
 
 
