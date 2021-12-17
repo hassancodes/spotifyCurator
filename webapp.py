@@ -5,6 +5,7 @@ from flask import Flask,escape
 from flask import render_template
 from flask import send_file
 from collections import OrderedDict
+from rate import pps
 import os
 app = Flask(__name__)
 
@@ -78,6 +79,14 @@ var = "main"
 def addplaylist():
     return render_template("addplaylists.html", var=var)
 
+
+ratepps = pps()
+data = dict(ratepps)
+# for k,v in ratepps.items():
+#     print(k , ":" ,v)
+@app.route("/ratepps")
+def ratepps():
+    return render_template("rate.html", data=data)
 
 
 # miscellaneous

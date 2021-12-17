@@ -1,0 +1,30 @@
+{% include "header.html" %}
+
+<div class="table-responsive">
+  <table class="table mb-0">
+    <thead>
+      <tr>
+        <th>Country</th>
+        <th>PPS</th>
+        <th>Per Million Streams</th>
+        <th>Analysis</th>
+        <th>Change in %</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for key,value in data.items() %}
+      <tr>
+        <td>{{data[key]["Country"]}}</td>
+        <td>{{data[key]["PPS"]}}</td>
+        <td>{{data[key]["Per Million Streams"]}}</td>
+        <td>{{data[key]["Analysis"]}}</td>
+        <td>{{data[key]["Change in %"]}}</td>
+
+      </tr>
+      {% endfor %}
+
+    </tbody>
+  </table>
+</div>
+
+{% include "footer.html" %}
