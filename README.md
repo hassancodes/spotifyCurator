@@ -30,3 +30,7 @@
 # Currently working:
 * Adding the total streams, rows ,Amount made(working)🔃
 * get the target playlists (working)🔃
+
+
+
+"GET IT done by the end of December. Period"
