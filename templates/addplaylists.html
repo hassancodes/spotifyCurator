@@ -15,7 +15,7 @@
   <div class="table-bordered" style="overflow-x:auto;">
     <!-- table-responsive -->
     <!-- table mb-0 -->
-    <table class="table mb-0">
+    <table class="table mb-0 playlisttable">
       <thead>
         <tr class="tableheadcenter">
           <th>Index</th>
@@ -28,8 +28,17 @@
         </tr>
       </thead>
       <tbody id='addplaylisttbl'>
-        <!-- the table will  be added here by javascript -->
+        {% for dict in pldata %}
+        <tr>
+          {% for key,value in dict.items() %}
+          <td contenteditable="true">
+            <div>{{value}}</div>
+          </td>
+          {% endfor %}
+
+        </tr> <!-- the table will  be added here by javascript -->
         <!-- </tbody> -->
+        {% endfor %}
     </table>
     <!-- ################################################################################ -->
   </div>

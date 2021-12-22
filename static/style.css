@@ -1,4 +1,7 @@
 /* #########################################HEADER########################################## */
+
+/* some starting rules */
+/* "Common" means the elements that are present in all pages */
 :root {
   /* Potential Colors 1 */
   --color-scheme1: #5680E9;
@@ -14,8 +17,14 @@
 }
 
 
-body{
+body {
   padding-bottom: 50px;
+}
+
+
+/* Drop is only present on main page for 24,7 and 28 days data */
+.dropdown {
+  display: inline;
 }
 .dropdown-btn {
   /* border: 1px yellow solid; */
@@ -24,14 +33,11 @@ body{
   text-align: right;
 }
 
-.dropdown {
-  display: inline;
-}
-
 .dropdown select {
   padding: 8px 10px 8px 10px;
   border-radius: 10px;
 }
+
 
 .addplaylist {
   display: inline;
@@ -41,6 +47,7 @@ body{
   /* border: 1px yellow solid; */
 }
 
+/* COMMON */
 #addplaybtn a {
   border: 1px solid grey;
   text-decoration: none;
@@ -49,7 +56,7 @@ body{
 }
 
 /* css for the top button on the addplaylist button page. */
-#addplaybtn button{
+#addplaybtn button {
   border: 1px solid grey;
   text-decoration: none;
   border-radius: 10px;
@@ -61,8 +68,8 @@ body{
   border: 2px solid grey;
 }
 
-/* playlist add button (bottom) */
 
+/* COMMON */
 .navbar {
   background-color: var(--primary-color);
   border-bottom-right-radius: 15px;
@@ -90,14 +97,8 @@ div .nav-ul {
   background-color: var(--color3);
 }
 
-/* ################################################################################# */
-.addbtn{
-  display:block;
 
-    border : 1px solid black;
-}
-
-/* ########################################################### */
+/* ######################Fixing the long playlist names######################### */
 #playlist-name {
   white-space: nowrap;
   overflow: hidden;
@@ -105,9 +106,45 @@ div .nav-ul {
   max-width: 15ch;
 }
 
-.tableheadcenter th{
-  text-align:center;
+.tableheadcenter th {
+  text-align: center;
 }
+
+/* ######################Fixing the long spotify link ######################### */
+
+.playlisttable {
+  table-layout: fixed;
+  width: 100px;
+  border-collapse: collapse;
+}
+.playlisttable th:nth-child(1) {
+  width: 5%;
+}
+
+.playlisttable th:nth-child(5) {
+  width: 19%;
+}
+
+.playlisttable div {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* vertical-align: top; */
+}
+
+
+.playlisttable div:hover {
+  z-index: 1;
+  width: auto;
+  background-color: #FFFFCC;
+}
+
+
+
+
 /* footer and its contents starts from here */
 .footer {
   position: fixed;

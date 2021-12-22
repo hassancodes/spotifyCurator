@@ -6,7 +6,9 @@ from flask import render_template
 from flask import send_file
 from collections import OrderedDict
 from rate import pps
+from helpfunc import displaylists
 import os
+
 app = Flask(__name__)
 
 file = open("scrapejson/tedays.json", "r", encoding="utf-8")
@@ -56,9 +58,13 @@ def handle_data():
             file.seek(0)
             json.dump(file_data, file, indent = 4)
 
-    with open("addplaylist.json" , "r") as file:
-        a = json.load(file)
-        return a
+# redirecting after adding the data to the form
+    return redirect(url_for("addplaylist"))
+
+######################## TESTING ########################
+    # with open("addplaylist.json" , "r") as file:
+    #     a = json.load(file)
+    #     return a
 
 
 
@@ -68,25 +74,35 @@ def seven_days():
     return render_template("sevendays.html" ,sdData =sdData)
 
 
-# Seperate script for checking potential playlists.
-@app.route("/potentialplaylists")
-def pplaylists():
-    return render_template("potentialplaylists.html")
+# Work Here
 
-
+# this the main functionality endpoint.(Adds data)
 var = "main"
 @app.route("/addplaylists")
 def addplaylist():
-    return render_template("addplaylists.html", var=var)
+    pldata = displaylists()
+    return render_template("addplaylists.html", var=var,pldata=pldata)
+
 
 
 ratepps = pps()
 data = dict(ratepps)
-# for k,v in ratepps.items():
-#     print(k , ":" ,v)
 @app.route("/ratepps")
 def ratepps():
     return render_template("rate.html", data=data)
+
+
+
+
+
+
+
+#################################### Endpoints below require more work ########################################
+
+# Seperate script for checking potential playlists.
+@app.route("/potentialplaylists")
+def pplaylists():
+    return render_template("potentialplaylists.html")
 
 
 # miscellaneous
@@ -95,7 +111,6 @@ var = "main"
 @app.route("/tutorial")
 def tut():
     return render_template("tutorial.html", var=var)
-
 
 
 

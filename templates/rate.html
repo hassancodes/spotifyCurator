@@ -1,9 +1,10 @@
 {% include "header.html" %}
 
-<div class="table-responsive">
+<div class="table-bordered table-responsive" style="overflow-x:auto;">
   <table class="table mb-0">
     <thead>
-      <tr>
+      <tr class="tableheadcenter">
+        <th>Index</th>
         <th>Country</th>
         <th>PPS</th>
         <th>Per Million Streams</th>
@@ -14,6 +15,7 @@
     <tbody>
       {% for key,value in data.items() %}
       <tr>
+        <td>{{loop.index}}</td>
         <td>{{data[key]["Country"]}}</td>
         <td>{{data[key]["PPS"]}}</td>
         <td>{{data[key]["Per Million Streams"]}}</td>
