@@ -164,7 +164,7 @@ def addtoHtml():
     loginOpt = int(input())
     print("Enter Email:")
     email =input()
-    print(" Enter Password:")
+    print("Enter Password:")
     pw = input()
 
     body = main(email,pw, loginOpt)
