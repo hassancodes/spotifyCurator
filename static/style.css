@@ -122,8 +122,14 @@ div .nav-ul {
 }
 
 .playlisttable th:nth-child(5) {
-  width: 19%;
+  width: 10%;
 }
+.playlisttable th:nth-child(6) {
+  width: 9.5%;
+}
+/* .playlisttable th:nth-child(4) {
+  width: 19%;
+} */
 
 .playlisttable div {
   display: inline-block;

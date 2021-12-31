@@ -1,12 +1,12 @@
 import flask
 from flask import *
 import json
-from flask import Flask,escape
-from flask import render_template
-from flask import send_file
+# from flask import Flask,escape
+# from flask import render_template
+# from flask import send_file
 from collections import OrderedDict
 from rate import pps
-from helpfunc import displaylists
+from helpfunc import displaylists, get_index,displayppt,get_indexppt
 import os
 
 app = Flask(__name__)
@@ -30,11 +30,14 @@ def main():
 @app.route('/handle_data', methods=['POST'])
 def handle_data():
     # this is the current data the user will input
+    index = get_index()
     data = {
-    "id" : request.form["index_num"],
+    "id" : index+1,
     "amount_paid":request.form["amount_paid"],
     "playlistlink":request.form["playlistlink"],
     "insta": request.form["insta"],
+    "noofsongs": request.form["noofsongs"],
+    "noofplaylist": request.form["noofplaylist"],
     "country":request.form['country'],
     "start_date":request.form["start_date"],
     "end_date":request.form["end_date"]
@@ -50,7 +53,8 @@ def handle_data():
             ls.append(data)
             mydict["PlayList Data"] = ls
             json.dump(mydict,file)
-            return "Entry one added"
+            # changed
+            return redirect(url_for("addplaylist"))
         elif jsonsize!=0:
 
             file_data = json.load(file)
@@ -61,10 +65,42 @@ def handle_data():
 # redirecting after adding the data to the form
     return redirect(url_for("addplaylist"))
 
-######################## TESTING ########################
-    # with open("addplaylist.json" , "r") as file:
-    #     a = json.load(file)
-    #     return a
+
+#######################################################################################################
+# # handling the submission of potential PlayList
+@app.route("/handle_ppt", methods=['POST'])
+def handle_ppt():
+
+    index =get_indexppt()
+    file_loc = "maindata/potentialplaylists.json"
+    data = {
+        "id" : index+1 ,
+        "playlist name" : request.form["playlistname"],
+        "playlist link" : request.form["playlistlink"],
+        "curator contact" : request.form["curatorcontact"]
+        }
+
+    with open(file_loc , "r+") as ppt:
+        # working on presistent data in add playlist.json
+        mydict = OrderedDict()
+        ls = []
+        jsonsize = os.path.getsize(file_loc)
+        if jsonsize ==0:
+            ls.append(data)
+            mydict["Potential Playlists"] = ls
+            json.dump(mydict,ppt)
+            # changed
+            return redirect(url_for("pplaylists"))
+        elif jsonsize!=0:
+
+            file_data = json.load(ppt)
+            file_data["Potential Playlists"].append(data)
+            ppt.seek(0)
+            json.dump(file_data,ppt, indent = 4)
+
+    # redirecting after adding the data to the form
+    return redirect(url_for("pplaylists"))
+
 
 
 
@@ -84,6 +120,13 @@ def addplaylist():
     return render_template("addplaylists.html", var=var,pldata=pldata)
 
 
+# Seperate script for checking potential playlists.
+@app.route("/potentialplaylists")
+def pplaylists():
+    pptdata  = displayppt()
+    return render_template("potentialplaylists.html", pptdata = pptdata)
+
+
 
 ratepps = pps()
 data = dict(ratepps)
@@ -99,10 +142,6 @@ def ratepps():
 
 #################################### Endpoints below require more work ########################################
 
-# Seperate script for checking potential playlists.
-@app.route("/potentialplaylists")
-def pplaylists():
-    return render_template("potentialplaylists.html")
 
 
 # miscellaneous

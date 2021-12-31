@@ -5,18 +5,88 @@
             "amount_paid": "132.39 AUD",
             "playlistlink": "https://open.spotify.com/playlist/0wLyMoCz2SSdpPETqFFpga",
             "insta": "@cameron_turner03",
+            "noofsongs": "1",
+            "noofplaylist": "1",
             "country": "Australia",
-            "start_date": "2021-12-25",
-            "end_date": "2022-01-25"
+            "start_date": "2021-12-21",
+            "end_date": "2022-01-21"
         },
         {
-            "id": "1",
+            "id": "2",
             "amount_paid": "200 EUR",
             "playlistlink": "https://open.spotify.com/playlist/3A46xM92rYMDL7Ohezea0H",
             "insta": "@spotify.hiphop90s",
+            "noofsongs": "3",
+            "noofplaylist": "1",
             "country": "None",
             "start_date": "2021-12-06",
             "end_date": "2022-01-06"
+        },
+        {
+            "id": "3",
+            "amount_paid": "400 EUR",
+            "playlistlink": "https://open.spotify.com/playlist/4chsjZRoaD9HgQoZqCU68N",
+            "insta": "maeveplaylist",
+            "noofsongs": "1",
+            "noofplaylist": "4",
+            "country": "None",
+            "start_date": "2021-12-20",
+            "end_date": "2022-01-19"
+        },
+        {
+            "id": "4",
+            "amount_paid": "",
+            "playlistlink": "https://open.spotify.com/playlist/2NiCiOhn7d1LzNQGwpqAIv",
+            "insta": "majoradvertising.ltd@gmail.com",
+            "noofsongs": "1",
+            "noofplaylist": "1",
+            "country": "None",
+            "start_date": "2021-12-08",
+            "end_date": "2022-01-06"
+        },
+        {
+            "id": "5",
+            "amount_paid": "",
+            "playlistlink": "https://open.spotify.com/playlist/5hVpehELI1qW3eIUWZxXmH",
+            "insta": "majoradvertising.ltd@gmail.com",
+            "noofsongs": "1",
+            "noofplaylist": "2",
+            "country": "None",
+            "start_date": "2021-12-08",
+            "end_date": "2022-01-06"
+        },
+        {
+            "id": "6",
+            "amount_paid": "",
+            "playlistlink": "https://open.spotify.com/playlist/3SjdW0T5cs7tV3QEx5FytP",
+            "insta": "majoradvertising.ltd@gmail.com",
+            "noofsongs": "1",
+            "noofplaylist": "3",
+            "country": "None",
+            "start_date": "2021-12-08",
+            "end_date": "2022-01-06"
+        },
+        {
+            "id": "7",
+            "amount_paid": "",
+            "playlistlink": "https://open.spotify.com/playlist/0p8rHieG3ixhI9QjTj5VNM",
+            "insta": "majoradvertising.ltd@gmail.com",
+            "noofsongs": "1",
+            "noofplaylist": "4",
+            "country": "None",
+            "start_date": "2021-12-08",
+            "end_date": "2022-01-06"
+        },
+        {
+            "id": "8",
+            "amount_paid": "",
+            "playlistlink": "https://open.spotify.com/playlist/10IedBocwmHD13PjTIvfzC",
+            "insta": "diamondhandsplaylists",
+            "noofsongs": "5",
+            "noofplaylist": "1",
+            "country": "None",
+            "start_date": "2021-12-07",
+            "end_date": "2022-01-05"
         }
     ]
 }

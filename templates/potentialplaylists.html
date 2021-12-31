@@ -1,3 +1,44 @@
 {% include "header.html" %}
-<h1>Potential Playlists</h1>
+
+
+<div class="dropdown-btn">
+
+  <!-- btn start -->
+  <div class="addplaylist" id="addplaybtn">
+    <button type="button" name="button" onclick="addpp()">Potention Playlist ➕</button>
+  </div>
+  <!-- btn end -->
+</div>
+
+</div>
+
+<form action="{{ url_for('handle_ppt') }}" method="post">
+  <div class="table-bordered" style="overflow-x:auto;">
+    <!-- table-responsive -->
+    <!-- table mb-0 -->
+    <table class="table mb-0 playlisttable">
+      <thead>
+        <tr class="tableheadcenter">
+          <th>Index</th>
+          <th>Playlist name</th>
+          <th>Playlist Link</th>
+          <th>Curator Contact🗣️</th>
+        </tr>
+      </thead>
+      <tbody id="potentialplaylisttbl">
+        {% for dict in pptdata %}
+        <tr>
+          {% for key,value in dict.items() %}
+          <td contenteditable="true">
+            <div>{{value}}</div>
+          </td>
+          {% endfor %}
+
+        </tr> <!-- the table will  be added here by javascript -->
+        <!-- </tbody> -->
+        {% endfor %}
+    </table>
+    <!-- ################################################################################ -->
+  </div>
+</form>
 {% include "footer.html" %}

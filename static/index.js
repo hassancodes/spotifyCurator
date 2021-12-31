@@ -1,19 +1,22 @@
-var indexpl =1;
+var indexpl = "X";
+
 function generateRow() {
-// ##################################################
+  // ##################################################
 
 
-
-// ##################################################
-// <td><input type="number" min="10" max="10000" name="amount_paid"></td>
-    data = `
+  // ##################################################
+  // <td><input type="number" min="10" max="10000" name="amount_paid"></td>
+  // <td><input type="number" name="noofsongs"></td>
+  var data = `
     <tr>
       <td><input type="hidden" name="index_num" value="${indexpl}"/>${indexpl}</td>
-      <td><input type=text name="amount_paid"></td>
-      <td><input type="text" name="playlistlink"></td>
-      <td><input type="text" name="insta"></td>
-      <td>
-        <select id="country" name="country">
+      <td><input style="width:80%" type=text name="amount_paid"></td>
+      <td><input style="width:100%" type="text" name="playlistlink"></td>
+      <td><input style="width:100%" type="text" name="insta"></td>
+      <td><input style="width:100%" type="number" name="noofsongs"></td>
+      <td><input style="width:100%" type="number" name="noofplaylist"></td>
+      <td style="width:50%">
+        <select style="width:50% id="country" name="country">
           <option value="None">None</option>
           <option value="Afganistan">Afghanistan</option>
           <option value="Albania">Albania</option>
@@ -263,15 +266,35 @@ function generateRow() {
           <option value="Zimbabwe">Zimbabwe</option>
         </select>
       </td>
-      <td><input type="date" name="start_date"></td>
-      <td><input type="date" name="end_date"></td>
-          <td style="display:none;"><input type="submit"></td>
+      <td><input style="width:100%" type="date" name="start_date"></td>
+      <td><input style="width:100%" type="date" name="end_date"></td>
+      <td style="display:none;"><input type="submit"></td>
     </tr>
     </tbody>
   `
   // taking care of the index in Table
-    var tbody = document.getElementById("addplaylisttbl");
-    var readytbody = tbody.innerHTML + data;
-    tbody.innerHTML = readytbody;
-    indexpl+=1;
+  var tbody = document.getElementById("addplaylisttbl");
+  var readytbody = tbody.innerHTML + data;
+  tbody.innerHTML = readytbody;
+}
+
+
+// for adding a potention playlist
+var indexppt =1;
+function addpp() {
+
+  var datapp = `<tr>
+  <td><input type="hidden" name="index_num" value="${indexppt}"/>${indexppt}</td>
+  <td><input style="width:80%" type=text name="playlistname"></td>
+  <td><input style="width:100%" type="text" name="playlistlink"></td>
+  <td><input style="width:100%" type="text" name="curatorcontact"></td>
+  <td style="display:none;"><input type="submit"></td>
+</tr>
+</tbody>
+`
+
+  var tbodypp = document.getElementById("potentialplaylisttbl");
+  var readytbodypp = tbodypp.innerHTML + datapp;
+  tbodypp.innerHTML = readytbodypp;
+  indexppt += 1;
 }
