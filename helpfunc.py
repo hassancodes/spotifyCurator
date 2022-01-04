@@ -1,5 +1,7 @@
 import json
 import os
+import requests
+from bs4 import BeautifulSoup
 
 
 # this functions helps in displaying the added playlist.
@@ -61,3 +63,20 @@ def get_indexppt():
         with open(file_loc, 'r') as js:
             data = json.loads(js.read())
             return len(data["Potential Playlists"])
+
+
+####################################################################################
+
+def getplaylistname(link):
+    req = requests.get("https://open.spotify.com/playlist/0HtZSEqRMz6L5ZXAWCBgWp")
+    soup = BeautifulSoup(req.content, "lxml")
+    title = soup.find_all("h1")[0].get_text()
+    return title
+
+    # print(soup.find_all("h1")[0].get_text())
+
+
+
+
+
+# getplaylistname("https://open.spotify.com/playlist/0HtZSEqRMz6L5ZXAWCBgWp")

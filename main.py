@@ -35,7 +35,10 @@ def createDict(ls):
         if counter ==7:
             maindata[k] = round((int(maindata["streams"].replace(",",'')) * 0.006),2)
         else:
+
             maindata[k] ="".join(ls[counter])
+            # print(ls)
+            # print(len(ls))
         counter +=1
 
     if maindata["playlistname"] == "Unknown":
@@ -57,12 +60,15 @@ def main(email,pw,loginOpt):
 
 
     op = Options()
+    op.add_argument('--headless')
+    op.add_argument("window-size=1920,1080")
     op.add_experimental_option("excludeSwitches", ["enable-automation"])
     op.add_experimental_option('useAutomationExtension', False)
     op.add_argument("start-maximized")
 
     global driver
     driver = webdriver.Chrome('./chromedriver', options=op)
+    print(driver.get_window_size())
     driver.get("https://accounts.spotify.com/en/login?continue=https:%2F%2Fartists.spotify.com%2F")
     time.sleep(4)
 
@@ -150,7 +156,29 @@ def main(email,pw,loginOpt):
     # add in data to html file
     with open("scrapehtml/sevendays.html", "w",encoding="utf-8") as file:
         file.write(f"{sebody}")
-        # print("Successfully data written to sevendays.html")
+        print("Successfully data written to sevendays.html")
+
+############################24 days data######################################
+    # getting the seven days data.
+    driver.get("https://artists.spotify.com/c/artist/7KzG8dszzwlSDGEsCbzANz/music/playlists?time-filter=1day")
+    driver.implicitly_wait(10)
+    time.sleep(5)
+    driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+    print("worked")
+    driver.implicitly_wait(4)
+    # searching for show more button.
+    driver.find_element_by_xpath("//*[contains(text(),'Show More')]").click()
+    print("Found the button")
+    driver.implicitly_wait(4)
+    func()
+    tfhours = driver.find_element_by_tag_name("body")
+    tfbody = BeautifulSoup(tfhours.get_attribute("innerHTML"), "lxml")
+
+    # add in data to html file
+    with open("scrapehtml/tfhours.html", "w",encoding="utf-8") as file:
+        file.write(f"{tfbody}")
+        print("Successfully data written to tfhours.html")
+
 # ###################################Seven days fetching ends here###############################
 #
     return mbody
@@ -213,13 +241,30 @@ def parsefunc(filename):
 
 # main logic starts from here
 addtoHtml()
+time.sleep(10)
 parsefunc("tedays")
+time.sleep(10)
 # print(pprint.pprint(dictionary))
 
+######################################seven days creating json ########################################
 # initializing the dictionary again to store the seven data from start
 dictionary = OrderedDict()
+time.sleep(10)
 parsefunc("sevendays")
+time.sleep(10)
 # print(pprint.pprint(dictionary))
+
+
+######################################24 hours creating json ########################################
+# initializing the dictionary again to store the seven data from start
+dictionary = OrderedDict()
+time.sleep(10)
+parsefunc("tfhours")
+time.sleep(10)
+# print(pprint.pprint(dictionary))
+
+
+
 
 
 #####################################################################################

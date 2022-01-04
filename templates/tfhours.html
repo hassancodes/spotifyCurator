@@ -1,0 +1,69 @@
+{% include "header.html" %}
+<hr>
+
+<div class="dropdown-btn">
+
+  <!-- drop down start-->
+  <div class="dropdown">
+    <!-- <form action="/action_page.php"> -->
+    <label for="timeframe"></label>
+    <!-- for is used to connect lable with id -->
+    <select name="tf" id="timeframe" onchange="javascript:handleSelect(this)">
+      <option value="24hours">24 hours</option>
+      <option value="sevendays">7days</option>
+      <option value="main">28 Days</option>
+    </select>
+    <!-- </form> -->
+  </div>
+
+
+</div>
+
+</div>
+
+<div class="table-responsive">
+  <table class="table mb-0">
+    <thead>
+      <tr>
+        <th>#ROS</th>
+        <th>Amount Paid</th>
+        <th>Playlist Name</th>
+        <th>Streams</th>
+        <th>Money Made</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      {% set totalpaid = "total Paid"%}
+      {% set totalStreams = [] %}
+      {% set totalplaylists = [] %}
+      {% set totalRevenue = [] %}
+      {% for key,value in tfData.items() %}
+      <tr>
+        <td>{{tfData[key]["rank"]}}</td>
+        <td><input name="moneyGiven" placeholder="input Money" type=text></td>
+        <td id="playlist-name">{{tfData[key]["playlistname"]}}</td>
+        <td>{{tfData[key]["streams"]}}</td>
+        <td><span class="label label-danger">${{tfData[key]["revenue"]}}</span></td>
+
+        <!-- Below I have added the streams and revenue to jinja variables so I use it at the end of the table -->
+        {% set __ = totalplaylists.append( tfData[key]["rank"] | int) %}
+        {% set __ = totalRevenue.append( tfData[key]["revenue"]) %}
+        <!-- replace the commas from the string integers and then storing them into the list -->
+        {% set __ = totalStreams.append( tfData[key]["streams"] | replace(',','') | int) %}
+      </tr>
+      {% endfor %}
+
+      <tr>
+        <td>{{ totalplaylists | length }}</td>
+        <td>TotalMoney</td>
+        <td id="playlist-name">Playlist Name</td>
+        <td>{{ totalStreams | sum }}</td>
+        <td><span class="label label-danger"></span>${{totalRevenue | sum | round(2,'floor')}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+  <!-- ################################################################################ -->
+</div>
+{%include "footer.html"%}

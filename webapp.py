@@ -6,11 +6,13 @@ import json
 # from flask import send_file
 from collections import OrderedDict
 from rate import pps
-from helpfunc import displaylists, get_index,displayppt,get_indexppt
+from helpfunc import displaylists, get_index,displayppt,get_indexppt,getplaylistname
 import os
 
 app = Flask(__name__)
 
+
+############################### Opening data files here to create variable for templates ######################
 file = open("scrapejson/tedays.json", "r", encoding="utf-8")
 jData = json.load(file)
 
@@ -18,6 +20,14 @@ jData = json.load(file)
 sdfile = open("scrapejson/sevendays.json", "r", encoding="utf-8")
 sdData = json.load(sdfile)
 # print(jData)
+
+tffile = open("scrapejson/tfhours.json", "r", encoding="utf-8")
+tfData = json.load(tffile)
+
+
+
+
+
 
 # Home Route
 ab = "tutorial"
@@ -76,7 +86,7 @@ def handle_ppt():
     data = {
         "id" : index+1 ,
         "playlist name" : request.form["playlistname"],
-        "playlist link" : request.form["playlistlink"],
+        "playlist link" : getplaylistname(request.form["playlistlink"]),
         "curator contact" : request.form["curatorcontact"]
         }
 
@@ -104,11 +114,15 @@ def handle_ppt():
 
 
 
-#############################################################################
+#############################seven days endpoint #################################
 @app.route("/sevendays")
 def seven_days():
     return render_template("sevendays.html" ,sdData =sdData)
 
+##############################24 hours end point######################################
+@app.route("/24hours")
+def tf_hours():
+    return render_template("tfhours.html" ,tfData =tfData)
 
 # Work Here
 
@@ -151,7 +165,10 @@ var = "main"
 def tut():
     return render_template("tutorial.html", var=var)
 
-
+var = "main"
+@app.route("/blacklist")
+def blacklist():
+    return render_template("blacklist.html", var=var)
 
 # function to display error pages
 @app.route("/<name>")
