@@ -2,15 +2,38 @@
     "Potential Playlists": [
         {
             "id": 1,
-            "playlist name": "asdfasdf",
-            "playlist link": "Rap Workout (Running and Lifting)",
-            "curator contact": "dsfsfdg"
+            "Amount": "100$",
+            "location": "United states of America",
+            "playlist link": "Trap en Ingl\u00e9s",
+            "curator contact": "@traplist.ing"
         },
         {
             "id": 2,
-            "playlist name": "https://open.spotify.com/playlist/6Y5k0bSCLonwHRHSwjNXHB",
-            "playlist link": "Rap Workout (Running and Lifting)",
-            "curator contact": "https://open.spotify.com/playlist/6Y5k0bSCLonwHRHSwjNXHB"
+            "Amount": "100$",
+            "location": "United states of America",
+            "playlist link": "Radio Hits 2010-2021",
+            "curator contact": "@sherlymadrid"
+        },
+        {
+            "id": 3,
+            "Amount": "200 EUR",
+            "location": "Netherland",
+            "playlist link": "Hiphop 90\u2019s",
+            "curator contact": "@spotify.hiphop90s"
+        },
+        {
+            "id": 4,
+            "Amount": "80$",
+            "location": "Argentina",
+            "playlist link": "RAP EN INGL\u00c9S ",
+            "curator contact": "@paolitomas"
+        },
+        {
+            "id": 5,
+            "Amount": "120$",
+            "location": "United States of America",
+            "playlist link": "TRAP YANKEE \ud83c\uddfa\ud83c\uddf8",
+            "curator contact": "@facumurilloo"
         }
     ]
 }

@@ -85,7 +85,8 @@ def handle_ppt():
     file_loc = "maindata/potentialplaylists.json"
     data = {
         "id" : index+1 ,
-        "playlist name" : request.form["playlistname"],
+        "Amount" : request.form["amount"],
+        "location" : request.form["location"],
         "playlist link" : getplaylistname(request.form["playlistlink"]),
         "curator contact" : request.form["curatorcontact"]
         }
@@ -171,8 +172,8 @@ def blacklist():
     return render_template("blacklist.html", var=var)
 
 # function to display error pages
-@app.route("/<name>")
-def error(name):
-    return "error"
+@app.route("/<random>")
+def error(random):
+    return "page not found, Bad Request"
 
 app.run("127.0.0.1",port=8080 ,debug=True)

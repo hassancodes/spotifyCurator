@@ -68,7 +68,7 @@ def get_indexppt():
 ####################################################################################
 
 def getplaylistname(link):
-    req = requests.get("https://open.spotify.com/playlist/0HtZSEqRMz6L5ZXAWCBgWp")
+    req = requests.get(link)
     soup = BeautifulSoup(req.content, "lxml")
     title = soup.find_all("h1")[0].get_text()
     return title
@@ -76,7 +76,10 @@ def getplaylistname(link):
     # print(soup.find_all("h1")[0].get_text())
 
 
+####################################################################################
 
+def blacklistus():
+    pass
 
 
 # getplaylistname("https://open.spotify.com/playlist/0HtZSEqRMz6L5ZXAWCBgWp")

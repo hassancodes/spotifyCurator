@@ -285,9 +285,10 @@ function addpp() {
 
   var datapp = `<tr>
   <td><input type="hidden" name="index_num" value="${indexppt}"/>${indexppt}</td>
-  <td><input style="width:80%" type=text name="playlistname"></td>
-  <td><input style="width:100%" type="text" name="playlistlink"></td>
-  <td><input style="width:100%" type="text" name="curatorcontact"></td>
+  <td><input type=text name="amount"></td>
+  <td><input type=text name="location"></td>
+  <td><input type="text" name="playlistlink"></td>
+  <td><input type="text" name="curatorcontact"></td>
   <td style="display:none;"><input type="submit"></td>
 </tr>
 </tbody>
