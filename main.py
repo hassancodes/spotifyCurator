@@ -68,7 +68,7 @@ def main(email,pw,loginOpt):
 
     global driver
     driver = webdriver.Chrome('./chromedriver', options=op)
-    print(driver.get_window_size())
+    # print(driver.get_window_size())
     driver.get("https://accounts.spotify.com/en/login?continue=https:%2F%2Fartists.spotify.com%2F")
     time.sleep(4)
 
