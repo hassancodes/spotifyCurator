@@ -38,18 +38,20 @@ def dbhandle():
 
 
 # this function stores the 24 hours data on regular basics
-def longTermData():
-    # for now just storing the 24 data, because we can use that to generate 7day and 28 day data
-    dbname = client["spotifyCuratorExtra"]
-
-    # collection inside dbname
-    tfhours = dbname["tfhourslong"]
-    # sevendays = dbname["sevendayslong"]
-    # tedays = dbname["tedayslong"]
-    currentDate = curdate()
-    with open("scrapejson/tfhours.json" ,"r") as tf:
-        tfdata = json.loads(tf.read())
-        tfhours.insert_one({ currentDate : tfdata})
+# def longTermData():
+#     # for now just storing the 24 data, because we can use that to generate 7day and 28 day data
+#     dbname = client["spotifyCuratorExtra"]
+#
+#     # collection inside dbname
+#     tfhours = dbname["tfhourslong"]
+#     # sevendays = dbname["sevendayslong"]
+#     # tedays = dbname["tedayslong"]
+#     currentDate = curdate()
+#     a = tfhours.find({currentDate : {"$exists": "true"}})
+#
+#     with open("scrapejson/tfhours.json" ,"r") as tf:
+#         tfdata = json.loads(tf.read())
+#         tfhours.insert_one({ currentDate : tfdata})
 
 
 

@@ -1,0 +1,57 @@
+{
+  "uri": "spotify:user:1186336261",
+  "name": "Arne Lindhardt",
+  "image_url": "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-1/p320x320/117108160_1661564327334239_7472577281409319666_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=0c64ff&_nc_ohc=IkUMZUmSynUAX9ayZNV&_nc_ht=scontent-ort2-1.xx&edm=AP4hL3IEAAAA&oh=00_AT-LwWVDHxhJzZ5UqypxscJqQQpoit6amgWQKrvV8VC9qg&oe=61FE97DB",
+  "followers_count": 52,
+  "following_count": 34,
+  "public_playlists": [{
+    "uri": "spotify:playlist:0tAxg0Cck2bzKh5Q1Hg2GV",
+    "name": "Til mamma",
+    "image_url": "spotify:mosaic:ab67616d00001e021622b92a310a2e33e679f6bf:ab67616d00001e021af9a8395ee7708718e53f9d:ab67616d00001e02cc2cf912462d8ae4ef856434:ab67616d00001e02d84a9bbcba91cb6a4a212b1b",
+    "followers_count": 1
+  }, {
+    "uri": "spotify:playlist:1vflMyteU2dfNkcRfrtsV8",
+    "name": "Staring at the ceiling",
+    "image_url": "spotify:image:ab67706c0000da84cdb8b476d9f632e23ae2d20f"
+  }, {
+    "uri": "spotify:playlist:2QhIhayr7DcrIpQ36vHc8k",
+    "name": "R&B",
+    "image_url": "spotify:image:ab67706c0000da84e6a4e63008c08a91d4cdc72b"
+  }, {
+    "uri": "spotify:playlist:12dKwfaX2GMXU1YBLFar9k",
+    "name": "Beste timen av livet ditt",
+    "image_url": "spotify:image:ab67706c0000da840f3ec6ca4e7666daa0e1162f",
+    "followers_count": 2
+  }, {
+    "uri": "spotify:playlist:1SqZIHYLXMKzd2EociZTPx",
+    "name": "FADDERUKA 2021",
+    "image_url": "spotify:image:ab67706c0000da84a7b47ffddc966bd91052af9b",
+    "followers_count": 2
+  }, {
+    "uri": "spotify:playlist:6Fqwi1yqTFysNOgmRdzh9O",
+    "name": "VIBEY WOBS",
+    "image_url": "spotify:image:ab67706c0000da8466bba9f8478a058081da73b5",
+    "followers_count": 1
+  }, {
+    "uri": "spotify:playlist:0YT6vamD8nmU45P4cCamH9",
+    "name": "L I N D A",
+    "image_url": "spotify:image:ab67706c0000da8491f8a02d1a55e2cbb071cedf",
+    "followers_count": 2
+  }, {
+    "uri": "spotify:playlist:1NCk6nUXMqtf73x0lLubcT",
+    "name": "Watching sunsets",
+    "image_url": "spotify:image:ab67706c0000da84926d2d8e32b054442003a097",
+    "followers_count": 1
+  }, {
+    "uri": "spotify:playlist:7kcrI3uNgoT4NtFPqQQKLe",
+    "name": "Alt. rock",
+    "image_url": "spotify:image:ab67706c0000da844413b823d088cb2083b78372"
+  }, {
+    "uri": "spotify:playlist:1RZDKLFY0dlTDc7qOxoCb0",
+    "name": "Halfstick",
+    "image_url": "spotify:image:ab67706c0000da84be869d05ccfda275aa30a671",
+    "followers_count": 1
+  }],
+  "total_public_playlists_count": 18,
+  "color": 1697420
+}

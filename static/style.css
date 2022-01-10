@@ -167,3 +167,8 @@ div .nav-ul {
 .footer li {
   list-style: none;
 }
+
+/* ###################################### blacklist page design ############################################# */
+.blacklist__class{
+  text-align: center;
+}

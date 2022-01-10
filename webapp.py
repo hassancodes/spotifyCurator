@@ -6,7 +6,8 @@ import json
 # from flask import send_file
 from collections import OrderedDict
 from rate import pps
-from helpfunc import displaylists, get_index,displayppt,get_indexppt,getplaylistname
+from helpfunc import displaylists, get_index,displayppt
+from helpfunc import get_indexppt,getplaylistname,blacklistus
 import os
 
 app = Flask(__name__)
@@ -112,7 +113,11 @@ def handle_ppt():
     # redirecting after adding the data to the form
     return redirect(url_for("pplaylists"))
 
-
+@app.route("/handle_blacklist", methods=["POST"])
+def handle_blacklist():
+    link = request.form["blacklist"]
+    # if link.startswith("https://open.spotify.com/user/"):
+    data = blacklistus(link)
 
 
 #############################seven days endpoint #################################

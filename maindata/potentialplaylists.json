@@ -34,6 +34,41 @@
             "location": "United States of America",
             "playlist link": "TRAP YANKEE \ud83c\uddfa\ud83c\uddf8",
             "curator contact": "@facumurilloo"
+        },
+        {
+            "id": 6,
+            "Amount": "80$",
+            "location": "United states of America",
+            "playlist link": "Top 100 most streamed songs on Spotify",
+            "curator contact": "@norenholgersson"
+        },
+        {
+            "id": 7,
+            "Amount": "250 EUR",
+            "location": "Europe",
+            "playlist link": "RAP US 2022 \ud83d\udcb8 [ 100% HITS ] ",
+            "curator contact": "@spoti.nath"
+        },
+        {
+            "id": 8,
+            "Amount": "250$",
+            "location": "Brazil",
+            "playlist link": "Black Antigos (S\u00d3 REL\u00cdQUIA)",
+            "curator contact": "@fabio92ti"
+        },
+        {
+            "id": 9,
+            "Amount": "60$",
+            "location": "United states of America",
+            "playlist link": "Hype Gym Bangers",
+            "curator contact": "@camden.walsh"
+        },
+        {
+            "id": 10,
+            "Amount": "300 EUR",
+            "location": "Europe",
+            "playlist link": "tiktok songs slowed + reverb",
+            "curator contact": "@maeveplaylist"
         }
     ]
 }

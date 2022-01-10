@@ -1,3 +1,11 @@
 {% include "header.html" %}
-<h1>Blacklisting</h1>
+<div>
+  <form class="blacklist__class" action={{url_for('handle_blacklist')}} method="post">
+    <label for="inputblacklist">Enter the user link you want to blacklist</label>
+  <br>
+    <input type="text" name="blacklist" id="inputblacklist">
+
+  </form>
+
+</div>
 {% include "footer.html" %}

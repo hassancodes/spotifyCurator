@@ -1,3 +1,4 @@
+import pprint
 import json
 import os
 import requests
@@ -78,8 +79,41 @@ def getplaylistname(link):
 
 ####################################################################################
 
-def blacklistus():
-    pass
+def blacklistus(link):
+    user = link.split("/")[-1]
+    # mainurl = f"https://spclient.wg.spotify.com/user-profile-view/v3/profile/{user}?playlist_limit=10&artist_limit=10&market=from_token"
+    mainurl = link
+    headers ={
+        "accept": "application/json",
+        "accept-language": "en",
+        "app-platform": "WebPlayer",
+        "cache-control": "no-cache",
+        "pragma": "no-cache",
+        "sec-ch-ua": "\"(Not(A:Brand\";v=\"8\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-site",
+        "spotify-app-version": "1.1.77.277.g27ca9e7b",
+        "Referer": "https://open.spotify.com/",
+        "Referrer-Policy": "strict-origin-when-cross-origin"
+      }
+          # "authorization": "Bearer BQDrzoZxnnqBcvB5qUweoG9pbKyY-2Gt6je7yci8MuYQG0fZSfBCGEnjthy3cdMtlfT2auShMldcl0t4lkYFBgsvrhLJBYBzYe3XD7proBFufMZSkPj3Bvm_s6Rvr-hVq7vMUHLJ-RoUYepxbESqG7o0VQikwdZ_6zK4q2vkpu9kywuUOu1kootB2JF0iGU0_zEpaX5eHOaWd3cB9Ye0GEStEMpGrNZVlHtOyX3RW9sYR-2HG4mlR-KvSxzjbR5UV3QVSWkaiMaxsEGrodPu0mZ7HukRxlO7ddQFsFmbHXF_pqBzqHaBI6Vf",
+    req = requests.get(mainurl, headers=headers)
+    # a = str(req.json()).replace("'" , '"')
+    # soup = BeautifulSoup(req.content, 'lxml')
+    # blackdata = soup.body.get_text()
+    # pprint.pprint(blackdata)
+    print(a)
+
+
+
+
+
+
+# blacklistus("https://open.spotify.com/user/1186336261")
+
 
 
 # getplaylistname("https://open.spotify.com/playlist/0HtZSEqRMz6L5ZXAWCBgWp")
