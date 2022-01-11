@@ -32,7 +32,7 @@ tfData = json.load(tffile)
 
 # Home Route
 ab = "tutorial"
-@application.route("/main")
+@application.route("/")
 def main():
     return render_template("index.html" , jData=jData, var=ab)
 
