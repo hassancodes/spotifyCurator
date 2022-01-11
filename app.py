@@ -178,4 +178,4 @@ def blacklist():
 def error(random):
     return "page not found, Bad Request"
 
-app.run("127.0.0.1",port=8080 ,debug=True)
+app.run(debug=True)
