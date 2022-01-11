@@ -10,7 +10,7 @@ from helpfunc import displaylists, get_index,displayppt
 from helpfunc import get_indexppt,getplaylistname,blacklistus
 import os
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 
 ############################### Opening data files here to create variable for templates ######################
@@ -32,13 +32,13 @@ tfData = json.load(tffile)
 
 # Home Route
 ab = "tutorial"
-@app.route("/main")
+@application.route("/main")
 def main():
     return render_template("index.html" , jData=jData, var=ab)
 
 ###############################################GOD Function ########################################################
 # handling the add playlist submission data
-@app.route('/handle_data', methods=['POST'])
+@application.route('/handle_data', methods=['POST'])
 def handle_data():
     # this is the current data the user will input
     index = get_index()
@@ -61,7 +61,7 @@ def handle_data():
         ls = []
         jsonsize = os.path.getsize("addplaylist.json")
         if jsonsize ==0:
-            ls.append(data)
+            ls.applicationend(data)
             mydict["PlayList Data"] = ls
             json.dump(mydict,file)
             # changed
@@ -69,7 +69,7 @@ def handle_data():
         elif jsonsize!=0:
 
             file_data = json.load(file)
-            file_data["PlayList Data"].append(data)
+            file_data["PlayList Data"].applicationend(data)
             file.seek(0)
             json.dump(file_data, file, indent = 4)
 
@@ -79,7 +79,7 @@ def handle_data():
 
 #######################################################################################################
 # # handling the submission of potential PlayList
-@app.route("/handle_ppt", methods=['POST'])
+@application.route("/handle_ppt", methods=['POST'])
 def handle_ppt():
 
     index =get_indexppt()
@@ -98,7 +98,7 @@ def handle_ppt():
         ls = []
         jsonsize = os.path.getsize(file_loc)
         if jsonsize ==0:
-            ls.append(data)
+            ls.applicationend(data)
             mydict["Potential Playlists"] = ls
             json.dump(mydict,ppt)
             # changed
@@ -106,14 +106,14 @@ def handle_ppt():
         elif jsonsize!=0:
 
             file_data = json.load(ppt)
-            file_data["Potential Playlists"].append(data)
+            file_data["Potential Playlists"].applicationend(data)
             ppt.seek(0)
             json.dump(file_data,ppt, indent = 4)
 
     # redirecting after adding the data to the form
     return redirect(url_for("pplaylists"))
 
-@app.route("/handle_blacklist", methods=["POST"])
+@application.route("/handle_blacklist", methods=["POST"])
 def handle_blacklist():
     link = request.form["blacklist"]
     # if link.startswith("https://open.spotify.com/user/"):
@@ -121,12 +121,12 @@ def handle_blacklist():
 
 
 #############################seven days endpoint #################################
-@app.route("/sevendays")
+@application.route("/sevendays")
 def seven_days():
     return render_template("sevendays.html" ,sdData =sdData)
 
 ##############################24 hours end point######################################
-@app.route("/24hours")
+@application.route("/24hours")
 def tf_hours():
     return render_template("tfhours.html" ,tfData =tfData)
 
@@ -134,14 +134,14 @@ def tf_hours():
 
 # this the main functionality endpoint.(Adds data)
 var = "main"
-@app.route("/addplaylists")
+@application.route("/addplaylists")
 def addplaylist():
     pldata = displaylists()
     return render_template("addplaylists.html", var=var,pldata=pldata)
 
 
 # Seperate script for checking potential playlists.
-@app.route("/potentialplaylists")
+@application.route("/potentialplaylists")
 def pplaylists():
     pptdata  = displayppt()
     return render_template("potentialplaylists.html", pptdata = pptdata)
@@ -150,7 +150,7 @@ def pplaylists():
 
 ratepps = pps()
 data = dict(ratepps)
-@app.route("/ratepps")
+@application.route("/ratepps")
 def ratepps():
     return render_template("rate.html", data=data)
 
@@ -164,19 +164,19 @@ def ratepps():
 # miscellaneous
 # about, main
 var = "main"
-@app.route("/tutorial")
+@application.route("/tutorial")
 def tut():
     return render_template("tutorial.html", var=var)
 
 var = "main"
-@app.route("/blacklist")
+@application.route("/blacklist")
 def blacklist():
     return render_template("blacklist.html", var=var)
 
 # function to display error pages
-@app.route("/<random>")
+@application.route("/<random>")
 def error(random):
     return "page not found, Bad Request"
 
 if __name__ == "__main__":
-    app.run()
+    application.run()
