@@ -1,5 +1,4 @@
 /* #########################################HEADER########################################## */
-
 /* some starting rules */
 /* "Common" means the elements that are present in all pages */
 :root {
@@ -16,16 +15,15 @@
   /* --color4 : ; */
 }
 
-
 body {
   padding-bottom: 50px;
 }
-
 
 /* Drop is only present on main page for 24,7 and 28 days data */
 .dropdown {
   display: inline;
 }
+
 .dropdown-btn {
   /* border: 1px yellow solid; */
   margin-top: 20px;
@@ -37,7 +35,6 @@ body {
   padding: 8px 10px 8px 10px;
   border-radius: 10px;
 }
-
 
 .addplaylist {
   display: inline;
@@ -68,7 +65,6 @@ body {
   border: 2px solid grey;
 }
 
-
 /* COMMON */
 .navbar {
   background-color: var(--primary-color);
@@ -97,7 +93,6 @@ div .nav-ul {
   background-color: var(--color3);
 }
 
-
 /* ######################Fixing the long playlist names######################### */
 #playlist-name {
   white-space: nowrap;
@@ -111,12 +106,12 @@ div .nav-ul {
 }
 
 /* ######################Fixing the long spotify link ######################### */
-
 .playlisttable {
   /* table-layout: fixed; */
   width: 100px;
   border-collapse: collapse;
 }
+
 .playlisttable th:nth-child(1) {
   width: 5%;
 }
@@ -124,13 +119,14 @@ div .nav-ul {
 .playlisttable th:nth-child(5) {
   width: 10%;
 }
+
 .playlisttable th:nth-child(6) {
   width: 9.5%;
 }
+
 /* .playlisttable th:nth-child(4) {
   width: 19%;
 } */
-
 .playlisttable div {
   display: inline-block;
   position: relative;
@@ -141,15 +137,11 @@ div .nav-ul {
   /* vertical-align: top; */
 }
 
-
 .playlisttable div:hover {
   z-index: 1;
   width: auto;
   background-color: #FFFFCC;
 }
-
-
-
 
 /* footer and its contents starts from here */
 .footer {
@@ -169,6 +161,71 @@ div .nav-ul {
 }
 
 /* ###################################### blacklist page design ############################################# */
-.blacklist__class{
+.blacklist__class {
   text-align: center;
+}
+
+/* ######################################### login page design starts from here ##################################### */
+/* ##################################################################################################################### */
+.login__body{
+  /* background-image:linear-gradient(#c29200,#d7a100); */
+  background-image: url("/static/img/headphone.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+
+
+@media screen and (max-width: 900px) {
+  .login__body{
+        background-image:url("/static/img/mobile1.jpg");
+    }
+}
+
+@media screen and (max-width:900px){
+  .login{
+    opacity:0.5;
+  }
+}
+
+
+.login__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.login {
+  text-align: center;
+  width: 300px;
+  border: 2px dashed grey;
+  border-radius: 10px;
+  width: 320px;
+  height: 350px;
+  opacity: 0.8;
+  background-color: white;
+  box-shadow: 5px 5px grey;
+}
+
+.login:hover{
+  transition: all .4s;
+  -moz-transition: all .4s;
+  -webkit-transition:all .4s;
+  -o-transition: all .4s;
+  width: 330px;
+  height:355px;
+}
+
+.user__name, .user_pass {
+  /* border:10px solid yellow; */
+  padding-top: 10px;
+  padding-bottom:10px;
+
+}
+
+.user_inp, .pass_inp{
+    border-radius: 7px;
+    width: 250px;
+    height:40px;
 }

@@ -168,6 +168,11 @@ var = "main"
 def tut():
     return render_template("tutorial.html", var=var)
 
+@application.route("/login")
+def login():
+    return render_template("login.html")
+
+
 var = "main"
 @application.route("/blacklist")
 def blacklist():
