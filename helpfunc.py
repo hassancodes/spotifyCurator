@@ -69,12 +69,20 @@ def get_indexppt():
 ####################################################################################
 
 def getplaylistname(link):
-    req = requests.get(link)
+    headers = {
+    "accept-language": "en",
+    "app-platform": "WebPlayer",
+    "cache-control": "no-cache",
+     "user-agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4818.2 Safari/537.36"
+
+    }
+    req = requests.get(link, headers= headers)
+    # print(req.content)
     soup = BeautifulSoup(req.content, "lxml")
-    title = soup.find_all("h1")[0].get_text()
+    title = soup.find("title").get_text()
     return title
 
-    # print(soup.find_all("h1")[0].get_text())
+
 
 
 ####################################################################################
