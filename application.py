@@ -61,7 +61,7 @@ def handle_data():
         ls = []
         jsonsize = os.path.getsize("addplaylist.json")
         if jsonsize ==0:
-            ls.applicationend(data)
+            ls.append(data)
             mydict["PlayList Data"] = ls
             json.dump(mydict,file)
             # changed
@@ -69,7 +69,7 @@ def handle_data():
         elif jsonsize!=0:
 
             file_data = json.load(file)
-            file_data["PlayList Data"].applicationend(data)
+            file_data["PlayList Data"].append(data)
             file.seek(0)
             json.dump(file_data, file, indent = 4)
 
@@ -98,7 +98,7 @@ def handle_ppt():
         ls = []
         jsonsize = os.path.getsize(file_loc)
         if jsonsize ==0:
-            ls.applicationend(data)
+            ls.append(data)
             mydict["Potential Playlists"] = ls
             json.dump(mydict,ppt)
             # changed
@@ -106,7 +106,7 @@ def handle_ppt():
         elif jsonsize!=0:
 
             file_data = json.load(ppt)
-            file_data["Potential Playlists"].applicationend(data)
+            file_data["Potential Playlists"].append(data)
             ppt.seek(0)
             json.dump(file_data,ppt, indent = 4)
 
