@@ -71,16 +71,14 @@ def get_indexppt():
 def getplaylistname(link):
     headers = {
     "accept-language": "en",
-    "app-platform": "WebPlayer",
-    "cache-control": "no-cache",
      "user-agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4818.2 Safari/537.36"
 
     }
-    req = requests.get(link, headers= headers)
-    # print(req.content)
+    req = requests.get(link, headers=headers)
     soup = BeautifulSoup(req.content, "lxml")
-    title = soup.find("title").get_text()
-    return title
+
+    title = str(soup.find("title").get_text()).split("- playlist by")[0]
+    return title.strip()
 
 
 
