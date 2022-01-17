@@ -1,6 +1,6 @@
 # Working on **Spotify Curator**
 
-# Required
+# Required:
 
 -   create a file with all the clean data. ✅
 -   Convert the existing code to functional paradigm (working)✅
