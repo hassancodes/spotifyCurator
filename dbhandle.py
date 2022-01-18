@@ -48,13 +48,13 @@ def longTermData():
     # tedays = dbname["tedayslong"]
     currentDate = curdate()
 
-    print(dir(tfhours))
+    # print(dir(tfhours))
 
     # print(tfhours.find({currentDate : {"$exists": "true"}}))
 
-    # with open("scrapejson/tfhours.json" ,"r") as tf:
-    #     tfdata = json.loads(tf.read())
-    #     tfhours.insert_one({ currentDate : tfdata})
+    with open("scrapejson/tfhours.json" ,"r") as tf:
+        tfdata = json.loads(tf.read())
+        tfhours.insert_one({ currentDate : tfdata})
 
 
 
@@ -69,7 +69,7 @@ def curdate():
     x =datetime(year,month,day)
     return x.strftime("%b %d %Y")
 
-
+# dbhandle()
 # main call start fron here
-longTermData()
+# longTermData()
 # dbhandle()

@@ -1,9 +1,6 @@
 import flask
 from flask import *
 import json
-# from flask import Flask,escape
-# from flask import render_template
-# from flask import send_file
 from collections import OrderedDict
 from rate import pps
 from helpfunc import displaylists, get_index,displayppt
