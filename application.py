@@ -4,7 +4,7 @@ import json
 from collections import OrderedDict
 from rate import pps
 from helpfunc import displaylists, get_index,displayppt
-from helpfunc import get_indexppt,getplaylistname,blacklistus
+from helpfunc import get_indexppt,getplaylistname
 import os
 
 application = Flask(__name__)
