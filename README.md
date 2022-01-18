@@ -1,7 +1,6 @@
 # Working on **Spotify Curator**
 
-# Required:
-
+# Required:-
 -   create a file with all the clean data. ✅
 -   Convert the existing code to functional paradigm (working)✅
 -   Create plan for implementing front-end. (Working)
@@ -16,7 +15,7 @@
 
 # Extra:
 
--   add a page for potential playlists to target.
+-   add a page for potential playlists to target for future.
 -   Dash board for Songs
 -   Grab all the data from Spotify.
 
