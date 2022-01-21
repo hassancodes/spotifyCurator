@@ -69,7 +69,7 @@ def curdate():
     x =datetime(year,month,day)
     return x.strftime("%b %d %Y")
 
-# dbhandle()
+dbhandle()
 # main call start fron here
-# longTermData()
+longTermData()
 # dbhandle()
