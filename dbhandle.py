@@ -4,6 +4,7 @@ import urllib
 import json
 from decouple import config
 from datetime import datetime
+import pprint
 
 
 userID = config('id',default='')
@@ -69,7 +70,25 @@ def curdate():
     x =datetime(year,month,day)
     return x.strftime("%b %d %Y")
 
-dbhandle()
-# main call start fron here
-longTermData()
 # dbhandle()
+# # main call start fron here
+# longTermData()
+# dbhandle()
+
+
+
+# A universal function to insert data in the give database collection.
+def dbinsert(dbname, dbcollection,data):
+    # getting current database names
+    dbnames = [x["name"] for x in client.list_databases()]
+    # validating that the database is present or not
+    if dbname in dbnames:
+        # connecting to the db
+        db = client[dbname]
+        dbcol = db[dbcollection]
+#  inserting data into the respect collection
+        dbcol.insert_one(data)
+
+    elif dbname not in dbnames:
+        # the error may change later on
+        return "Error! DB Not Found"

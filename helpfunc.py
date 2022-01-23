@@ -6,6 +6,8 @@ from bs4 import BeautifulSoup
 from spotipy import util
 from bs4 import BeautifulSoup
 import pprint
+# non-native functions
+from dbhandle import dbinsert
 
 
 # this functions helps in displaying the added playlist.
@@ -110,7 +112,8 @@ def fetchdata(noofdays):
 
 
 ############################# Function for blacklisting #####################################
-
+#  this function use spotify api to generate a accesstoken and
+# then uses that token to fetch the users playlists to blacklist
 def blacklistus(user,prof_link):
     # validating the link
     if prof_link.startswith("https://open.spotify.com/user/") or prof_link.startswith("open.spotify.com/user/"):
@@ -146,11 +149,12 @@ def blacklistus(user,prof_link):
 
     tar_url  = f"https://api.spotify.com/v1/users/{profile}/playlists"
     # sending the final request
-    data = requests.get(tar_url,  headers= headers, params= params)
+    req = requests.get(tar_url,  headers= headers, params= params)
     # soup = BeautifulSoup(data.content,"lxml")
+    value = eval(str(req.json()).replace("'", '"'))
+    key = value["items"][0]["owner"]["display_name"]
 
-    return eval(str(data.json()).replace("'", '"'))
-
-
-# takes in my username
-print(blacklistus("iamdope","https://open.spotify.com/user/17tsxk06b67ckkwe17j2z427k"))
+    mydict = { key : value}
+    print(mydict)
+    # using the universal dbinsert function
+    dbinsert("miscellaneous","blacklist",mydict)
