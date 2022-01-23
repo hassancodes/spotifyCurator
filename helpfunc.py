@@ -3,6 +3,9 @@ import json
 import os
 import requests
 from bs4 import BeautifulSoup
+from spotipy import util
+from bs4 import BeautifulSoup
+import pprint
 
 
 # this functions helps in displaying the added playlist.
@@ -103,3 +106,51 @@ def fetchdata(noofdays):
         tfhours = dbname["tfhourscol"]
         data = dict(list(tfhours.find_one().items())[1:])
         return data
+
+
+
+############################# Function for blacklisting #####################################
+
+def blacklistus(user,prof_link):
+    # validating the link
+    if prof_link.startswith("https://open.spotify.com/user/") or prof_link.startswith("open.spotify.com/user/"):
+        profile = prof_link.split("/")[-1]
+        print(profile)
+    else:
+        # return invalid response
+        print("invalid Profile Link")
+
+    # data = {
+    # "client_id": "f198005bb50e43ffae25db4194603bad",
+    # "client_secret" : "3e8d3b3c68464b2a91cf753950245148"
+    # }
+    #
+    # tar_url = "https://accounts.spotify.com/authorize?"
+    # req = requests.get(tar_url, data)
+    # main_url = req.content
+    # print(main_url)
+    token = util.prompt_for_user_token(user,client_id='f198005bb50e43ffae25db4194603bad',client_secret='3e8d3b3c68464b2a91cf753950245148',redirect_uri="http://127.0.0.1:5000/callback")
+    print(token)
+
+    headers = {
+
+    "Content-Type": "application/json",
+    "Authorization": f"Bearer {token}",
+    "Host": "api.spotify.com",
+    }
+
+    params = {
+    "offset": 0,
+    "limit" : 20
+    }
+
+    tar_url  = f"https://api.spotify.com/v1/users/{profile}/playlists"
+    # sending the final request
+    data = requests.get(tar_url,  headers= headers, params= params)
+    # soup = BeautifulSoup(data.content,"lxml")
+
+    return eval(str(data.json()).replace("'", '"'))
+
+
+# takes in my username
+print(blacklistus("iamdope","https://open.spotify.com/user/17tsxk06b67ckkwe17j2z427k"))
