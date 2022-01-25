@@ -116,7 +116,10 @@ def handle_ppt():
 def handle_blacklist():
     link = request.form["blacklist"]
 
-    return blacklistus("iamdope",link)
+    blacklistus("iamdope",link)
+    return "LOL"
+
+
 
 #############################seven days endpoint #################################
 @application.route("/sevendays")
