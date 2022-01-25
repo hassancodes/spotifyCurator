@@ -116,7 +116,7 @@ def handle_ppt():
 def handle_blacklist():
     link = request.form["blacklist"]
 
-    blaclist_json  = blacklistus("iamdope",link)
+    blacklist_json  = blacklistus("iamdope",link)
     return blacklist_json
 
 
