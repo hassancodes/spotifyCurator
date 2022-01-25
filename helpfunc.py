@@ -147,7 +147,7 @@ def blacklistus(user,prof_link):
 
     mydict = { key : value }
     # using the universal dbinsert function
-    # dbinsert("miscellaneous","blacklist",mydict)
+    dbinsert("miscellaneous","blacklist",mydict)
 
     return mydict
 
