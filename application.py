@@ -4,7 +4,8 @@ import json
 from collections import OrderedDict
 from rate import pps
 from helpfunc import displaylists, get_index,displayppt
-from helpfunc import get_indexppt,getplaylistname
+from helpfunc import get_indexppt
+from helpfunc import getplaylistname, blacklistus
 import os
 
 application = Flask(__name__)
@@ -110,12 +111,12 @@ def handle_ppt():
     # redirecting after adding the data to the form
     return redirect(url_for("pplaylists"))
 
+
 @application.route("/handle_blacklist", methods=["POST"])
 def handle_blacklist():
     link = request.form["blacklist"]
-    # if link.startswith("https://open.spotify.com/user/"):
-    data = blacklistus(link)
 
+    return blacklistus("iamdope",link)
 
 #############################seven days endpoint #################################
 @application.route("/sevendays")
@@ -156,8 +157,6 @@ def ratepps():
 
 #################################### Endpoints below require more work ########################################
 
-
-
 # miscellaneous
 # about, main
 var = "main"
@@ -178,7 +177,7 @@ def blacklist():
 # function to display error pages
 @application.route("/<random>")
 def error(random):
-    return "page not found, Bad Request"
+    return "Page not found!"
 
 if __name__ == "__main__":
     application.run()

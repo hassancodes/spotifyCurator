@@ -299,23 +299,3 @@ function addpp() {
   tbodypp.innerHTML = readytbodypp;
   indexppt += 1;
 }
-
-
-
-
-// -------------------------------------- testing -----------------------------------
-
-function getlist(){
-  var client_id = 'f36ff1ca4b824787b02a8cf49cb6db78';
-  var state = "ajdkfhakjdfhakjd";
-  var scope = 'user-read-private user-read-email';
-
-  var res = fetch('https://accounts.spotify.com/authorize?', {
-    response_type: 'code',
-    client_id: client_id,
-    state: state
-  });
-    console.log(res);
-
-}
-getlist();

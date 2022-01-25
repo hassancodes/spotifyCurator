@@ -118,22 +118,13 @@ def blacklistus(user,prof_link):
     # validating the link
     if prof_link.startswith("https://open.spotify.com/user/") or prof_link.startswith("open.spotify.com/user/"):
         profile = prof_link.split("/")[-1]
-        print(profile)
+        # print(profile)
     else:
         # return invalid response
         print("invalid Profile Link")
 
-    # data = {
-    # "client_id": "f198005bb50e43ffae25db4194603bad",
-    # "client_secret" : "3e8d3b3c68464b2a91cf753950245148"
-    # }
-    #
-    # tar_url = "https://accounts.spotify.com/authorize?"
-    # req = requests.get(tar_url, data)
-    # main_url = req.content
-    # print(main_url)
     token = util.prompt_for_user_token(user,client_id='f198005bb50e43ffae25db4194603bad',client_secret='3e8d3b3c68464b2a91cf753950245148',redirect_uri="http://127.0.0.1:5000/callback")
-    print(token)
+    # print(token)
 
     headers = {
 
@@ -149,12 +140,15 @@ def blacklistus(user,prof_link):
 
     tar_url  = f"https://api.spotify.com/v1/users/{profile}/playlists"
     # sending the final request
-    req = requests.get(tar_url,  headers= headers, params= params)
+    req = requests.get(tar_url, headers=headers, params=params)
     # soup = BeautifulSoup(data.content,"lxml")
     value = eval(str(req.json()).replace("'", '"'))
     key = value["items"][0]["owner"]["display_name"]
 
-    mydict = { key : value}
-    print(mydict)
+    mydict = { key : value }
     # using the universal dbinsert function
-    dbinsert("miscellaneous","blacklist",mydict)
+    # dbinsert("miscellaneous","blacklist",mydict)
+
+    return mydict
+
+# blacklistus("iamdope","https://open.spotify.com/user/e5kzgfyenbpthi0ew37kmrgmq")
