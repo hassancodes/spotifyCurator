@@ -76,6 +76,27 @@
             "location": "United states of America",
             "playlist link": "American Rap 2022",
             "curator contact": "@americaraplist"
+        },
+        {
+            "id": 12,
+            "Amount": "----",
+            "location": "Brazil",
+            "playlist link": "Hip Hop 90s & 2000s - Classics",
+            "curator contact": "@bgabraga"
+        },
+        {
+            "id": 13,
+            "Amount": "30$",
+            "location": "Brazil",
+            "playlist link": "Fast and Furious (The best of)",
+            "curator contact": "@helder_monteiro97"
+        },
+        {
+            "id": 14,
+            "Amount": "30$",
+            "location": "Mexico",
+            "playlist link": "GYM MODO BESTIA \ud83d\udcaa\ud83c\udffb",
+            "curator contact": "@bernardo.reynose"
         }
     ]
 }
