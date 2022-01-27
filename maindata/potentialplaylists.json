@@ -97,6 +97,27 @@
             "location": "Mexico",
             "playlist link": "GYM MODO BESTIA \ud83d\udcaa\ud83c\udffb",
             "curator contact": "@bernardo.reynose"
+        },
+        {
+            "id": 15,
+            "Amount": "65$",
+            "location": "Great Britain",
+            "playlist link": "Throwback Bangers \ud83d\udd25\ud83d\udd25\ud83d\udd25",
+            "curator contact": "@chris.simpson99"
+        },
+        {
+            "id": 16,
+            "Amount": "100$",
+            "location": "Germany",
+            "playlist link": "RNB MUSIC",
+            "curator contact": "@volupmusic"
+        },
+        {
+            "id": 17,
+            "Amount": "147$",
+            "location": "Germany",
+            "playlist link": "RAP INTERNATIONAL",
+            "curator contact": "@volupmusic"
         }
     ]
 }
