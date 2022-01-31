@@ -2,77 +2,77 @@
     "Potential Playlists": [
         {
             "id": 1,
-            "Amount": "100$",
+            "Amount": "$100",
             "location": "United states of America",
             "playlist link": "Trap en Ingl\u00e9s",
             "curator contact": "@traplist.ing"
         },
         {
             "id": 2,
-            "Amount": "100$",
+            "Amount": "$100",
             "location": "United states of America",
             "playlist link": "Radio Hits 2010-2021",
             "curator contact": "@sherlymadrid"
         },
         {
             "id": 3,
-            "Amount": "200 EUR",
+            "Amount": "E200",
             "location": "Netherland",
             "playlist link": "Hiphop 90\u2019s",
             "curator contact": "@spotify.hiphop90s"
         },
         {
             "id": 4,
-            "Amount": "80$",
+            "Amount": "$80",
             "location": "Argentina",
             "playlist link": "RAP EN INGL\u00c9S ",
             "curator contact": "@paolitomas"
         },
         {
             "id": 5,
-            "Amount": "120$",
+            "Amount": "$120",
             "location": "United States of America",
             "playlist link": "TRAP YANKEE \ud83c\uddfa\ud83c\uddf8",
             "curator contact": "@facumurilloo"
         },
         {
             "id": 6,
-            "Amount": "80$",
+            "Amount": "$80",
             "location": "United states of America",
             "playlist link": "Top 100 most streamed songs on Spotify",
             "curator contact": "@norenholgersson"
         },
         {
             "id": 7,
-            "Amount": "250 EUR",
+            "Amount": "E250",
             "location": "Europe",
             "playlist link": "RAP US 2022 \ud83d\udcb8 [ 100% HITS ] ",
             "curator contact": "@spoti.nath"
         },
         {
             "id": 8,
-            "Amount": "250$",
+            "Amount": "$250",
             "location": "Brazil",
             "playlist link": "Black Antigos (S\u00d3 REL\u00cdQUIA)",
             "curator contact": "@fabio92ti"
         },
         {
             "id": 9,
-            "Amount": "60$",
+            "Amount": "$60",
             "location": "United states of America",
             "playlist link": "Hype Gym Bangers",
             "curator contact": "@camden.walsh"
         },
         {
             "id": 10,
-            "Amount": "300 EUR",
+            "Amount": "E300",
             "location": "Europe",
             "playlist link": "tiktok songs slowed + reverb",
             "curator contact": "@maeveplaylist"
         },
         {
             "id": 11,
-            "Amount": "110$",
+            "Amount": "$110",
             "location": "United states of America",
             "playlist link": "American Rap 2022",
             "curator contact": "@americaraplist"
@@ -86,45 +86,52 @@
         },
         {
             "id": 13,
-            "Amount": "30$",
+            "Amount": "$30",
             "location": "Brazil",
             "playlist link": "Fast and Furious (The best of)",
             "curator contact": "@helder_monteiro97"
         },
         {
             "id": 14,
-            "Amount": "30$",
+            "Amount": "$30",
             "location": "Mexico",
             "playlist link": "GYM MODO BESTIA \ud83d\udcaa\ud83c\udffb",
             "curator contact": "@bernardo.reynose"
         },
         {
             "id": 15,
-            "Amount": "65$",
+            "Amount": "$65",
             "location": "Great Britain",
             "playlist link": "Throwback Bangers \ud83d\udd25\ud83d\udd25\ud83d\udd25",
             "curator contact": "@chris.simpson99"
         },
         {
             "id": 16,
-            "Amount": "100$",
+            "Amount": "$100",
             "location": "Germany",
             "playlist link": "RNB MUSIC",
             "curator contact": "@volupmusic"
         },
         {
             "id": 17,
-            "Amount": "147$",
+            "Amount": "$147",
             "location": "Germany",
             "playlist link": "RAP INTERNATIONAL",
             "curator contact": "@volupmusic"
         },
         {
             "id": 18,
-            "Amount": "30 EUR",
+            "Amount": "E30",
             "location": "Italy",
             "playlist link": "Best English Rap/Hip Pop\ud83d\udd25",
             "curator contact": "@serafinialessandro0_"
+        },
+        {
+            "id": 19,
+            "Amount": "E20",
+            "location": "Europe",
+            "playlist link": "want me - cl4pers",
+            "curator contact": "@ola.wav"
         }
     ]
 }
