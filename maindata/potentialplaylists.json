@@ -139,6 +139,20 @@
             "location": "Europe",
             "playlist link": "Nemzzz - 2MS",
             "curator contact": "@ola.wav"
+        },
+        {
+            "id": 21,
+            "Amount": "$50",
+            "location": "USA",
+            "playlist link": "foolin around yvngxchris (unreleased)",
+            "curator contact": "@codymgmt"
+        },
+        {
+            "id": 22,
+            "Amount": "$50",
+            "location": "USA",
+            "playlist link": "f*ck me like you want me",
+            "curator contact": "@codymgmt"
         }
     ]
 }
