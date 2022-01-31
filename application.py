@@ -144,18 +144,19 @@ def addplaylist():
 
 
 # Seperate script for checking potential playlists.
+var = "main"
 @application.route("/potentialplaylists")
 def pplaylists():
     pptdata  = displayppt()
-    return render_template("potentialplaylists.html", pptdata = pptdata)
+    return render_template("potentialplaylists.html", pptdata = pptdata ,var=var)
 
 
-
+var = "main"
 ratepps = pps()
 data = dict(ratepps)
 @application.route("/ratepps")
 def ratepps():
-    return render_template("rate.html", data=data)
+    return render_template("rate.html", data=data, var =var)
 
 
 
