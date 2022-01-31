@@ -115,40 +115,44 @@ def fetchdata(noofdays):
 #  this function use spotify api to generate a accesstoken and
 # then uses that token to fetch the users playlists to blacklist
 def blacklistus(user,prof_link):
+    profile = None
     # validating the link
     if prof_link.startswith("https://open.spotify.com/user/") or prof_link.startswith("open.spotify.com/user/"):
         profile = prof_link.split("/")[-1]
+        token = util.prompt_for_user_token(user,client_id='f198005bb50e43ffae25db4194603bad',client_secret='3e8d3b3c68464b2a91cf753950245148',redirect_uri="http://127.0.0.1:5000/callback")
+        # print(token)
+
+        headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {token}",
+        "Host": "api.spotify.com",
+        }
+
+        params = {
+        "offset": 0,
+        "limit" : 20
+        }
+
+        tar_url  = f"https://api.spotify.com/v1/users/{profile}/playlists"
+        # sending the final request
+        req = requests.get(tar_url, headers=headers, params=params)
+        # soup = BeautifulSoup(data.content,"lxml")
+        value = eval(str(req.json()).replace("'", '"'))
+        key = value["items"][0]["owner"]["display_name"]
+        #
+        mydict = { key : value }
+        data = mydict
+        # # using the universal dbinsert function
+        dbinsert("miscellaneous","blacklist",mydict)
+        #
+        return data[key]
         # print(profile)
     else:
         # return invalid response
         print("invalid Profile Link")
 
-    token = util.prompt_for_user_token(user,client_id='f198005bb50e43ffae25db4194603bad',client_secret='3e8d3b3c68464b2a91cf753950245148',redirect_uri="http://127.0.0.1:5000/callback")
-    # print(token)
+print(blacklistus("iamdope", "https://open.spotify.com/user/ja3t9dn7t7dou8nru1xqbkurq"))
 
-    headers = {
 
-    "Content-Type": "application/json",
-    "Authorization": f"Bearer {token}",
-    "Host": "api.spotify.com",
-    }
-
-    params = {
-    "offset": 0,
-    "limit" : 20
-    }
-
-    tar_url  = f"https://api.spotify.com/v1/users/{profile}/playlists"
-    # sending the final request
-    req = requests.get(tar_url, headers=headers, params=params)
-    # soup = BeautifulSoup(data.content,"lxml")
-    value = eval(str(req.json()).replace("'", '"'))
-    key = value["items"][0]["owner"]["display_name"]
-
-    mydict = { key : value }
-    # using the universal dbinsert function
-    dbinsert("miscellaneous","blacklist",mydict)
-
-    return mydict
 
 # blacklistus("iamdope","https://open.spotify.com/user/e5kzgfyenbpthi0ew37kmrgmq")

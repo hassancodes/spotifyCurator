@@ -153,6 +153,20 @@
             "location": "USA",
             "playlist link": "f*ck me like you want me",
             "curator contact": "@codymgmt"
+        },
+        {
+            "id": 23,
+            "Amount": "$35",
+            "location": "USA",
+            "playlist link": "TRAP GRINGO HITS 2022 \ud83e\udd89",
+            "curator contact": "@eipify"
+        },
+        {
+            "id": 24,
+            "Amount": "E30",
+            "location": "Europe",
+            "playlist link": "\ud83e\udd85",
+            "curator contact": "@varestheproducer"
         }
     ]
 }

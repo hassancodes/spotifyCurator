@@ -1,0 +1,672 @@
+{
+  'Masked Mortal Music': {
+    'href': 'https://api.spotify.com/v1/users/ja3t9dn7t7dou8nru1xqbkurq/playlists?offset=0&limit=20',
+    'items': [{
+      'collaborative': False,
+      'description': 'Top tier drill music from all across the world! From NYC to UK, we got it covered! website: maskedmortal.com',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/5Nx1xmA8qNvN4QBlPeQqNF'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/5Nx1xmA8qNvN4QBlPeQqNF',
+      'id': '5Nx1xmA8qNvN4QBlPeQqNF',
+      'images': [{
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67706c0000bebbd9d323de343ca3f471d6ef06',
+        'width': None
+      }],
+      'name': 'Drill Elite ',
+      'owner': {
+        'display_name': 'Masked Mortal Music',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/ja3t9dn7t7dou8nru1xqbkurq'
+        },
+        'href': 'https://api.spotify.com/v1/users/ja3t9dn7t7dou8nru1xqbkurq',
+        'id': 'ja3t9dn7t7dou8nru1xqbkurq',
+        'type': 'user',
+        'uri': 'spotify:user:ja3t9dn7t7dou8nru1xqbkurq'
+      },
+      'primary_color': None,
+      'public': True,
+      'snapshot_id': 'MjU3LDM0NTA1MTdmNzRhODdkNzdlNjM3Y2Q5ZDJjMTNjYmU3MmE1ZjNiMmQ=',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/5Nx1xmA8qNvN4QBlPeQqNF/tracks',
+        'total': 143
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:5Nx1xmA8qNvN4QBlPeQqNF'
+    }, {
+      'collaborative': False,
+      'description': 'a heartbreak narrative of a failing relationship.. Website: maskedmortal.com',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/5ZIt49vR2PzI34rJKX4KJx'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/5ZIt49vR2PzI34rJKX4KJx',
+      'id': '5ZIt49vR2PzI34rJKX4KJx',
+      'images': [{
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67706c0000bebbf3163ba5051f8d7c586af003',
+        'width': None
+      }],
+      'name': 'The Hottest love has the coldest end',
+      'owner': {
+        'display_name': 'Masked Mortal Music',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/ja3t9dn7t7dou8nru1xqbkurq'
+        },
+        'href': 'https://api.spotify.com/v1/users/ja3t9dn7t7dou8nru1xqbkurq',
+        'id': 'ja3t9dn7t7dou8nru1xqbkurq',
+        'type': 'user',
+        'uri': 'spotify:user:ja3t9dn7t7dou8nru1xqbkurq'
+      },
+      'primary_color': None,
+      'public': True,
+      'snapshot_id': 'ODM2LDkzNGM0OTQ3ZjllOGM1YWJiMjBkNmMyM2NmNWQ1ZGZhYmZiOWE2YTc=',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/5ZIt49vR2PzI34rJKX4KJx/tracks',
+        'total': 113
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:5ZIt49vR2PzI34rJKX4KJx'
+    }, {
+      'collaborative': False,
+      'description': 'A playlist that&#x27;ll let you have the best taste out of your friend group! Website: maskedmortal.com',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/20DdfFrbUQsBIMAve63GF5'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/20DdfFrbUQsBIMAve63GF5',
+      'id': '20DdfFrbUQsBIMAve63GF5',
+      'images': [{
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67706c0000bebbe3e58da00c82d38da4defd25',
+        'width': None
+      }],
+      'name': 'Chill rap vibes',
+      'owner': {
+        'display_name': 'Masked Mortal Music',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/ja3t9dn7t7dou8nru1xqbkurq'
+        },
+        'href': 'https://api.spotify.com/v1/users/ja3t9dn7t7dou8nru1xqbkurq',
+        'id': 'ja3t9dn7t7dou8nru1xqbkurq',
+        'type': 'user',
+        'uri': 'spotify:user:ja3t9dn7t7dou8nru1xqbkurq'
+      },
+      'primary_color': None,
+      'public': True,
+      'snapshot_id': 'MjM5LDZmNWNhMWM1ZGRmNWNiNDE5ZDZjYTRmOGVjZTNkYjhjZTk5MzdiNjk=',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/20DdfFrbUQsBIMAve63GF5/tracks',
+        'total': 138
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:20DdfFrbUQsBIMAve63GF5'
+    }, {
+      'collaborative': False,
+      'description': 'Website: maskedmortal.com',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/2lKJiZkHDRAGSi808CZpxX'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/2lKJiZkHDRAGSi808CZpxX',
+      'id': '2lKJiZkHDRAGSi808CZpxX',
+      'images': [{
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67706c0000bebb3c9273c0177641302f282c7a',
+        'width': None
+      }],
+      'name': 'Pov I’m gonna fist fight a demon ',
+      'owner': {
+        'display_name': 'Masked Mortal Music',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/ja3t9dn7t7dou8nru1xqbkurq'
+        },
+        'href': 'https://api.spotify.com/v1/users/ja3t9dn7t7dou8nru1xqbkurq',
+        'id': 'ja3t9dn7t7dou8nru1xqbkurq',
+        'type': 'user',
+        'uri': 'spotify:user:ja3t9dn7t7dou8nru1xqbkurq'
+      },
+      'primary_color': None,
+      'public': True,
+      'snapshot_id': 'ODQwLGIwNTEzYWIwYWQ4NGMzMmJiMzBhMWRiYzJiZGMyZGNmOWNkZDQ0MjM=',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/2lKJiZkHDRAGSi808CZpxX/tracks',
+        'total': 159
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:2lKJiZkHDRAGSi808CZpxX'
+    }, {
+      'collaborative': False,
+      'description': 'Why does this keep happening to me... website: maskedmortal.com',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/5PfAJ11TWvqR6K988ml1JN'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/5PfAJ11TWvqR6K988ml1JN',
+      'id': '5PfAJ11TWvqR6K988ml1JN',
+      'images': [{
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67706c0000bebb4432a9491be98450d4a50158',
+        'width': None
+      }],
+      'name': 'Incomplete & Depressed ',
+      'owner': {
+        'display_name': 'Masked Mortal Music',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/ja3t9dn7t7dou8nru1xqbkurq'
+        },
+        'href': 'https://api.spotify.com/v1/users/ja3t9dn7t7dou8nru1xqbkurq',
+        'id': 'ja3t9dn7t7dou8nru1xqbkurq',
+        'type': 'user',
+        'uri': 'spotify:user:ja3t9dn7t7dou8nru1xqbkurq'
+      },
+      'primary_color': None,
+      'public': True,
+      'snapshot_id': 'MTE3MSwwYTA3ZDc4MzJmZTY4YWU5MWU1OTZhNmNlNTk2YzViZjQxZGJiMDkx',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/5PfAJ11TWvqR6K988ml1JN/tracks',
+        'total': 140
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:5PfAJ11TWvqR6K988ml1JN'
+    }, {
+      'collaborative': False,
+      'description': 'Songs with god like amounts of bass! Website: Maskedmortal.com',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/69VxvnEF4Bf2Pn9f9fhqwj'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/69VxvnEF4Bf2Pn9f9fhqwj',
+      'id': '69VxvnEF4Bf2Pn9f9fhqwj',
+      'images': [{
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67706c0000bebbbec191fd5eb2900cb0f80fe0',
+        'width': None
+      }],
+      'name': 'Bass to Blow Out Your Car Speaker',
+      'owner': {
+        'display_name': 'Masked Mortal Music',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/ja3t9dn7t7dou8nru1xqbkurq'
+        },
+        'href': 'https://api.spotify.com/v1/users/ja3t9dn7t7dou8nru1xqbkurq',
+        'id': 'ja3t9dn7t7dou8nru1xqbkurq',
+        'type': 'user',
+        'uri': 'spotify:user:ja3t9dn7t7dou8nru1xqbkurq'
+      },
+      'primary_color': None,
+      'public': True,
+      'snapshot_id': 'MzkxLDExOGQ2OTYxOTQ0MzAzZmI5MjliNzQyOGM1YThhOGI5YzM0YTQ5YWU=',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/69VxvnEF4Bf2Pn9f9fhqwj/tracks',
+        'total': 109
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:69VxvnEF4Bf2Pn9f9fhqwj'
+    }, {
+      'collaborative': False,
+      'description': 'Welcome to the sub genre that’s exploding! I’ll be your guide for the evening! Website: maskedmortal.com',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/4ZPOImN73Go77YayVzTl86'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/4ZPOImN73Go77YayVzTl86',
+      'id': '4ZPOImN73Go77YayVzTl86',
+      'images': [{
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67706c0000bebb5b6129b338fbbe3645f0e69d',
+        'width': None
+      }],
+      'name': 'Best of Aesthetic Rap',
+      'owner': {
+        'display_name': 'Masked Mortal Music',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/ja3t9dn7t7dou8nru1xqbkurq'
+        },
+        'href': 'https://api.spotify.com/v1/users/ja3t9dn7t7dou8nru1xqbkurq',
+        'id': 'ja3t9dn7t7dou8nru1xqbkurq',
+        'type': 'user',
+        'uri': 'spotify:user:ja3t9dn7t7dou8nru1xqbkurq'
+      },
+      'primary_color': None,
+      'public': True,
+      'snapshot_id': 'MTAxOSwxNDRkNDZkMGVhOWU5YjA1ZDIwNTJjOTQ1ZjU1M2EzODI1NzM0NmRk',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/4ZPOImN73Go77YayVzTl86/tracks',
+        'total': 167
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:4ZPOImN73Go77YayVzTl86'
+    }, {
+      'collaborative': False,
+      'description': 'Throw This On Shuffle And FLOAT AWAY!! Website: maskedmortal.com',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/648DNIu1IvDYJvYp6iqPeK'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/648DNIu1IvDYJvYp6iqPeK',
+      'id': '648DNIu1IvDYJvYp6iqPeK',
+      'images': [{
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67706c0000bebb88cd3da6c6c493e6b72cdf83',
+        'width': None
+      }],
+      'name': 'Songs that make my soul float amongst the clouds',
+      'owner': {
+        'display_name': 'Masked Mortal Music',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/ja3t9dn7t7dou8nru1xqbkurq'
+        },
+        'href': 'https://api.spotify.com/v1/users/ja3t9dn7t7dou8nru1xqbkurq',
+        'id': 'ja3t9dn7t7dou8nru1xqbkurq',
+        'type': 'user',
+        'uri': 'spotify:user:ja3t9dn7t7dou8nru1xqbkurq'
+      },
+      'primary_color': None,
+      'public': True,
+      'snapshot_id': 'NjMyLDU3NGI0MDM1YWQzNzliM2U1ZjFmMDMzYmUzNGRmN2UyYTRiZTQwYWM=',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/648DNIu1IvDYJvYp6iqPeK/tracks',
+        'total': 129
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:648DNIu1IvDYJvYp6iqPeK'
+    }, {
+      'collaborative': False,
+      'description': 'A gym playlist that makes you push your limits.. Website: maskedmortal.com',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/6xCXoYE5SObMkZjUS2kU8w'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/6xCXoYE5SObMkZjUS2kU8w',
+      'id': '6xCXoYE5SObMkZjUS2kU8w',
+      'images': [{
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67706c0000bebbfbbac735d6ed802b5dcc2521',
+        'width': None
+      }],
+      'name': 'Gym Apex Monster Playlist ',
+      'owner': {
+        'display_name': 'Masked Mortal Music',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/ja3t9dn7t7dou8nru1xqbkurq'
+        },
+        'href': 'https://api.spotify.com/v1/users/ja3t9dn7t7dou8nru1xqbkurq',
+        'id': 'ja3t9dn7t7dou8nru1xqbkurq',
+        'type': 'user',
+        'uri': 'spotify:user:ja3t9dn7t7dou8nru1xqbkurq'
+      },
+      'primary_color': None,
+      'public': True,
+      'snapshot_id': 'NjU4LDBjNjg5ZmVmNDE3Njg2MzExM2JhY2Y3NDRjMjAwMTM1ZWQxNzlkYmM=',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/6xCXoYE5SObMkZjUS2kU8w/tracks',
+        'total': 122
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:6xCXoYE5SObMkZjUS2kU8w'
+    }, {
+      'collaborative': False,
+      'description': 'Clear your head with a drive.. website: maskedmortal.com',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/1AmPdqxo5mLmGlexBAeMVo'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/1AmPdqxo5mLmGlexBAeMVo',
+      'id': '1AmPdqxo5mLmGlexBAeMVo',
+      'images': [{
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67706c0000bebb683719021f6fd7cd6d5f78c8',
+        'width': None
+      }],
+      'name': 'Late Night Drive ',
+      'owner': {
+        'display_name': 'Masked Mortal Music',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/ja3t9dn7t7dou8nru1xqbkurq'
+        },
+        'href': 'https://api.spotify.com/v1/users/ja3t9dn7t7dou8nru1xqbkurq',
+        'id': 'ja3t9dn7t7dou8nru1xqbkurq',
+        'type': 'user',
+        'uri': 'spotify:user:ja3t9dn7t7dou8nru1xqbkurq'
+      },
+      'primary_color': None,
+      'public': True,
+      'snapshot_id': 'NjMxLDM5OTMxNWI0NDI3ZGIwNzk5YTk3ZmFmNjgwNzM5MzQzZTM1MTZiOTQ=',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/1AmPdqxo5mLmGlexBAeMVo/tracks',
+        'total': 123
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:1AmPdqxo5mLmGlexBAeMVo'
+    }, {
+      'collaborative': False,
+      'description': 'You were the one, just at the wrong time.. until our paths cross. Website: maskedmortal.com',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/7sjbj7bcX8fypgSIDku4Cs'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/7sjbj7bcX8fypgSIDku4Cs',
+      'id': '7sjbj7bcX8fypgSIDku4Cs',
+      'images': [{
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67706c0000bebb8ca58f7be834d25caeb51fcf',
+        'width': None
+      }],
+      'name': 'We Had The Right Love at The Wrong Time',
+      'owner': {
+        'display_name': 'Masked Mortal Music',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/ja3t9dn7t7dou8nru1xqbkurq'
+        },
+        'href': 'https://api.spotify.com/v1/users/ja3t9dn7t7dou8nru1xqbkurq',
+        'id': 'ja3t9dn7t7dou8nru1xqbkurq',
+        'type': 'user',
+        'uri': 'spotify:user:ja3t9dn7t7dou8nru1xqbkurq'
+      },
+      'primary_color': None,
+      'public': True,
+      'snapshot_id': 'NzA2LDFjMGU4MDJiM2RjNGYxMjA0NDk4ZTNiOTFmMjI5ZjI0YmU2N2UzYzQ=',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/7sjbj7bcX8fypgSIDku4Cs/tracks',
+        'total': 116
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:7sjbj7bcX8fypgSIDku4Cs'
+    }, {
+      'collaborative': False,
+      'description': 'Website: maskedmortal.com',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/4wYF0SoFuiAETLS0NMfviS'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/4wYF0SoFuiAETLS0NMfviS',
+      'id': '4wYF0SoFuiAETLS0NMfviS',
+      'images': [{
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67706c0000bebb3ad7f89f3a558d654be700b2',
+        'width': None
+      }],
+      'name': 'Phonk beats and rap mix ',
+      'owner': {
+        'display_name': 'Masked Mortal Music',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/ja3t9dn7t7dou8nru1xqbkurq'
+        },
+        'href': 'https://api.spotify.com/v1/users/ja3t9dn7t7dou8nru1xqbkurq',
+        'id': 'ja3t9dn7t7dou8nru1xqbkurq',
+        'type': 'user',
+        'uri': 'spotify:user:ja3t9dn7t7dou8nru1xqbkurq'
+      },
+      'primary_color': None,
+      'public': True,
+      'snapshot_id': 'OTc0LDRkZjg0MTI2NGFlNTdiZmZhYTQ4Y2EwNDdhZWRmOGM1MDdlYTg3NDA=',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/4wYF0SoFuiAETLS0NMfviS/tracks',
+        'total': 158
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:4wYF0SoFuiAETLS0NMfviS'
+    }, {
+      'collaborative': False,
+      'description': 'Vibes you can’t go without! Updated Bi-Weekly | Website: maskedmortal.com',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/27KQl93Ijh1JrtDfFNlmWS'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/27KQl93Ijh1JrtDfFNlmWS',
+      'id': '27KQl93Ijh1JrtDfFNlmWS',
+      'images': [{
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67706c0000bebb08a826cde6a8e0ecbcc42ba5',
+        'width': None
+      }],
+      'name': 'Vibes You Need in Your Rotation 🌊 ',
+      'owner': {
+        'display_name': 'Masked Mortal Music',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/ja3t9dn7t7dou8nru1xqbkurq'
+        },
+        'href': 'https://api.spotify.com/v1/users/ja3t9dn7t7dou8nru1xqbkurq',
+        'id': 'ja3t9dn7t7dou8nru1xqbkurq',
+        'type': 'user',
+        'uri': 'spotify:user:ja3t9dn7t7dou8nru1xqbkurq'
+      },
+      'primary_color': None,
+      'public': True,
+      'snapshot_id': 'NjM4LDI3ZmNlNjM5MDYxZGJmOGUxNzFhNmExYTU1M2FhNTk3OTdkNGMwMTE=',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/27KQl93Ijh1JrtDfFNlmWS/tracks',
+        'total': 132
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:27KQl93Ijh1JrtDfFNlmWS'
+    }, {
+      'collaborative': False,
+      'description': 'Listen for yourself.. Website: maskedmortal.com',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/3HUIhGf0y3aPOmeezGjThR'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/3HUIhGf0y3aPOmeezGjThR',
+      'id': '3HUIhGf0y3aPOmeezGjThR',
+      'images': [{
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67706c0000bebba9d5f296adf91c6f975e570a',
+        'width': None
+      }],
+      'name': 'Beauty in the Darkness',
+      'owner': {
+        'display_name': 'Masked Mortal Music',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/ja3t9dn7t7dou8nru1xqbkurq'
+        },
+        'href': 'https://api.spotify.com/v1/users/ja3t9dn7t7dou8nru1xqbkurq',
+        'id': 'ja3t9dn7t7dou8nru1xqbkurq',
+        'type': 'user',
+        'uri': 'spotify:user:ja3t9dn7t7dou8nru1xqbkurq'
+      },
+      'primary_color': None,
+      'public': True,
+      'snapshot_id': 'NTA1LDlkMmNmMzIwMTQ1ZDdkODljMmY1ZThkZTc1ZTZhNmMzZDE4ZDRjMzM=',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/3HUIhGf0y3aPOmeezGjThR/tracks',
+        'total': 108
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:3HUIhGf0y3aPOmeezGjThR'
+    }, {
+      'collaborative': False,
+      'description': 'Pregame, Devious Lick, feeling disrespectful, this will be the playlist for you! Website: maskedmortal.com',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/20TJQWJO07dtProObjHImU'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/20TJQWJO07dtProObjHImU',
+      'id': '20TJQWJO07dtProObjHImU',
+      'images': [{
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67706c0000bebb2d00c3a4502b1ec00153e98d',
+        'width': None
+      }],
+      'name': 'Activate Demon Time 😈',
+      'owner': {
+        'display_name': 'Masked Mortal Music',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/ja3t9dn7t7dou8nru1xqbkurq'
+        },
+        'href': 'https://api.spotify.com/v1/users/ja3t9dn7t7dou8nru1xqbkurq',
+        'id': 'ja3t9dn7t7dou8nru1xqbkurq',
+        'type': 'user',
+        'uri': 'spotify:user:ja3t9dn7t7dou8nru1xqbkurq'
+      },
+      'primary_color': None,
+      'public': True,
+      'snapshot_id': 'NDQxLDIxZDRhMTQ4ZTI1MDYyMjRkMWJmZGM3NWFiMGY5ODUyNDY2ZGE2MTM=',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/20TJQWJO07dtProObjHImU/tracks',
+        'total': 141
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:20TJQWJO07dtProObjHImU'
+    }, {
+      'collaborative': False,
+      'description': 'Vibes that&#x27;ll have you &quot;walking on a Dream&quot; Website: maskedmortal.com',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/5Q2dskkoSSSEmAltp28pMo'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/5Q2dskkoSSSEmAltp28pMo',
+      'id': '5Q2dskkoSSSEmAltp28pMo',
+      'images': [{
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67706c0000bebb9bdc64c01f8185fa7b45a791',
+        'width': None
+      }],
+      'name': 'Be the energy you want to attract',
+      'owner': {
+        'display_name': 'Masked Mortal Music',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/ja3t9dn7t7dou8nru1xqbkurq'
+        },
+        'href': 'https://api.spotify.com/v1/users/ja3t9dn7t7dou8nru1xqbkurq',
+        'id': 'ja3t9dn7t7dou8nru1xqbkurq',
+        'type': 'user',
+        'uri': 'spotify:user:ja3t9dn7t7dou8nru1xqbkurq'
+      },
+      'primary_color': None,
+      'public': True,
+      'snapshot_id': 'MzgwLGJhNjk3NmUwYTI3YWQ5YjI3NzBhNjY5NjhlYmM3OTM5OGU4MGZkZmE=',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/5Q2dskkoSSSEmAltp28pMo/tracks',
+        'total': 116
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:5Q2dskkoSSSEmAltp28pMo'
+    }, {
+      'collaborative': False,
+      'description': 'Songs that are simply better slowed &amp; reverbed!',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/0ZykvcbR9aBY9znaURL4rl'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/0ZykvcbR9aBY9znaURL4rl',
+      'id': '0ZykvcbR9aBY9znaURL4rl',
+      'images': [{
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67706c0000bebb113cf95922c046fd14cc49df',
+        'width': None
+      }],
+      'name': 'Slowed & Reverb to Perfection',
+      'owner': {
+        'display_name': 'Masked Mortal Music',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/ja3t9dn7t7dou8nru1xqbkurq'
+        },
+        'href': 'https://api.spotify.com/v1/users/ja3t9dn7t7dou8nru1xqbkurq',
+        'id': 'ja3t9dn7t7dou8nru1xqbkurq',
+        'type': 'user',
+        'uri': 'spotify:user:ja3t9dn7t7dou8nru1xqbkurq'
+      },
+      'primary_color': None,
+      'public': True,
+      'snapshot_id': 'MTY0LDJjNmFjNDE4MGQ1NzdiNDBjYTEwYzc2NjU2NzRiYjQ5MzNkYzZiN2U=',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/0ZykvcbR9aBY9znaURL4rl/tracks',
+        'total': 77
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:0ZykvcbR9aBY9znaURL4rl'
+    }, {
+      'collaborative': False,
+      'description': 'Warm Weather, Good Vibes, No Worries! Website: maskedmortal.com',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/27eWf8VBOU8akdCtYNtepP'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/27eWf8VBOU8akdCtYNtepP',
+      'id': '27eWf8VBOU8akdCtYNtepP',
+      'images': [{
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67706c0000bebb2bffba67f5afc08a0860089c',
+        'width': None
+      }],
+      'name': 'Summer Feel Good Vibes',
+      'owner': {
+        'display_name': 'Masked Mortal Music',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/ja3t9dn7t7dou8nru1xqbkurq'
+        },
+        'href': 'https://api.spotify.com/v1/users/ja3t9dn7t7dou8nru1xqbkurq',
+        'id': 'ja3t9dn7t7dou8nru1xqbkurq',
+        'type': 'user',
+        'uri': 'spotify:user:ja3t9dn7t7dou8nru1xqbkurq'
+      },
+      'primary_color': None,
+      'public': True,
+      'snapshot_id': 'NDE1LDA5NGU3ODc5NzVhNGUxZGQxZDBhMjAwNzFjNzEzYTVmYjgzY2I1MGI=',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/27eWf8VBOU8akdCtYNtepP/tracks',
+        'total': 135
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:27eWf8VBOU8akdCtYNtepP'
+    }, {
+      'collaborative': False,
+      'description': '&quot;Let the rain wash away, all the pain of yesterday&quot; Website: maskedmortal.com',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/0Dsw7YArXbgY1U5DAdvbbH'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/0Dsw7YArXbgY1U5DAdvbbH',
+      'id': '0Dsw7YArXbgY1U5DAdvbbH',
+      'images': [{
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67706c0000bebb5af03e2111e68b8af03913cb',
+        'width': None
+      }],
+      'name': 'Rainy Day Vibes',
+      'owner': {
+        'display_name': 'Masked Mortal Music',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/ja3t9dn7t7dou8nru1xqbkurq'
+        },
+        'href': 'https://api.spotify.com/v1/users/ja3t9dn7t7dou8nru1xqbkurq',
+        'id': 'ja3t9dn7t7dou8nru1xqbkurq',
+        'type': 'user',
+        'uri': 'spotify:user:ja3t9dn7t7dou8nru1xqbkurq'
+      },
+      'primary_color': None,
+      'public': True,
+      'snapshot_id': 'NDYzLGZmYWI0ZGQ4MWVhMzJmYjZiMmY4MzE4NTAxMTgwY2M0YWU2MzBjZWY=',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/0Dsw7YArXbgY1U5DAdvbbH/tracks',
+        'total': 121
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:0Dsw7YArXbgY1U5DAdvbbH'
+    }, {
+      'collaborative': False,
+      'description': 'Helping you know what falling in love feels like a song at a time! Website: maskedmortal.com',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/6GYMi0tM3KwME29I2QqMUl'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/6GYMi0tM3KwME29I2QqMUl',
+      'id': '6GYMi0tM3KwME29I2QqMUl',
+      'images': [{
+        'height': None,
+        'url': 'https://i.scdn.co/image/ab67706c0000bebbe037f6423fde4288b4d204cf',
+        'width': None
+      }],
+      'name': 'Falling in Love',
+      'owner': {
+        'display_name': 'Masked Mortal Music',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/ja3t9dn7t7dou8nru1xqbkurq'
+        },
+        'href': 'https://api.spotify.com/v1/users/ja3t9dn7t7dou8nru1xqbkurq',
+        'id': 'ja3t9dn7t7dou8nru1xqbkurq',
+        'type': 'user',
+        'uri': 'spotify:user:ja3t9dn7t7dou8nru1xqbkurq'
+      },
+      'primary_color': None,
+      'public': True,
+      'snapshot_id': 'MjgxLDIxN2U1OWQ4NzRiYjZjNjc2YTNlZDJiN2VhNDA4MWQ2OTY2ZDQyYWI=',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/6GYMi0tM3KwME29I2QqMUl/tracks',
+        'total': 110
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:6GYMi0tM3KwME29I2QqMUl'
+    }],
+    'limit': 20,
+    'next': 'https://api.spotify.com/v1/users/ja3t9dn7t7dou8nru1xqbkurq/playlists?offset=20&limit=20',
+    'offset': 0,
+    'previous': None,
+    'total': 27
+  },
+  '_id': ObjectId('61f83a2a3de214440c161333')
+}
