@@ -144,14 +144,13 @@ def blacklistus(user,prof_link):
         data = mydict
         # # using the universal dbinsert function
         dbinsert("miscellaneous","blacklist",mydict)
-        #
+        # using key so the id don't get included into the json. That will cause errors later on.
         return data[key]
         # print(profile)
     else:
-        # return invalid response
+
         print("invalid Profile Link")
 
-print(blacklistus("iamdope", "https://open.spotify.com/user/ja3t9dn7t7dou8nru1xqbkurq"))
 
 
 

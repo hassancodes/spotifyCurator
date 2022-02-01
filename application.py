@@ -117,7 +117,11 @@ def handle_blacklist():
     link = request.form["blacklist"]
 
     blacklist_json  = blacklistus("iamdope",link)
-    return blacklist_json
+    for k,v in blacklist_json.items():
+        print(k,v)
+        break
+
+
 
 
 
