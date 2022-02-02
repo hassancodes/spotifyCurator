@@ -164,7 +164,26 @@ div .nav-ul {
 .blacklist__class {
   text-align: center;
 }
+.card{
+  width: 15rem !important;
+  height:15rem !important;
+  background-size:cover;
+  display: flex !important;
+}
 
+.card a{
+  color : white;
+}
+
+.card h5{
+  opacity : 1;
+  color: white !important;
+}
+
+.card div{
+  opacity :1;
+color:white !important;
+}
 /* ######################################### login page design starts from here ##################################### */
 /* ##################################################################################################################### */
 .login__body{

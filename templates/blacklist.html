@@ -9,12 +9,28 @@
 
 <div class="present__blacklist">
 
+  <!-- {% for blacklist in dbdata %}
+<div class="">
+
+  blacklist["plname"]
+  blacklist["pllink"]
+  <img src="" alt="">
+</div> -->
+  <!-- {% endfor %} -->
+  <div class="card-deck">
+<h1>Diamond Hands</h1>
+    {% for singDict in dbdata %}
+    <!-- style="max-width: 18rem; max-height:25rem; -->
+    <div class="card bg-light mb-3" style="max-width: 18rem; max-height:25rem; opacity:0.7; background-image:url({{singDict['imagesrc']}});">
+      <div class="card-header"><a style=" text-decoration: none;" href="{{singDict['ownerlink']}}">{{singDict["ownername"]}}</a></div>
+      <div class="card-body">
+        <h5 class="card-title"><a style=" text-decoration: none;" href="{{singDict['pllink']}}">{{singDict["plname"]}}</a></h5>
+        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 </div>
 
-<div class="">
-  {% for i in data %}
-  <p>{{i}}</p>
-  {% endfor %}
-</div>
 
 {% include "footer.html" %}

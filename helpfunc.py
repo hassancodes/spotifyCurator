@@ -150,8 +150,3 @@ def blacklistus(user,prof_link):
 
     else:
         return "invalid Profile Link"
-
-
-
-
-blacklistus("iamdope","https://open.spotify.com/user/e5kzgfyenbpthi0ew37kmrgmq")

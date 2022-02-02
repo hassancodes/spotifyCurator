@@ -115,18 +115,52 @@ def handle_ppt():
 
 
 
-
+# this blacklist handle
 @application.route("/handle_blacklist", methods=["POST"])
 def handle_blacklist():
     data_dict = {}
     link = request.form["blacklist"]
 
     bljson  = blacklistus("iamdope",link)
+    return redirect("/blacklist")
+
+
+
+# actual blacklist endpoint
+var = "main"
+@application.route("/blacklist")
+def blacklist():
+    # fetching data in real time.
     data = dbfetch("miscellaneous", "blacklist")
-    return render_template("blacklist.html" , data=data)
+    # print(data)
+    # list of dictionaries
+    mainlist = []
 
 
+    # gettig the owner name because you don't know it LOL
+    ownername = [k for k,v in data[0].items()][0]
+    # print("This is the ownername" ,ownername)
+    if len(data) <1:
+        pass
+    elif len(data[0][ownername]["items"])>1:
 
+        # setting the counter so we can go through all the items
+        counter = 0
+        for dictionary in range(len(data[0][ownername]["items"])):
+            print(dictionary)
+            singDict = {}
+            # getting the owner name to call data
+            singDict["plname"]    =data[0][ownername]["items"][counter]["name"]
+            singDict["pllink"]    =data[0][ownername]["items"][counter]["external_urls"]["spotify"]
+            singDict["ownername"] = data[0][ownername]["items"][counter]["owner"]["display_name"]
+            singDict["ownerlink"] = data[0][ownername]["items"][counter]["owner"]["external_urls"]["spotify"]
+            singDict["imagesrc"]  = data[0][ownername]["items"][counter]["images"][0]["url"]
+            mainlist.append(singDict)
+            counter +=1
+
+
+    # print(mainlist)
+    return render_template("blacklist.html",dbdata=mainlist, var=var)
 
 
 
@@ -170,8 +204,10 @@ def ratepps():
 
 
 
-#################################### Endpoints below require more work ########################################
 
+
+
+#################################### Endpoints below require more work ########################################
 # miscellaneous
 # about, main
 var = "main"
@@ -185,11 +221,6 @@ def tut():
 def login():
     return render_template("login.html")
 
-
-var = "main"
-@application.route("/blacklist")
-def blacklist():
-    return render_template("blacklist.html", var=var)
 
 # function to display error pages
 @application.route("/<random>")
