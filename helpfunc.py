@@ -114,6 +114,7 @@ def fetchdata(noofdays):
 ############################# Function for blacklisting #####################################
 #  this function use spotify api to generate a accesstoken and
 # then uses that token to fetch the users playlists to blacklist
+# First the data is stored in a db and then the blacklist functions fetches the data from mongodb for front
 def blacklistus(user,prof_link):
     profile = None
     # validating the link
@@ -137,21 +138,20 @@ def blacklistus(user,prof_link):
         # sending the final request
         req = requests.get(tar_url, headers=headers, params=params)
         # soup = BeautifulSoup(data.content,"lxml")
-        value = eval(str(req.json()).replace("'", '"'))
+        # value = eval(str(req.json()).replace("'", '"'))
+        value = req.json()
         key = value["items"][0]["owner"]["display_name"]
         #
         mydict = { key : value }
         data = mydict
         # # using the universal dbinsert function
         dbinsert("miscellaneous","blacklist",mydict)
-        # using key so the id don't get included into the json. That will cause errors later on.
-        return data[key]
-        # print(profile)
+        # return data[key]
+
     else:
-
-        print("invalid Profile Link")
-
+        return "invalid Profile Link"
 
 
 
-# blacklistus("iamdope","https://open.spotify.com/user/e5kzgfyenbpthi0ew37kmrgmq")
+
+blacklistus("iamdope","https://open.spotify.com/user/e5kzgfyenbpthi0ew37kmrgmq")

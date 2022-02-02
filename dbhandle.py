@@ -12,9 +12,9 @@ password = config('password',default='')
 client = MongoClient("mongodb+srv://muhammadhassan:" + urllib.parse.quote("mongodbevjr3303@A") + "@cluster0.tsgul.mongodb.net/testdatabase?retryWrites=true&w=majority")
 
 def dbhandle():
+    # database
     dbname = client["spotifyCurator"]
-
-
+    # three collections in a database
     tfhours = dbname["tfhourscol"]
     sevendays = dbname["sevendayscol"]
     tedays = dbname["tedayscol"]
@@ -30,7 +30,6 @@ def dbhandle():
         tedata = json.loads(te.read())
         tedays.delete_many({})
         tedays.insert_one(tedata)
-
 
     with open("scrapejson/sevendays.json" ,"r") as sd:
         sdData = json.loads(sd.read())
@@ -48,11 +47,6 @@ def longTermData():
     # sevendays = dbname["sevendayslong"]
     # tedays = dbname["tedayslong"]
     currentDate = curdate()
-
-    # print(dir(tfhours))
-
-    # print(tfhours.find({currentDate : {"$exists": "true"}}))
-
     with open("scrapejson/tfhours.json" ,"r") as tf:
         tfdata = json.loads(tf.read())
         tfhours.insert_one({ currentDate : tfdata})
@@ -72,8 +66,8 @@ def curdate():
 
 # dbhandle()
 # # main call start fron here
-longTermData()
-dbhandle()
+# longTermData()
+# dbhandle()
 
 
 
@@ -92,3 +86,13 @@ def dbinsert(dbname, dbcollection,data):
     elif dbname not in dbnames:
         # the error may change later on
         return "Error! DB Not Found"
+
+
+# unisersal function for fetching the data
+def dbfetch(dbname,dbcollection):
+    db  = client[dbname]
+    col = db[dbcollection]
+    data  = list(col.find({}))
+    return data
+
+# dbfetch("miscellaneous", "blacklist")

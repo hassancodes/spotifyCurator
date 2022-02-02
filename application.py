@@ -6,6 +6,7 @@ from rate import pps
 from helpfunc import displaylists, get_index,displayppt
 from helpfunc import get_indexppt
 from helpfunc import getplaylistname, blacklistus
+from dbhandle import dbfetch
 import os
 
 application = Flask(__name__)
@@ -112,14 +113,18 @@ def handle_ppt():
     return redirect(url_for("pplaylists"))
 
 
+
+
+
 @application.route("/handle_blacklist", methods=["POST"])
 def handle_blacklist():
+    data_dict = {}
     link = request.form["blacklist"]
 
-    blacklist_json  = blacklistus("iamdope",link)
-    for k,v in blacklist_json.items():
-        print(k,v)
-        break
+    bljson  = blacklistus("iamdope",link)
+    data = dbfetch("miscellaneous", "blacklist")
+    return render_template("blacklist.html" , data=data)
+
 
 
 
