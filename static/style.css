@@ -165,72 +165,59 @@ div .nav-ul {
   text-align: center;
 }
 
-
-.card{
+.card {
   width: 200px !important;
-  height:200px !important;
-  background-size:cover;
-
+  height: 200px !important;
+  background-size: cover;
+  text-align: center;
 }
-  /* display: flex !important; */
 
 
-.card-columns{
+
+.card-columns {
   display: grid !important;
-  grid-template-columns : repeat(6, 185px);
-  margin:auto;
-
-}
-/*
-.card-colums{
+  grid-template-columns: repeat(6, 200px);
   margin: auto;
-} */
-
-
+}
 
 .card {
   border-radius: 20px !important;
 }
+
 .card:hover {
-   border: 2px solid #3E7DC0 !important;
+  border: 2px solid #3E7DC0 !important;
 }
 
-.card-columns a{
+.card-columns a {
   color: white;
 }
 
-
-
 /* ######################################### login page design starts from here ##################################### */
 /* ##################################################################################################################### */
-.login__body{
+.login__body {
   /* background-image:linear-gradient(#c29200,#d7a100); */
   background-image: url("/static/img/headphone.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-
 }
-
 
 @media screen and (max-width: 900px) {
-  .login__body{
-        background-image:url("/static/img/mobile1.jpg");
-    }
-}
-
-@media screen and (max-width:900px){
-  .login{
-    opacity:0.5;
+  .login__body {
+    background-image: url("/static/img/mobile1.jpg");
   }
 }
 
+@media screen and (max-width:900px) {
+  .login {
+    opacity: 0.5;
+  }
+}
 
 .login__body {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 .login {
   text-align: center;
@@ -244,24 +231,23 @@ div .nav-ul {
   box-shadow: 5px 5px grey;
 }
 
-.login:hover{
+.login:hover {
   transition: all .4s;
   -moz-transition: all .4s;
-  -webkit-transition:all .4s;
+  -webkit-transition: all .4s;
   -o-transition: all .4s;
   width: 330px;
-  height:355px;
+  height: 355px;
 }
 
 .user__name, .user_pass {
   /* border:10px solid yellow; */
   padding-top: 10px;
-  padding-bottom:10px;
-
+  padding-bottom: 10px;
 }
 
-.user_inp, .pass_inp{
-    border-radius: 7px;
-    width: 250px;
-    height:40px;
+.user_inp, .pass_inp {
+  border-radius: 7px;
+  width: 250px;
+  height: 40px;
 }
