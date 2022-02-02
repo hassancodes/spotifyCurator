@@ -92,7 +92,7 @@ def dbinsert(dbname, dbcollection,data):
 def dbfetch(dbname,dbcollection):
     db  = client[dbname]
     col = db[dbcollection]
-    data  = list(col.find({}))
+    data  = list(col.find({}, {"_id":False"}))
     return data
 
 # dbfetch("miscellaneous", "blacklist")
