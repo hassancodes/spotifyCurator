@@ -175,6 +175,10 @@ div .nav-ul {
   color : white;
 }
 
+.card-header{
+  background-color:grey;
+  opacity : 0.5;
+}
 .card h5{
   opacity : 1;
   color: white !important;
@@ -184,6 +188,16 @@ div .nav-ul {
   opacity :1;
 color:white !important;
 }
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+
 /* ######################################### login page design starts from here ##################################### */
 /* ##################################################################################################################### */
 .login__body{

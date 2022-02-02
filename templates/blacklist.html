@@ -7,20 +7,36 @@
   </form>
 </div>
 
-<div class="present__blacklist">
-
-  <div class="card-deck">
-    {% for singDict in dbdata %}
+<!-- <div class="present__blacklist">
+<hr>
+  <div class="card-columns">
+    {% for singDict in dbdata %} -->
     <!-- style="max-width: 18rem; max-height:25rem; -->
-    <div class="card bg-light mb-3" style="max-width: 18rem; max-height:25rem; opacity:0.7; background-image:url({{singDict['imagesrc']}});">
+    <!-- <div class="card bg-light mb-3" style="max-width: 18rem; max-height:25rem; opacity:0.7; background-image:url({{singDict['imagesrc']}});">
       <div class="card-header"><a style=" text-decoration: none;" href="{{singDict['ownerlink']}}">{{singDict["ownername"]}}</a></div>
       <div class="card-body">
-        <h5 class="card-title"><a style=" text-decoration: none;" href="{{singDict['pllink']}}">{{singDict["plname"]}}</a></h5>
+        <h5 class="card-title"><a style=" text-decoration: none;" href="{{singDict['pllink']}}">{{singDict["plname"]}}</a></h5> -->
         <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-      </div>
+      <!-- </div>
     </div>
     {% endfor %}
   </div>
+</div> -->
+
+
+<!-- how does it look -->
+
+<div class="card-columns">
+  {% for singDict in dbdata %}
+  <img src="{{singDict['imagesrc']}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><a style=" text-decoration: none;" href="{{singDict['ownerlink']}}">{{singDict["ownername"]}}</a></h5>
+    <p class="card-text"><a style=" text-decoration: none;" href="{{singDict['pllink']}}">{{singDict["plname"]}}</a></p>
+  </div>
+  <div class="card-footer">
+    <small class="text-muted">Last updated 3 mins ago</small>
+  </div>
+  {% endfor %}
 </div>
 
 

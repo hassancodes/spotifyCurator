@@ -132,35 +132,43 @@ var = "main"
 def blacklist():
     # fetching data in real time.
     data = dbfetch("miscellaneous", "blacklist")
+    # print(len(data))
     # print(data)
     # list of dictionaries
     mainlist = []
 
 
     # gettig the owner name because you don't know it LOL
-    ownername = [k for k,v in data[0].items()][0]
+
     # print("This is the ownername" ,ownername)
     if len(data) <1:
         pass
-    elif len(data[0][ownername]["items"])>1:
-
+    else:
         # setting the counter so we can go through all the items
-        counter = 0
-        for dictionary in range(len(data[0][ownername]["items"])):
-            print(dictionary)
-            singDict = {}
-            # getting the owner name to call data
-            singDict["plname"]    =data[0][ownername]["items"][counter]["name"]
-            singDict["pllink"]    =data[0][ownername]["items"][counter]["external_urls"]["spotify"]
-            singDict["ownername"] = data[0][ownername]["items"][counter]["owner"]["display_name"]
-            singDict["ownerlink"] = data[0][ownername]["items"][counter]["owner"]["external_urls"]["spotify"]
-            singDict["imagesrc"]  = data[0][ownername]["items"][counter]["images"][0]["url"]
-            mainlist.append(singDict)
-            counter +=1
 
+        outcounter = 0
+        for dictionary in data:
+            counter = 0
+            ownername = [k for k,v in data[outcounter].items()][0]
+            print("ownerbooks" ,ownername)
 
-    # print(mainlist)
-    return render_template("blacklist.html",dbdata=mainlist, var=var)
+            for items in range(len(data[outcounter][ownername]["items"])):
+                singDict = {}
+                # getting the owner name to call data
+                singDict["plname"]    = dictionary[ownername]["items"][counter]["name"]
+                singDict["pllink"]    = dictionary[ownername]["items"][counter]["external_urls"]["spotify"]
+                singDict["ownername"] = dictionary[ownername]["items"][counter]["owner"]["display_name"]
+                singDict["ownerlink"] = dictionary[ownername]["items"][counter]["owner"]["external_urls"]["spotify"]
+                try:
+                    singDict["imagesrc"]  = dictionary[ownername]["items"][counter]["images"][0]["url"]
+                except IndexError:
+                    singDict["imagesrc"]  = "https://images.pexels.com/photos/167092/pexels-photo-167092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                print("counter",counter)
+                mainlist.append(singDict)
+                counter +=1
+            outcounter +=1
+        print("length of main list" ,len(mainlist))
+        return render_template("blacklist.html",dbdata=mainlist, var=var)
 
 
 
