@@ -176,7 +176,7 @@ div .nav-ul {
 
 .card-columns {
   display: grid !important;
-  grid-template-columns: repeat(6, 210px);
+  grid-template-columns: repeat(6, 215px);
   margin: auto;
 }
 
