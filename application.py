@@ -130,28 +130,18 @@ def handle_blacklist():
 var = "main"
 @application.route("/blacklist")
 def blacklist():
-    # fetching data in real time.
     data = dbfetch("miscellaneous", "blacklist")
-    # print(len(data))
-    # print(data)
-    # list of dictionaries
+    # list that contains all the clean dictionaries
     mainlist = []
-
-
-    # gettig the owner name because you don't know it LOL
-
-    # print("This is the ownername" ,ownername)
     if len(data) <1:
         pass
     else:
-        # setting the counter so we can go through all the items
-
+        # setting the counter so we can go through all the item
         outcounter = 0
         for dictionary in data:
             counter = 0
             ownername = [k for k,v in data[outcounter].items()][0]
-            print("ownerbooks" ,ownername)
-
+            # print("ownerbooks" ,ownername)
             for items in range(len(data[outcounter][ownername]["items"])):
                 singDict = {}
                 # getting the owner name to call data
@@ -163,15 +153,12 @@ def blacklist():
                     singDict["imagesrc"]  = dictionary[ownername]["items"][counter]["images"][0]["url"]
                 except IndexError:
                     singDict["imagesrc"]  = "https://images.pexels.com/photos/167092/pexels-photo-167092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                print("counter",counter)
+                # print("counter",counter)
                 mainlist.append(singDict)
                 counter +=1
             outcounter +=1
         print("length of main list" ,len(mainlist))
         return render_template("blacklist.html",dbdata=mainlist, var=var)
-
-
-
 
 
 #############################seven days endpoint #################################
