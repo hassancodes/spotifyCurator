@@ -184,14 +184,14 @@
         },
         {
             "id": 27,
-            "Amount": "100$",
+            "Amount": "$100",
             "location": "USA",
             "playlist link": "ULTIMATE GYM RAP 2021 \ud83d\udcaa\ud83c\udffc",
             "curator contact": "@azarrella9"
         },
         {
             "id": 28,
-            "Amount": "40$",
+            "Amount": "$40",
             "location": "England",
             "playlist link": "Gaming Music 2022 HipHop Rap",
             "curator contact": "@Coby#1542 (discord)"
@@ -209,6 +209,13 @@
             "location": "Spain",
             "playlist link": "POP SONGS 2022 \ud83c\udfb6 \ud83d\udc83",
             "curator contact": "@playlists.ifmmusic"
+        },
+        {
+            "id": 31,
+            "Amount": "$100",
+            "location": "USA",
+            "playlist link": "Hard Rap \ud83d\udd25",
+            "curator contact": "502alexhunter@gmail.com"
         }
     ]
 }
