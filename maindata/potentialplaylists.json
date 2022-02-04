@@ -3,14 +3,14 @@
         {
             "id": 1,
             "Amount": "$100",
-            "location": "United states of America",
+            "location": "USA",
             "playlist link": "Trap en Ingl\u00e9s",
             "curator contact": "@traplist.ing"
         },
         {
             "id": 2,
             "Amount": "$100",
-            "location": "United states of America",
+            "location": "USA",
             "playlist link": "Radio Hits 2010-2021",
             "curator contact": "@sherlymadrid"
         },
@@ -31,14 +31,14 @@
         {
             "id": 5,
             "Amount": "$120",
-            "location": "United States of America",
+            "location": "USA",
             "playlist link": "TRAP YANKEE \ud83c\uddfa\ud83c\uddf8",
             "curator contact": "@facumurilloo"
         },
         {
             "id": 6,
             "Amount": "$80",
-            "location": "United states of America",
+            "location": "USA",
             "playlist link": "Top 100 most streamed songs on Spotify",
             "curator contact": "@norenholgersson"
         },
@@ -59,7 +59,7 @@
         {
             "id": 9,
             "Amount": "$60",
-            "location": "United states of America",
+            "location": "USA",
             "playlist link": "Hype Gym Bangers",
             "curator contact": "@camden.walsh"
         },
@@ -73,7 +73,7 @@
         {
             "id": 11,
             "Amount": "$110",
-            "location": "United states of America",
+            "location": "USA",
             "playlist link": "American Rap 2022",
             "curator contact": "@americaraplist"
         },
