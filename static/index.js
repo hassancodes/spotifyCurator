@@ -280,7 +280,8 @@ function generateRow() {
 
 
 // for adding a potention playlist
-var indexppt =1;
+var indexppt = 1;
+
 function addpp() {
 
   var datapp = `<tr>
@@ -298,4 +299,14 @@ function addpp() {
   var readytbodypp = tbodypp.innerHTML + datapp;
   tbodypp.innerHTML = readytbodypp;
   indexppt += 1;
+}
+
+
+
+function reverse() {
+  window.location.href = "/potentialplaylists/descending";
+}
+
+function forward(){
+  window.location.href = "/potentialplaylists";
 }

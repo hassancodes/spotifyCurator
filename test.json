@@ -1,1759 +1,199 @@
-[
-
-  {
-  "Diamond Hands": {
-    "href": "https://api.spotify.com/v1/users/e5kzgfyenbpthi0ew37kmrgmq/playlists?offset=0&limit=20",
-    "items": [{
-      "collaborative": False,
-      "description": "Title says it all... IG: @diamondhandsplaylists",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/1bTRUO5HFa1BJ4acmi57Er"
-      },
-      "href": "https://api.spotify.com/v1/playlists/1bTRUO5HFa1BJ4acmi57Er",
-      "id": "1bTRUO5HFa1BJ4acmi57Er",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebba753e659a8142c9d8117839e",
-        "width": None
-      }],
-      "name": "No Genres All Gas",
-      "owner": {
-        "display_name": "Diamond Hands",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/e5kzgfyenbpthi0ew37kmrgmq"
-        },
-        "href": "https://api.spotify.com/v1/users/e5kzgfyenbpthi0ew37kmrgmq",
-        "id": "e5kzgfyenbpthi0ew37kmrgmq",
-        "type": "user",
-        "uri": "spotify:user:e5kzgfyenbpthi0ew37kmrgmq"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "NTMsYmZlMTUwM2Q2ZWYxZTU5NWRlMmI2MzBmYWM1ZWVlOWE5YjRjMTQ0NA==",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/1bTRUO5HFa1BJ4acmi57Er/tracks",
-        "total": 11
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:1bTRUO5HFa1BJ4acmi57Er"
-    }, {
-      "collaborative": False,
-      "description": "What&#x27;s Hot IG: @diamondhandsplaylists",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/1e27xHMYdkRJNkT7kSIHG7"
-      },
-      "href": "https://api.spotify.com/v1/playlists/1e27xHMYdkRJNkT7kSIHG7",
-      "id": "1e27xHMYdkRJNkT7kSIHG7",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebbe597d50d0a1c93ec1cbbad72",
-        "width": None
-      }],
-      "name": "Hottest in the Game",
-      "owner": {
-        "display_name": "Diamond Hands",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/e5kzgfyenbpthi0ew37kmrgmq"
-        },
-        "href": "https://api.spotify.com/v1/users/e5kzgfyenbpthi0ew37kmrgmq",
-        "id": "e5kzgfyenbpthi0ew37kmrgmq",
-        "type": "user",
-        "uri": "spotify:user:e5kzgfyenbpthi0ew37kmrgmq"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "NzAsODVlYzQ4YThkYTI2YmE4OWUwZDQxOGViYjM4YWZiOGIwNGUwNTUxOQ==",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/1e27xHMYdkRJNkT7kSIHG7/tracks",
-        "total": 13
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:1e27xHMYdkRJNkT7kSIHG7"
-    }, {
-      "collaborative": False,
-      "description": "IG: @diamondhandsplaylists",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/3JyN37vLYHjEZ581ER9U76"
-      },
-      "href": "https://api.spotify.com/v1/playlists/3JyN37vLYHjEZ581ER9U76",
-      "id": "3JyN37vLYHjEZ581ER9U76",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb033a6effe7f2c955dd769f29",
-        "width": None
-      }],
-      "name": "New Hits 2021",
-      "owner": {
-        "display_name": "Diamond Hands",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/e5kzgfyenbpthi0ew37kmrgmq"
-        },
-        "href": "https://api.spotify.com/v1/users/e5kzgfyenbpthi0ew37kmrgmq",
-        "id": "e5kzgfyenbpthi0ew37kmrgmq",
-        "type": "user",
-        "uri": "spotify:user:e5kzgfyenbpthi0ew37kmrgmq"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "NzEsMzY5ZGMwOTNlMWE5NGRjN2MxMzgzMWYxMzE3Njg0NDQxN2VhMzRjZQ==",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/3JyN37vLYHjEZ581ER9U76/tracks",
-        "total": 13
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:3JyN37vLYHjEZ581ER9U76"
-    }, {
-      "collaborative": False,
-      "description": "The upcoming kings of underground rap. Updated weekly IG: @diamondhandsplaylists",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/10IedBocwmHD13PjTIvfzC"
-      },
-      "href": "https://api.spotify.com/v1/playlists/10IedBocwmHD13PjTIvfzC",
-      "id": "10IedBocwmHD13PjTIvfzC",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb6f1b86ae594c8c7d5b4f328e",
-        "width": None
-      }],
-      "name": "Underground Kings",
-      "owner": {
-        "display_name": "Diamond Hands",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/e5kzgfyenbpthi0ew37kmrgmq"
-        },
-        "href": "https://api.spotify.com/v1/users/e5kzgfyenbpthi0ew37kmrgmq",
-        "id": "e5kzgfyenbpthi0ew37kmrgmq",
-        "type": "user",
-        "uri": "spotify:user:e5kzgfyenbpthi0ew37kmrgmq"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "MTQ5LGI1MWIyZGVkY2I3OWQzOTA3NGExZGU1NmFmY2UwNDY3NDYxZDE4NmU=",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/10IedBocwmHD13PjTIvfzC/tracks",
-        "total": 12
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:10IedBocwmHD13PjTIvfzC"
-    }, {
-      "collaborative": False,
-      "description": "Weird and wild but still dope. Updated Weekly IG: @diamondhandsplaylists",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/0bfi1zVJzb6WjUEhVsqG7L"
-      },
-      "href": "https://api.spotify.com/v1/playlists/0bfi1zVJzb6WjUEhVsqG7L",
-      "id": "0bfi1zVJzb6WjUEhVsqG7L",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb1c92c573579039b7d10f1053",
-        "width": None
-      }],
-      "name": "X-peer i-Mental",
-      "owner": {
-        "display_name": "Diamond Hands",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/e5kzgfyenbpthi0ew37kmrgmq"
-        },
-        "href": "https://api.spotify.com/v1/users/e5kzgfyenbpthi0ew37kmrgmq",
-        "id": "e5kzgfyenbpthi0ew37kmrgmq",
-        "type": "user",
-        "uri": "spotify:user:e5kzgfyenbpthi0ew37kmrgmq"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "NzcsNGIxMzYyNzE2NGZiZDkwNGNlY2FlYWNjOTU1N2Q4Mjk5NWJkY2VkMA==",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/0bfi1zVJzb6WjUEhVsqG7L/tracks",
-        "total": 11
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:0bfi1zVJzb6WjUEhVsqG7L"
-    }, {
-      "collaborative": False,
-      "description": "The perfect summer playlist. Updated weekly IG: @diamondhandsplaylists",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/50XePlPVnwweajzDQNlAKr"
-      },
-      "href": "https://api.spotify.com/v1/playlists/50XePlPVnwweajzDQNlAKr",
-      "id": "50XePlPVnwweajzDQNlAKr",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb3f3c03d84d4be449d1618906",
-        "width": None
-      }],
-      "name": "Pool Party",
-      "owner": {
-        "display_name": "Diamond Hands",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/e5kzgfyenbpthi0ew37kmrgmq"
-        },
-        "href": "https://api.spotify.com/v1/users/e5kzgfyenbpthi0ew37kmrgmq",
-        "id": "e5kzgfyenbpthi0ew37kmrgmq",
-        "type": "user",
-        "uri": "spotify:user:e5kzgfyenbpthi0ew37kmrgmq"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "MTIzLGJhYzljYmFiOTNlNjRkZjYzODM4Mzk2NjU3Zjk3NTdlOWRkN2FhNGE=",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/50XePlPVnwweajzDQNlAKr/tracks",
-        "total": 10
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:50XePlPVnwweajzDQNlAKr"
-    }, {
-      "collaborative": False,
-      "description": "Festivals are back!! Updated weekly IG: @diamondhandsplaylists",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/4ivCRNV9ddk1pOtjRcxNzH"
-      },
-      "href": "https://api.spotify.com/v1/playlists/4ivCRNV9ddk1pOtjRcxNzH",
-      "id": "4ivCRNV9ddk1pOtjRcxNzH",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb354945367f6d97f2a7306c18",
-        "width": None
-      }],
-      "name": "EDM Xtacy",
-      "owner": {
-        "display_name": "Diamond Hands",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/e5kzgfyenbpthi0ew37kmrgmq"
-        },
-        "href": "https://api.spotify.com/v1/users/e5kzgfyenbpthi0ew37kmrgmq",
-        "id": "e5kzgfyenbpthi0ew37kmrgmq",
-        "type": "user",
-        "uri": "spotify:user:e5kzgfyenbpthi0ew37kmrgmq"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "MTE2LGFiZTgyZTNhZmVkMjhjNjIyZjViYzZhOTUwZmYyMDhlMzA0ZjMzZDc=",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/4ivCRNV9ddk1pOtjRcxNzH/tracks",
-        "total": 13
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:4ivCRNV9ddk1pOtjRcxNzH"
-    }],
-    "limit": 20,
-    "next": None,
-    "offset": 0,
-    "previous": None,
-    "total": 7
-  }
+[{
+  "id": 1,
+  "Amount": "100",
+  "location": "USA",
+  "playlist link": "Trap en Inglés",
+  "curator contact": "@traplist.ing"
 }, {
-  "Spotify": {
-    "href": "https://api.spotify.com/v1/users/11124879364/playlists?offset=0&limit=20",
-    "items": [{
-      "collaborative": False,
-      "description": "Uplifting and energetic music that helps you stay motivated.",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXdxcBWuJkbcy"
-      },
-      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdxcBWuJkbcy",
-      "id": "37i9dQZF1DXdxcBWuJkbcy",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706f00000003a088a35ef6e638c42f88deda",
-        "width": None
-      }],
-      "name": "Motivation Mix",
-      "owner": {
-        "display_name": "Spotify",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/spotify"
-        },
-        "href": "https://api.spotify.com/v1/users/spotify",
-        "id": "spotify",
-        "type": "user",
-        "uri": "spotify:user:spotify"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "MTY0MzgyODI2MiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXdxcBWuJkbcy/tracks",
-        "total": 100
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:37i9dQZF1DXdxcBWuJkbcy"
-    }, {
-      "collaborative": False,
-      "description": "Uma viagem no tempo através dos hits clássicos do Pagode. Foto: Grupo Fundo de Quintal",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXchBFvKSUooB"
-      },
-      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXchBFvKSUooB",
-      "id": "37i9dQZF1DXchBFvKSUooB",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706f00000003fd799975c423ccf2444cebd7",
-        "width": None
-      }],
-      "name": "Pagode das Antigas",
-      "owner": {
-        "display_name": "Spotify",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/spotify"
-        },
-        "href": "https://api.spotify.com/v1/users/spotify",
-        "id": "spotify",
-        "type": "user",
-        "uri": "spotify:user:spotify"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "MTY0MjczNDA2MCwwMDAwMDA2MTAwMDAwMTdlN2E5NDgyMzcwMDAwMDE3ZTc5MWJkZTM3",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXchBFvKSUooB/tracks",
-        "total": 100
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:37i9dQZF1DXchBFvKSUooB"
-    }, {
-      "collaborative": False,
-      "description": "Hype Music |Hip-Hop 2020 | Trap y Hip Hop en Ingles 2020 | New School Rap",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/4Z4EQVQKb4OBJQJfVp1YaV"
-      },
-      "href": "https://api.spotify.com/v1/playlists/4Z4EQVQKb4OBJQJfVp1YaV",
-      "id": "4Z4EQVQKb4OBJQJfVp1YaV",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebbe7dfd241a1f312b28ba2c4a5",
-        "width": None
-      }],
-      "name": "SUPREME HITS 2020 🔥 RAP HITS 2020",
-      "owner": {
-        "display_name": "Diestro Music",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/diestro"
-        },
-        "href": "https://api.spotify.com/v1/users/diestro",
-        "id": "diestro",
-        "type": "user",
-        "uri": "spotify:user:diestro"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "MjA0Myw1ZWY1ZGRlOGYxY2Y2MjhlNGY1MzMzMmVkZjJiZGNhMTY3NGRjNGVk",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/4Z4EQVQKb4OBJQJfVp1YaV/tracks",
-        "total": 60
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:4Z4EQVQKb4OBJQJfVp1YaV"
-    }, {
-      "collaborative": False,
-      "description": "New Music Friday - it features the best and chillest music from this moment. Music by: Justin Bieber, Disciples, Marshmello, Halsey, Khalid and more.. #chill | Submissions: houseplanetmusic@gmail.com",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/5OetGBhUvVugyCAc8yj29y"
-      },
-      "href": "https://api.spotify.com/v1/playlists/5OetGBhUvVugyCAc8yj29y",
-      "id": "5OetGBhUvVugyCAc8yj29y",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebbb36daffc900d07a9beb17ee8",
-        "width": None
-      }],
-      "name": "Weekly Chill | The Best and Chillest Music 😌",
-      "owner": {
-        "display_name": "planetsmusic",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/planetsmusic"
-        },
-        "href": "https://api.spotify.com/v1/users/planetsmusic",
-        "id": "planetsmusic",
-        "type": "user",
-        "uri": "spotify:user:planetsmusic"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "MzU5Nyw3N2I3ODZkZTI4ZWNlNmYwNDljOGE4NDk3YTRjZTBmNjdhYTE1MjU1",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/5OetGBhUvVugyCAc8yj29y/tracks",
-        "total": 175
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:5OetGBhUvVugyCAc8yj29y"
-    }, {
-      "collaborative": False,
-      "description": "The Weekly House playlist features some of the hottest dance hits, updating weekly! #EDM #Dance | contact: houseplanetmusic@gmail.com",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/2mbV5p0pQoGNc54g5T6pcn"
-      },
-      "href": "https://api.spotify.com/v1/playlists/2mbV5p0pQoGNc54g5T6pcn",
-      "id": "2mbV5p0pQoGNc54g5T6pcn",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebbdf7e7826c516d2aef4c66b59",
-        "width": None
-      }],
-      "name": "Weekly House | Best Dance Hits 2021",
-      "owner": {
-        "display_name": "planetsmusic",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/planetsmusic"
-        },
-        "href": "https://api.spotify.com/v1/users/planetsmusic",
-        "id": "planetsmusic",
-        "type": "user",
-        "uri": "spotify:user:planetsmusic"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "NTAyMCw0YzhiYjU3ZTAxM2Y4ZjVhYWJhMDQzOTUyNWFhYTE3Y2NjZjkyMDM2",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/2mbV5p0pQoGNc54g5T6pcn/tracks",
-        "total": 119
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:2mbV5p0pQoGNc54g5T6pcn"
-    }, {
-      "collaborative": False,
-      "description": "Listen on your way home or as you &#x27;drive&#x27; through your afternoon with Harry Styles, Phoebe Bridgers and so many artists we&#x27;ll introduce you to! ",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/4TbXtyRyJJHchLqM1TGfmf"
-      },
-      "href": "https://api.spotify.com/v1/playlists/4TbXtyRyJJHchLqM1TGfmf",
-      "id": "4TbXtyRyJJHchLqM1TGfmf",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb1469006c38ccaa4191cae4cd",
-        "width": None
-      }],
-      "name": "DPG Afternoon Drive",
-      "owner": {
-        "display_name": "DPG Worldwide",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/koralyoung"
-        },
-        "href": "https://api.spotify.com/v1/users/koralyoung",
-        "id": "koralyoung",
-        "type": "user",
-        "uri": "spotify:user:koralyoung"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "NzEzLDA4YmE5MGNhZmIzMzE4MDM2OGMwOGNmN2JiZjUyOTZhNjdlZmY4MDY=",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/4TbXtyRyJJHchLqM1TGfmf/tracks",
-        "total": 22
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:4TbXtyRyJJHchLqM1TGfmf"
-    }, {
-      "collaborative": False,
-      "description": "Bringing you the hottest selections in Electronic Dance Music, Deep House, Slap House and many more! Contact: music4welove@gmail.com",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/3lk0oO9FXemt7o3MsCDEGQ"
-      },
-      "href": "https://api.spotify.com/v1/playlists/3lk0oO9FXemt7o3MsCDEGQ",
-      "id": "3lk0oO9FXemt7o3MsCDEGQ",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb0abf77bbb93df92dec6f34a9",
-        "width": None
-      }],
-      "name": "Dance Hits 2022",
-      "owner": {
-        "display_name": "We Love",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/c0i1sasofmbo7mz4omia3a2d7"
-        },
-        "href": "https://api.spotify.com/v1/users/c0i1sasofmbo7mz4omia3a2d7",
-        "id": "c0i1sasofmbo7mz4omia3a2d7",
-        "type": "user",
-        "uri": "spotify:user:c0i1sasofmbo7mz4omia3a2d7"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "MTEwNzUsNDMyZjY1OThhNjUzMjE3NzhiYWIxMmZlNmE2MjBjYzUzMWIxZTE0OA==",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/3lk0oO9FXemt7o3MsCDEGQ/tracks",
-        "total": 74
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:3lk0oO9FXemt7o3MsCDEGQ"
-    }, {
-      "collaborative": False,
-      "description": "The expert curators at <a href="http://listen-up.biz/">Listen Up!</a> are here to help you discover everything TECHNO. Bringing you the biggest tracks from the likes of Drumcode, Terminal and Klockworks - you can expect to hear these bangers at Awakenings, Junction 2 and Kappa FuturFestival this year!",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/3NjYMkqUewLWybFT11oIMP"
-      },
-      "href": "https://api.spotify.com/v1/playlists/3NjYMkqUewLWybFT11oIMP",
-      "id": "3NjYMkqUewLWybFT11oIMP",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb1599a79ff1544f4fc66eb5b1",
-        "width": None
-      }],
-      "name": "Techno Tracks ⚡️ Minimal | Progressive | Dark | Berlin",
-      "owner": {
-        "display_name": "Indiemono",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/sanik007"
-        },
-        "href": "https://api.spotify.com/v1/users/sanik007",
-        "id": "sanik007",
-        "type": "user",
-        "uri": "spotify:user:sanik007"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "MzYwLDE0OWY2YjVlMWY4Mzg3YmQ3MjMwMjk5ZTI1MzEwNTE5ZmIzOTU1YjQ=",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/3NjYMkqUewLWybFT11oIMP/tracks",
-        "total": 100
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:3NjYMkqUewLWybFT11oIMP"
-    }, {
-      "collaborative": False,
-      "description": "Will resume momentarily. Email suggestions to swaysuniversespotify@gmail.com",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/6uo3zBMH9FMrn5nRGx3ONG"
-      },
-      "href": "https://api.spotify.com/v1/playlists/6uo3zBMH9FMrn5nRGx3ONG",
-      "id": "6uo3zBMH9FMrn5nRGx3ONG",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb11a3a35f5cae5f763a58f03b",
-        "width": None
-      }],
-      "name": "Calloway Curated",
-      "owner": {
-        "display_name": "Sway Calloway",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/vum0yhya9286bp9fpjynzxgup"
-        },
-        "href": "https://api.spotify.com/v1/users/vum0yhya9286bp9fpjynzxgup",
-        "id": "vum0yhya9286bp9fpjynzxgup",
-        "type": "user",
-        "uri": "spotify:user:vum0yhya9286bp9fpjynzxgup"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "MjY2NCwxNTVkNjYzZDI2YTcxZjA0OGU3YzMyNzZkZTYwMGYxMTBiZDg3NGRm",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/6uo3zBMH9FMrn5nRGx3ONG/tracks",
-        "total": 0
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:6uo3zBMH9FMrn5nRGx3ONG"
-    }, {
-      "collaborative": False,
-      "description": "Press play on Fresh Dose. Bringing you the latest releases from around the globe.  For submissions head over to www.freshdose.co.uk. A playlist for Independent Artists by Kelli-Leigh &amp; Hypertribe ",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/4dewnUVA7qEgOJjllcfR95"
-      },
-      "href": "https://api.spotify.com/v1/playlists/4dewnUVA7qEgOJjllcfR95",
-      "id": "4dewnUVA7qEgOJjllcfR95",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebbcfd6f29b583ff055ff10eb64",
-        "width": None
-      }],
-      "name": "Fresh Dose. : Top 20",
-      "owner": {
-        "display_name": "Fresh Dose.",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/ebhfrzimkj6blnyg71zoid4xq"
-        },
-        "href": "https://api.spotify.com/v1/users/ebhfrzimkj6blnyg71zoid4xq",
-        "id": "ebhfrzimkj6blnyg71zoid4xq",
-        "type": "user",
-        "uri": "spotify:user:ebhfrzimkj6blnyg71zoid4xq"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "MTEzMixhY2M4YmVhZmE3YTI2ZGY1MjI5YTdmMjc1NGM2NWViNjI1YTZmNDRk",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/4dewnUVA7qEgOJjllcfR95/tracks",
-        "total": 20
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:4dewnUVA7qEgOJjllcfR95"
-    }, {
-      "collaborative": False,
-      "description": "",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/2IQSyzfYZvR6ZByHGjMvpv"
-      },
-      "href": "https://api.spotify.com/v1/playlists/2IQSyzfYZvR6ZByHGjMvpv",
-      "id": "2IQSyzfYZvR6ZByHGjMvpv",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebbc8b98ff1281b184fc1114f1b",
-        "width": None
-      }],
-      "name": "Sidekick Music : Releases",
-      "owner": {
-        "display_name": "Sidekick Music",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/ib8ys2wyl0wb29354sx7t7uzh"
-        },
-        "href": "https://api.spotify.com/v1/users/ib8ys2wyl0wb29354sx7t7uzh",
-        "id": "ib8ys2wyl0wb29354sx7t7uzh",
-        "type": "user",
-        "uri": "spotify:user:ib8ys2wyl0wb29354sx7t7uzh"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "MjEyLDNlMjdlM2MwNjBhN2U0NGZlMjIyZmM1NWNiYmM0ZDE3ZmUyYmNiZmU=",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/2IQSyzfYZvR6ZByHGjMvpv/tracks",
-        "total": 154
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:2IQSyzfYZvR6ZByHGjMvpv"
-    }, {
-      "collaborative": False,
-      "description": "La única playlist oficial de <a href="https://open.spotify.com/artist/348pk4o3EhKmsSahzuClSf?si=4qw3kLJNQxmbHe3m8jJYXA">CA7RIEL</a> y <a href="https://open.spotify.com/artist/3E7NGbzUGlOjgYY8nvtijR?si=fMxodqiQToeU18wdPq3tPw">Paco Amoroso</a>",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/1es7PvcAId8cvBLho40bCH"
-      },
-      "href": "https://api.spotify.com/v1/playlists/1es7PvcAId8cvBLho40bCH",
-      "id": "1es7PvcAId8cvBLho40bCH",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebbfcd1c0f24f6bf1098a6c7222",
-        "width": None
-      }],
-      "name": "CA7RIEL, Paco Amoroso (Playlist Oficial)",
-      "owner": {
-        "display_name": "Ditto Music",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/dittomusic"
-        },
-        "href": "https://api.spotify.com/v1/users/dittomusic",
-        "id": "dittomusic",
-        "type": "user",
-        "uri": "spotify:user:dittomusic"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "NzksZGQ3NjRhMjYyMWY0NmJlY2FjMjAyZGY0YWEyNjUzYjBiNGU2NjQ3Nw==",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/1es7PvcAId8cvBLho40bCH/tracks",
-        "total": 33
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:1es7PvcAId8cvBLho40bCH"
-    }, {
-      "collaborative": False,
-      "description": "The latest and best tracks in UK Rap, Afrobeats, Drill, Grime &amp; R&amp;B. Cover:  23 Unofficial",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/1OqjsEMaVBdfhcDdfzJMZl"
-      },
-      "href": "https://api.spotify.com/v1/playlists/1OqjsEMaVBdfhcDdfzJMZl",
-      "id": "1OqjsEMaVBdfhcDdfzJMZl",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb4b84a064606c0ad65d8771f2",
-        "width": None
-      }],
-      "name": "Patterned -  Rap & Drill",
-      "owner": {
-        "display_name": "Ditto Music",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/dittomusic"
-        },
-        "href": "https://api.spotify.com/v1/users/dittomusic",
-        "id": "dittomusic",
-        "type": "user",
-        "uri": "spotify:user:dittomusic"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "MTY0MCxjOWVmMGMxNTdlMzI0ODNjMDEzZDI0NjIyYWEzMjdiNGQxMDFiNjM0",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/1OqjsEMaVBdfhcDdfzJMZl/tracks",
-        "total": 60
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:1OqjsEMaVBdfhcDdfzJMZl"
-    }, {
-      "collaborative": False,
-      "description": "För dig som går på hundprommis i ur och skur och  behöver lite ny musik i öronen!",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/3Q0bnmW4EqAiC9J5OuIqZv"
-      },
-      "href": "https://api.spotify.com/v1/playlists/3Q0bnmW4EqAiC9J5OuIqZv",
-      "id": "3Q0bnmW4EqAiC9J5OuIqZv",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebbc06eb06d4b078c8666e4318f",
-        "width": None
-      }],
-      "name": "Hundprommis",
-      "owner": {
-        "display_name": "Ditto Music",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/dittomusic"
-        },
-        "href": "https://api.spotify.com/v1/users/dittomusic",
-        "id": "dittomusic",
-        "type": "user",
-        "uri": "spotify:user:dittomusic"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "NTE0LGI4ZWY3ZmNjNDdkYzg5ZmVjZGFmZDdmYzA3YTBlMmU2NGRiZjljNTc=",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/3Q0bnmW4EqAiC9J5OuIqZv/tracks",
-        "total": 49
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:3Q0bnmW4EqAiC9J5OuIqZv"
-    }, {
-      "collaborative": False,
-      "description": "African storytelling and beats, from all over the continent and corners of the world. Cover:  Chris Kaiga",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/2yrd69tr6fcqrv1yTUr9Uq"
-      },
-      "href": "https://api.spotify.com/v1/playlists/2yrd69tr6fcqrv1yTUr9Uq",
-      "id": "2yrd69tr6fcqrv1yTUr9Uq",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb6412a8e36576975947441e73",
-        "width": None
-      }],
-      "name": "African Glow ",
-      "owner": {
-        "display_name": "Ditto Music",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/dittomusic"
-        },
-        "href": "https://api.spotify.com/v1/users/dittomusic",
-        "id": "dittomusic",
-        "type": "user",
-        "uri": "spotify:user:dittomusic"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "NzYyLDU5OWQ0OTdiNjM3MmM4MTFiZTI1MWQ4YzA3Zjg2YmY1OWU0MGYxMzU=",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/2yrd69tr6fcqrv1yTUr9Uq/tracks",
-        "total": 40
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:2yrd69tr6fcqrv1yTUr9Uq"
-    }, {
-      "collaborative": False,
-      "description": "Dance, swing, jazz and jackin the mix with the best new saxophone jams and classic soul music (#NuDisco #Vocal #Lounge)  <a href="https://lnk.to/submithub">Submit Music </a>",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/1Yt2Eb6s3yxZiJABZVMzXy"
-      },
-      "href": "https://api.spotify.com/v1/playlists/1Yt2Eb6s3yxZiJABZVMzXy",
-      "id": "1Yt2Eb6s3yxZiJABZVMzXy",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebbabc1f1ce1c18a8da35b37108",
-        "width": None
-      }],
-      "name": "Funky House Grooves 🦞 French House",
-      "owner": {
-        "display_name": "Island Beats",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/128794143"
-        },
-        "href": "https://api.spotify.com/v1/users/128794143",
-        "id": "128794143",
-        "type": "user",
-        "uri": "spotify:user:128794143"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "NDI3Miw2YjE1NmZhODY3ODUzMjY2MDQ0NmVjNDIxYWZiMDhmMGMwZDM0MTli",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/1Yt2Eb6s3yxZiJABZVMzXy/tracks",
-        "total": 778
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:1Yt2Eb6s3yxZiJABZVMzXy"
-    }, {
-      "collaborative": False,
-      "description": "The Worlds A Little Blurry Billie Eilish Documentary on Apple TV+ - Songs from Billie and similar artists.",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/2VNQou4JDxlqwu9mHD4yUc"
-      },
-      "href": "https://api.spotify.com/v1/playlists/2VNQou4JDxlqwu9mHD4yUc",
-      "id": "2VNQou4JDxlqwu9mHD4yUc",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebbce171c873e1464252a866093",
-        "width": None
-      }],
-      "name": "Billie Eilish - The World"s A Little Blurry",
-      "owner": {
-        "display_name": "Samantha Leah",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/1254636338"
-        },
-        "href": "https://api.spotify.com/v1/users/1254636338",
-        "id": "1254636338",
-        "type": "user",
-        "uri": "spotify:user:1254636338"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "NTE5LGUwZDUyNjM5ZjhkODJmMWQ5M2RhYjg1M2RkMDQzNjdmYzAwMWJjNzM=",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/2VNQou4JDxlqwu9mHD4yUc/tracks",
-        "total": 101
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:2VNQou4JDxlqwu9mHD4yUc"
-    }, {
-      "collaborative": False,
-      "description": "",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/37i9dQZF1E4quYUD15bjta"
-      },
-      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1E4quYUD15bjta",
-      "id": "37i9dQZF1E4quYUD15bjta",
-      "images": [{
-        "height": None,
-        "url": "https://seeded-session-images.scdn.co/v1/img/artist/3VYHK4GwzCj91BfIwsWhFS/en",
-        "width": None
-      }],
-      "name": "Samantha Leah Radio",
-      "owner": {
-        "display_name": "Spotify",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/spotify"
-        },
-        "href": "https://api.spotify.com/v1/users/spotify",
-        "id": "spotify",
-        "type": "user",
-        "uri": "spotify:user:spotify"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "MTY0MzgyODI2MiwwMDAwMDAwMGUyMjk1YWRhZmRkZDY1NzM2M2E1MjQzZmRmZGExZDA4",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1E4quYUD15bjta/tracks",
-        "total": 50
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:37i9dQZF1E4quYUD15bjta"
-    }, {
-      "collaborative": False,
-      "description": "spiritual vibes with a lil kick to it. law of attraction energy with spice. ",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/18drdcNtTrbQSmjsz6PnD0"
-      },
-      "href": "https://api.spotify.com/v1/playlists/18drdcNtTrbQSmjsz6PnD0",
-      "id": "18drdcNtTrbQSmjsz6PnD0",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebbc39aa789d5393b42b2a3cb9b",
-        "width": None
-      }],
-      "name": "manifesting magic 🔮✨",
-      "owner": {
-        "display_name": "Samantha Leah",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/1254636338"
-        },
-        "href": "https://api.spotify.com/v1/users/1254636338",
-        "id": "1254636338",
-        "type": "user",
-        "uri": "spotify:user:1254636338"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "MjU3MSwxZTE4ZDI3MDc0Y2JiYWI4M2U4ZTU5Yjc0MmMzNTk4MGM5NTQyOGMy",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/18drdcNtTrbQSmjsz6PnD0/tracks",
-        "total": 152
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:18drdcNtTrbQSmjsz6PnD0"
-    }, {
-      "collaborative": False,
-      "description": "",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/4WlBFcqBRBfiUtSN9hL77a"
-      },
-      "href": "https://api.spotify.com/v1/playlists/4WlBFcqBRBfiUtSN9hL77a",
-      "id": "4WlBFcqBRBfiUtSN9hL77a",
-      "images": [{
-        "height": 640,
-        "url": "https://mosaic.scdn.co/640/ab67616d0000b27355404f712deb84d0650a4b41ab67616d0000b2735be858c2255ac19199aec3f1ab67616d0000b27379ebbb60d2f3bc00bf39475cab67616d0000b273de6bd09b07e2b4af4e409f6c",
-        "width": 640
-      }, {
-        "height": 300,
-        "url": "https://mosaic.scdn.co/300/ab67616d0000b27355404f712deb84d0650a4b41ab67616d0000b2735be858c2255ac19199aec3f1ab67616d0000b27379ebbb60d2f3bc00bf39475cab67616d0000b273de6bd09b07e2b4af4e409f6c",
-        "width": 300
-      }, {
-        "height": 60,
-        "url": "https://mosaic.scdn.co/60/ab67616d0000b27355404f712deb84d0650a4b41ab67616d0000b2735be858c2255ac19199aec3f1ab67616d0000b27379ebbb60d2f3bc00bf39475cab67616d0000b273de6bd09b07e2b4af4e409f6c",
-        "width": 60
-      }],
-      "name": "",
-      "owner": {
-        "display_name": "Streamplaylists",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/markmyblurbs"
-        },
-        "href": "https://api.spotify.com/v1/users/markmyblurbs",
-        "id": "markmyblurbs",
-        "type": "user",
-        "uri": "spotify:user:markmyblurbs"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "MjI3MSw0NDIyNDI0Y2YxYzdmOTBhNTJlYmNjNjc5NGYzMmRmODIxYmVjNGJl",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/4WlBFcqBRBfiUtSN9hL77a/tracks",
-        "total": 83
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:4WlBFcqBRBfiUtSN9hL77a"
-    }],
-    "limit": 20,
-    "next": "https://api.spotify.com/v1/users/11124879364/playlists?offset=20&limit=20",
-    "offset": 0,
-    "previous": None,
-    "total": 103
-  }
+  "id": 2,
+  "Amount": "100",
+  "location": "USA",
+  "playlist link": "Radio Hits 2010-2021",
+  "curator contact": "@sherlymadrid"
 }, {
-  "Marc": {
-    "href": "https://api.spotify.com/v1/users/17tsxk06b67ckkwe17j2z427k/playlists?offset=0&limit=20",
-    "items": [{
-      "collaborative": False,
-      "description": "Showcasing the singer &#x2F; songwriters of Nashville and else where 2022 IG: @diamondhandsplaylists",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/4wfVvpTZiEDOThXnCse64k"
-      },
-      "href": "https://api.spotify.com/v1/playlists/4wfVvpTZiEDOThXnCse64k",
-      "id": "4wfVvpTZiEDOThXnCse64k",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb49e231b44f0d57f04bfe2f0d",
-        "width": None
-      }],
-      "name": "East Nashville",
-      "owner": {
-        "display_name": "Marc",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/17tsxk06b67ckkwe17j2z427k"
-        },
-        "href": "https://api.spotify.com/v1/users/17tsxk06b67ckkwe17j2z427k",
-        "id": "17tsxk06b67ckkwe17j2z427k",
-        "type": "user",
-        "uri": "spotify:user:17tsxk06b67ckkwe17j2z427k"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "MTA3LGJjMjcxMTBhZjUxZmM5NGM4ZGQ4MTQ4MmNhYjMwYmE0NWI3YWEwZjA=",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/4wfVvpTZiEDOThXnCse64k/tracks",
-        "total": 11
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:4wfVvpTZiEDOThXnCse64k"
-    }, {
-      "collaborative": False,
-      "description": "New music 2021 IG: @diamondhandsplaylists",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/0JVk2uGNFSqPa8G91wYttB"
-      },
-      "href": "https://api.spotify.com/v1/playlists/0JVk2uGNFSqPa8G91wYttB",
-      "id": "0JVk2uGNFSqPa8G91wYttB",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb4a51c61d716b984c3614df0e",
-        "width": None
-      }],
-      "name": "New Waves",
-      "owner": {
-        "display_name": "Marc",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/17tsxk06b67ckkwe17j2z427k"
-        },
-        "href": "https://api.spotify.com/v1/users/17tsxk06b67ckkwe17j2z427k",
-        "id": "17tsxk06b67ckkwe17j2z427k",
-        "type": "user",
-        "uri": "spotify:user:17tsxk06b67ckkwe17j2z427k"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "OTQsZjM3Y2RiY2NhYTQzODdkNjM0MGZmYjIyZjRmOWQ2ODNkYjc0YjA1ZQ==",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/0JVk2uGNFSqPa8G91wYttB/tracks",
-        "total": 12
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:0JVk2uGNFSqPa8G91wYttB"
-    }, {
-      "collaborative": False,
-      "description": "EDM for the after party 2021 IG: @diamondhandsplaylists",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/3vOz9PGwFbF2ZcTNel9RsU"
-      },
-      "href": "https://api.spotify.com/v1/playlists/3vOz9PGwFbF2ZcTNel9RsU",
-      "id": "3vOz9PGwFbF2ZcTNel9RsU",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb92ee8e8dcf65e8630e56ccc4",
-        "width": None
-      }],
-      "name": "After Party",
-      "owner": {
-        "display_name": "Marc",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/17tsxk06b67ckkwe17j2z427k"
-        },
-        "href": "https://api.spotify.com/v1/users/17tsxk06b67ckkwe17j2z427k",
-        "id": "17tsxk06b67ckkwe17j2z427k",
-        "type": "user",
-        "uri": "spotify:user:17tsxk06b67ckkwe17j2z427k"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "ODksODZjNDM2ZGZjM2ZlZWU0OThmOWNjNDUzYmU5MDFmYjExZWVhZmYxNg==",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/3vOz9PGwFbF2ZcTNel9RsU/tracks",
-        "total": 11
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:3vOz9PGwFbF2ZcTNel9RsU"
-    }, {
-      "collaborative": False,
-      "description": "Best in the rap game 2021 IG: @diamondhandsplaylists",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/2jpaTnNf2WtiVfW03xmm8B"
-      },
-      "href": "https://api.spotify.com/v1/playlists/2jpaTnNf2WtiVfW03xmm8B",
-      "id": "2jpaTnNf2WtiVfW03xmm8B",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebbe78510af9a17b23bfe174b08",
-        "width": None
-      }],
-      "name": "Rap Gold",
-      "owner": {
-        "display_name": "Marc",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/17tsxk06b67ckkwe17j2z427k"
-        },
-        "href": "https://api.spotify.com/v1/users/17tsxk06b67ckkwe17j2z427k",
-        "id": "17tsxk06b67ckkwe17j2z427k",
-        "type": "user",
-        "uri": "spotify:user:17tsxk06b67ckkwe17j2z427k"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "MTQ3LGEyN2EzZjQ4NDZiNzc0MmExNTRlNTQwNjk4YTIxOWQzNDk0OGFhZDE=",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/2jpaTnNf2WtiVfW03xmm8B/tracks",
-        "total": 12
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:2jpaTnNf2WtiVfW03xmm8B"
-    }, {
-      "collaborative": False,
-      "description": "Best of the best 2021 IG: @diamondhandsplaylists",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/1U8vdWXM00SNsM4VDMTMCi"
-      },
-      "href": "https://api.spotify.com/v1/playlists/1U8vdWXM00SNsM4VDMTMCi",
-      "id": "1U8vdWXM00SNsM4VDMTMCi",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebbf043c14b92e8f0da403ef3ce",
-        "width": None
-      }],
-      "name": "Turn It Up",
-      "owner": {
-        "display_name": "Marc",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/17tsxk06b67ckkwe17j2z427k"
-        },
-        "href": "https://api.spotify.com/v1/users/17tsxk06b67ckkwe17j2z427k",
-        "id": "17tsxk06b67ckkwe17j2z427k",
-        "type": "user",
-        "uri": "spotify:user:17tsxk06b67ckkwe17j2z427k"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "OTIsYWU0MTgyNmY2YmJhYTU1ODJmMmFmMGNjYzhkNTc0M2I3ZGRjM2NhYg==",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/1U8vdWXM00SNsM4VDMTMCi/tracks",
-        "total": 12
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:1U8vdWXM00SNsM4VDMTMCi"
-    }],
-    "limit": 20,
-    "next": None,
-    "offset": 0,
-    "previous": None,
-    "total": 5
-  }
+  "id": 3,
+  "Amount": "115",
+  "location": "Netherland",
+  "playlist link": "Hiphop 90’s",
+  "curator contact": "@spotify.hiphop90s"
 }, {
-  "Xiaopi": {
-    "href": "https://api.spotify.com/v1/users/rkvo4kefpee8g307myovuwhvi/playlists?offset=0&limit=20",
-    "items": [{
-      "collaborative": False,
-      "description": "보건교사 안은영 非常校護檔案 TV Show Netflix 2020 Bogeongyosa Aneunyeong",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/0BGyHIZqP8KKUc7eH9zaPa"
-      },
-      "href": "https://api.spotify.com/v1/playlists/0BGyHIZqP8KKUc7eH9zaPa",
-      "id": "0BGyHIZqP8KKUc7eH9zaPa",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb09da91fd3130d27ff9da64bf",
-        "width": None
-      }],
-      "name": "The School Nurse Files OST",
-      "owner": {
-        "display_name": "Xiaopi",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/rkvo4kefpee8g307myovuwhvi"
-        },
-        "href": "https://api.spotify.com/v1/users/rkvo4kefpee8g307myovuwhvi",
-        "id": "rkvo4kefpee8g307myovuwhvi",
-        "type": "user",
-        "uri": "spotify:user:rkvo4kefpee8g307myovuwhvi"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "MTQsMGM4NTQyMzM2OTY0NmQ0MmNmYjZhNjgwOGVhOTcwYjQ1NGNhYjBkNQ==",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/0BGyHIZqP8KKUc7eH9zaPa/tracks",
-        "total": 57
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:0BGyHIZqP8KKUc7eH9zaPa"
-    }, {
-      "collaborative": False,
-      "description": "Your Name Engraved Herein Taiwan Movie Soundtrack",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/5kZiKlTOatKDi538zX8Aol"
-      },
-      "href": "https://api.spotify.com/v1/playlists/5kZiKlTOatKDi538zX8Aol",
-      "id": "5kZiKlTOatKDi538zX8Aol",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb95998134d129cd73a383a8a6",
-        "width": None
-      }],
-      "name": "刻在你心底的名 字 電影主題曲 2020",
-      "owner": {
-        "display_name": "Xiaopi",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/rkvo4kefpee8g307myovuwhvi"
-        },
-        "href": "https://api.spotify.com/v1/users/rkvo4kefpee8g307myovuwhvi",
-        "id": "rkvo4kefpee8g307myovuwhvi",
-        "type": "user",
-        "uri": "spotify:user:rkvo4kefpee8g307myovuwhvi"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "NyxlYjkzM2Q1N2RhNjQ0ZGJjMGI4ZjhiZDAyMTU0NzhmZDA3Yjc3ODFj",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/5kZiKlTOatKDi538zX8Aol/tracks",
-        "total": 51
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:5kZiKlTOatKDi538zX8Aol"
-    }, {
-      "collaborative": False,
-      "description": "",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/0v5owjSIf03NkXfXnLP39R"
-      },
-      "href": "https://api.spotify.com/v1/playlists/0v5owjSIf03NkXfXnLP39R",
-      "id": "0v5owjSIf03NkXfXnLP39R",
-      "images": [],
-      "name": "Edward Scissorhands",
-      "owner": {
-        "display_name": "Xiaopi",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/rkvo4kefpee8g307myovuwhvi"
-        },
-        "href": "https://api.spotify.com/v1/users/rkvo4kefpee8g307myovuwhvi",
-        "id": "rkvo4kefpee8g307myovuwhvi",
-        "type": "user",
-        "uri": "spotify:user:rkvo4kefpee8g307myovuwhvi"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "MSxjYTJhM2QwYjQyYTcwZWVjYjRiYTJlOTA0MTE2NjRkMzU0MGEzYTNk",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/0v5owjSIf03NkXfXnLP39R/tracks",
-        "total": 0
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:0v5owjSIf03NkXfXnLP39R"
-    }, {
-      "collaborative": False,
-      "description": "森林特 攻隊:大腳ㄚ家族 Movie ",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/6HAFNbPX99NpnYVzX2HNh0"
-      },
-      "href": "https://api.spotify.com/v1/playlists/6HAFNbPX99NpnYVzX2HNh0",
-      "id": "6HAFNbPX99NpnYVzX2HNh0",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebbba4a2deb94a9c43c8070eff5",
-        "width": None
-      }],
-      "name": "Bigfoot Family Soundtrack 2020",
-      "owner": {
-        "display_name": "Xiaopi",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/rkvo4kefpee8g307myovuwhvi"
-        },
-        "href": "https://api.spotify.com/v1/users/rkvo4kefpee8g307myovuwhvi",
-        "id": "rkvo4kefpee8g307myovuwhvi",
-        "type": "user",
-        "uri": "spotify:user:rkvo4kefpee8g307myovuwhvi"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "NiwwMDc4NjMxNTA5OTkxYWI4NDE0YjA1MjMzZjA5OWFmNmUzNjExZTdh",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/6HAFNbPX99NpnYVzX2HNh0/tracks",
-        "total": 51
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:6HAFNbPX99NpnYVzX2HNh0"
-    }, {
-      "collaborative": False,
-      "description": "溫特沃斯 TV Show Netflix 2020",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/6MusGcQQpc2bUphqXipk6S"
-      },
-      "href": "https://api.spotify.com/v1/playlists/6MusGcQQpc2bUphqXipk6S",
-      "id": "6MusGcQQpc2bUphqXipk6S",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebbd960f5810a0bb7e2be2b36c6",
-        "width": None
-      }],
-      "name": "Wentworth Season 8 Soundtrack",
-      "owner": {
-        "display_name": "Xiaopi",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/rkvo4kefpee8g307myovuwhvi"
-        },
-        "href": "https://api.spotify.com/v1/users/rkvo4kefpee8g307myovuwhvi",
-        "id": "rkvo4kefpee8g307myovuwhvi",
-        "type": "user",
-        "uri": "spotify:user:rkvo4kefpee8g307myovuwhvi"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "Niw4ZDQ5Njc0Zjg5Y2VmNWFjNWQxMGUyZThmNzc0NDZmMzk4ZjZkYWM2",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/6MusGcQQpc2bUphqXipk6S/tracks",
-        "total": 51
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:6MusGcQQpc2bUphqXipk6S"
-    }, {
-      "collaborative": False,
-      "description": "Movie Netflix",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/1gjiZx3N6QDkvRrj8z7ZXY"
-      },
-      "href": "https://api.spotify.com/v1/playlists/1gjiZx3N6QDkvRrj8z7ZXY",
-      "id": "1gjiZx3N6QDkvRrj8z7ZXY",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebbd3a9998da84da2df17428d26",
-        "width": None
-      }],
-      "name": "Welcome to Sudden Death Soundtrack 2020",
-      "owner": {
-        "display_name": "Xiaopi",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/rkvo4kefpee8g307myovuwhvi"
-        },
-        "href": "https://api.spotify.com/v1/users/rkvo4kefpee8g307myovuwhvi",
-        "id": "rkvo4kefpee8g307myovuwhvi",
-        "type": "user",
-        "uri": "spotify:user:rkvo4kefpee8g307myovuwhvi"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "OCxjZTVhMmNhMGQ5MTZhMjIxODhlNjQxNzZlMmQ5M2VlMTQwY2Q4MGNl",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/1gjiZx3N6QDkvRrj8z7ZXY/tracks",
-        "total": 51
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:1gjiZx3N6QDkvRrj8z7ZXY"
-    }, {
-      "collaborative": False,
-      "description": "投票解碼 TV Show Netflix 2020",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/3NsnjnCrVPHZvvOWml93YT"
-      },
-      "href": "https://api.spotify.com/v1/playlists/3NsnjnCrVPHZvvOWml93YT",
-      "id": "3NsnjnCrVPHZvvOWml93YT",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebbb182086a9ef689b842fde3ce",
-        "width": None
-      }],
-      "name": "Whose Vote Counts, Explained Soundtrack",
-      "owner": {
-        "display_name": "Xiaopi",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/rkvo4kefpee8g307myovuwhvi"
-        },
-        "href": "https://api.spotify.com/v1/users/rkvo4kefpee8g307myovuwhvi",
-        "id": "rkvo4kefpee8g307myovuwhvi",
-        "type": "user",
-        "uri": "spotify:user:rkvo4kefpee8g307myovuwhvi"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "NixkOTdiNjgxZDlkM2VjNDBhYWEzMzc3YWVhMDNjNDkwZmVlMTgyODQy",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/3NsnjnCrVPHZvvOWml93YT/tracks",
-        "total": 51
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:3NsnjnCrVPHZvvOWml93YT"
-    }, {
-      "collaborative": False,
-      "description": "冰血暴 TV Show FX 2020",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/0uYbtinEY64YwmF9qXAdwn"
-      },
-      "href": "https://api.spotify.com/v1/playlists/0uYbtinEY64YwmF9qXAdwn",
-      "id": "0uYbtinEY64YwmF9qXAdwn",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb637a6515562cb56fc55c73c3",
-        "width": None
-      }],
-      "name": "Fargo Season 4 Soundtrack",
-      "owner": {
-        "display_name": "Xiaopi",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/rkvo4kefpee8g307myovuwhvi"
-        },
-        "href": "https://api.spotify.com/v1/users/rkvo4kefpee8g307myovuwhvi",
-        "id": "rkvo4kefpee8g307myovuwhvi",
-        "type": "user",
-        "uri": "spotify:user:rkvo4kefpee8g307myovuwhvi"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "Niw4MzNjZTU3NDA3ZDZhNmU1YmI3OWM0ODg4ZjkyZTBhMDQ0ODU5OWFj",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/0uYbtinEY64YwmF9qXAdwn/tracks",
-        "total": 51
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:0uYbtinEY64YwmF9qXAdwn"
-    }, {
-      "collaborative": False,
-      "description": "",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/4pOhaP7gRv2sS38WZ9Egvu"
-      },
-      "href": "https://api.spotify.com/v1/playlists/4pOhaP7gRv2sS38WZ9Egvu",
-      "id": "4pOhaP7gRv2sS38WZ9Egvu",
-      "images": [],
-      "name": "The Comey Rule",
-      "owner": {
-        "display_name": "Xiaopi",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/rkvo4kefpee8g307myovuwhvi"
-        },
-        "href": "https://api.spotify.com/v1/users/rkvo4kefpee8g307myovuwhvi",
-        "id": "rkvo4kefpee8g307myovuwhvi",
-        "type": "user",
-        "uri": "spotify:user:rkvo4kefpee8g307myovuwhvi"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "MSxmMzhhYzNlMmY2Y2I0NDRiMjdiMmQ0ZGMwODU0OWI4NzdjYjAxMDc3",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/4pOhaP7gRv2sS38WZ9Egvu/tracks",
-        "total": 0
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:4pOhaP7gRv2sS38WZ9Egvu"
-    }, {
-      "collaborative": False,
-      "description": "殺繆荒村 Movie",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/0qXZbyijoGjyfEklBPGKPe"
-      },
-      "href": "https://api.spotify.com/v1/playlists/0qXZbyijoGjyfEklBPGKPe",
-      "id": "0qXZbyijoGjyfEklBPGKPe",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb46252ebc89b5872e7a70ce98",
-        "width": None
-      }],
-      "name": "Bacurau Soundtrack 2020",
-      "owner": {
-        "display_name": "Xiaopi",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/rkvo4kefpee8g307myovuwhvi"
-        },
-        "href": "https://api.spotify.com/v1/users/rkvo4kefpee8g307myovuwhvi",
-        "id": "rkvo4kefpee8g307myovuwhvi",
-        "type": "user",
-        "uri": "spotify:user:rkvo4kefpee8g307myovuwhvi"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "NixiMjJkYzVlYTdlNmEyNDAzMmI0MTA1YmNjNDAxN2FlZDQ3NDUxZGVj",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/0qXZbyijoGjyfEklBPGKPe/tracks",
-        "total": 51
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:0qXZbyijoGjyfEklBPGKPe"
-    }, {
-      "collaborative": False,
-      "description": "重裝救援:全境獵殺 Movie ",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/2bvngEXLfi3RQDMkI9aPIJ"
-      },
-      "href": "https://api.spotify.com/v1/playlists/2bvngEXLfi3RQDMkI9aPIJ",
-      "id": "2bvngEXLfi3RQDMkI9aPIJ",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb2b3953988438e49e735b4afc",
-        "width": None
-      }],
-      "name": "Rogue Soundtrack 2020",
-      "owner": {
-        "display_name": "Xiaopi",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/rkvo4kefpee8g307myovuwhvi"
-        },
-        "href": "https://api.spotify.com/v1/users/rkvo4kefpee8g307myovuwhvi",
-        "id": "rkvo4kefpee8g307myovuwhvi",
-        "type": "user",
-        "uri": "spotify:user:rkvo4kefpee8g307myovuwhvi"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "NixkZmY5NjFkY2E0MjhkYjNmNDA2Mjg4MDliZTBmZDI2YzA0YWM4ZTdj",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/2bvngEXLfi3RQDMkI9aPIJ/tracks",
-        "total": 51
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:2bvngEXLfi3RQDMkI9aPIJ"
-    }, {
-      "collaborative": False,
-      "description": "太陽之家 Movie Japan ",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/7144mU1HmIxsboyXcUmLUw"
-      },
-      "href": "https://api.spotify.com/v1/playlists/7144mU1HmIxsboyXcUmLUw",
-      "id": "7144mU1HmIxsboyXcUmLUw",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb933f45ff5f6a4714ec37e3ac",
-        "width": None
-      }],
-      "name": "Family Bond Soundtrack 2020",
-      "owner": {
-        "display_name": "Xiaopi",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/rkvo4kefpee8g307myovuwhvi"
-        },
-        "href": "https://api.spotify.com/v1/users/rkvo4kefpee8g307myovuwhvi",
-        "id": "rkvo4kefpee8g307myovuwhvi",
-        "type": "user",
-        "uri": "spotify:user:rkvo4kefpee8g307myovuwhvi"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "NixiMWQ3ZjljZmZjZWIzNGNhZGM0ODcxNzMzMzdhMjVhZTAxOGU4ZDYz",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/7144mU1HmIxsboyXcUmLUw/tracks",
-        "total": 51
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:7144mU1HmIxsboyXcUmLUw"
-    }, {
-      "collaborative": False,
-      "description": "德黑蘭行動 TV Show 2020",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/1ANDGw2vDPieyFTg3Uyucu"
-      },
-      "href": "https://api.spotify.com/v1/playlists/1ANDGw2vDPieyFTg3Uyucu",
-      "id": "1ANDGw2vDPieyFTg3Uyucu",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebbf112ba45f9defcee62d8f7e6",
-        "width": None
-      }],
-      "name": "Tehran Soundtrack",
-      "owner": {
-        "display_name": "Xiaopi",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/rkvo4kefpee8g307myovuwhvi"
-        },
-        "href": "https://api.spotify.com/v1/users/rkvo4kefpee8g307myovuwhvi",
-        "id": "rkvo4kefpee8g307myovuwhvi",
-        "type": "user",
-        "uri": "spotify:user:rkvo4kefpee8g307myovuwhvi"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "NiwyZTllM2UyYzNiNjliOTgzNjY1ODNkNDZhZGNkOWI5NDk4MjMxOGZj",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/1ANDGw2vDPieyFTg3Uyucu/tracks",
-        "total": 51
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:1ANDGw2vDPieyFTg3Uyucu"
-    }, {
-      "collaborative": False,
-      "description": "當鄉村男遇上嘻哈女 TV Show Netflix 2020",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/4kWjQHYPFyKUsem5bENQXK"
-      },
-      "href": "https://api.spotify.com/v1/playlists/4kWjQHYPFyKUsem5bENQXK",
-      "id": "4kWjQHYPFyKUsem5bENQXK",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb44b7afae5766010d7a158029",
-        "width": None
-      }],
-      "name": "Country-Ish Soundtrack",
-      "owner": {
-        "display_name": "Xiaopi",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/rkvo4kefpee8g307myovuwhvi"
-        },
-        "href": "https://api.spotify.com/v1/users/rkvo4kefpee8g307myovuwhvi",
-        "id": "rkvo4kefpee8g307myovuwhvi",
-        "type": "user",
-        "uri": "spotify:user:rkvo4kefpee8g307myovuwhvi"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "MTAsOGM2YWUyYmM2N2U5ZjkzZTU1MzQxYjVhYzVmNDkwN2I4OTA0YjZkNw==",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/4kWjQHYPFyKUsem5bENQXK/tracks",
-        "total": 55
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:4kWjQHYPFyKUsem5bENQXK"
-    }, {
-      "collaborative": False,
-      "description": "完美犯罪：狄列夫·羅威德遇刺案 TV Show Netflix 2020",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/3zpNVHA6vE8krb5FA26Evb"
-      },
-      "href": "https://api.spotify.com/v1/playlists/3zpNVHA6vE8krb5FA26Evb",
-      "id": "3zpNVHA6vE8krb5FA26Evb",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb47dbc399c1cc2518f434e048",
-        "width": None
-      }],
-      "name": "Rohwedder (A Perfect Crime) Soundtrack ",
-      "owner": {
-        "display_name": "Xiaopi",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/rkvo4kefpee8g307myovuwhvi"
-        },
-        "href": "https://api.spotify.com/v1/users/rkvo4kefpee8g307myovuwhvi",
-        "id": "rkvo4kefpee8g307myovuwhvi",
-        "type": "user",
-        "uri": "spotify:user:rkvo4kefpee8g307myovuwhvi"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "Niw3MjRkMTAwN2M1ZjQyMzY5M2VjZGY4MjI2NjNkYmI3ZGNlZDAxNGRi",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/3zpNVHA6vE8krb5FA26Evb/tracks",
-        "total": 51
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:3zpNVHA6vE8krb5FA26Evb"
-    }, {
-      "collaborative": False,
-      "description": "為鞋癡狂 TV Show Netflix 2020",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/18NbFAZ6coZf6DyDRWyGZj"
-      },
-      "href": "https://api.spotify.com/v1/playlists/18NbFAZ6coZf6DyDRWyGZj",
-      "id": "18NbFAZ6coZf6DyDRWyGZj",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebbd6f94c4bf93546d53bda8042",
-        "width": None
-      }],
-      "name": "Sneakerheads Soundtrack",
-      "owner": {
-        "display_name": "Xiaopi",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/rkvo4kefpee8g307myovuwhvi"
-        },
-        "href": "https://api.spotify.com/v1/users/rkvo4kefpee8g307myovuwhvi",
-        "id": "rkvo4kefpee8g307myovuwhvi",
-        "type": "user",
-        "uri": "spotify:user:rkvo4kefpee8g307myovuwhvi"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "NixjZDk5NjgxOWE4ZDFjZWVhODcxNGI3N2FiOTJhODY4YWEyYzA5NTM5",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/18NbFAZ6coZf6DyDRWyGZj/tracks",
-        "total": 51
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:18NbFAZ6coZf6DyDRWyGZj"
-    }, {
-      "collaborative": False,
-      "description": "天才少女福爾摩斯 Movie Netflix",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/7exJyaXsVfOW7pXT3qcEEW"
-      },
-      "href": "https://api.spotify.com/v1/playlists/7exJyaXsVfOW7pXT3qcEEW",
-      "id": "7exJyaXsVfOW7pXT3qcEEW",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb0615e7a8d9fad643992d3b19",
-        "width": None
-      }],
-      "name": "Enola Holmes Soundtrack 2020",
-      "owner": {
-        "display_name": "Xiaopi",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/rkvo4kefpee8g307myovuwhvi"
-        },
-        "href": "https://api.spotify.com/v1/users/rkvo4kefpee8g307myovuwhvi",
-        "id": "rkvo4kefpee8g307myovuwhvi",
-        "type": "user",
-        "uri": "spotify:user:rkvo4kefpee8g307myovuwhvi"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "NTIsNTIxYTg2N2ZhMjA0YzJlMmZmOWE4OTQxZGYxMmI1NmQ5YjM3OTZhMw==",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/7exJyaXsVfOW7pXT3qcEEW/tracks",
-        "total": 51
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:7exJyaXsVfOW7pXT3qcEEW"
-    }, {
-      "collaborative": False,
-      "description": "黃金教戰守則 TV Show Netflix 2020",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/24O0uCGE75O8Sh8TWrwxxb"
-      },
-      "href": "https://api.spotify.com/v1/playlists/24O0uCGE75O8Sh8TWrwxxb",
-      "id": "24O0uCGE75O8Sh8TWrwxxb",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb53fd41312f80b208a6341bc1",
-        "width": None
-      }],
-      "name": "The Playbook Soundtrack",
-      "owner": {
-        "display_name": "Xiaopi",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/rkvo4kefpee8g307myovuwhvi"
-        },
-        "href": "https://api.spotify.com/v1/users/rkvo4kefpee8g307myovuwhvi",
-        "id": "rkvo4kefpee8g307myovuwhvi",
-        "type": "user",
-        "uri": "spotify:user:rkvo4kefpee8g307myovuwhvi"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "NixiYzE4NTIzMTQ3YmVjZGMyZDNlNjA5NWZkNTQxYmRmY2M2Y2M2ODk2",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/24O0uCGE75O8Sh8TWrwxxb/tracks",
-        "total": 51
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:24O0uCGE75O8Sh8TWrwxxb"
-    }, {
-      "collaborative": False,
-      "description": "貪金世家 TV Show FOX 2020",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/04kxj3zZleBPiK0N0NAPd1"
-      },
-      "href": "https://api.spotify.com/v1/playlists/04kxj3zZleBPiK0N0NAPd1",
-      "id": "04kxj3zZleBPiK0N0NAPd1",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebb83e42b7381ba5ab2a2b985d9",
-        "width": None
-      }],
-      "name": "Filthy Rich Soundtrack",
-      "owner": {
-        "display_name": "Xiaopi",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/rkvo4kefpee8g307myovuwhvi"
-        },
-        "href": "https://api.spotify.com/v1/users/rkvo4kefpee8g307myovuwhvi",
-        "id": "rkvo4kefpee8g307myovuwhvi",
-        "type": "user",
-        "uri": "spotify:user:rkvo4kefpee8g307myovuwhvi"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "NiwxNjIwMzZkN2ZjNzlmOGRjYWI4OTBhZDk0YzA4MDIwYmI5NmRmYzQw",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/04kxj3zZleBPiK0N0NAPd1/tracks",
-        "total": 51
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:04kxj3zZleBPiK0N0NAPd1"
-    }, {
-      "collaborative": False,
-      "description": "獻給拉塔莎的詠嘆調 Movie Netflix ",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/4Ss4Q7SL49y5fSR07CBdHG"
-      },
-      "href": "https://api.spotify.com/v1/playlists/4Ss4Q7SL49y5fSR07CBdHG",
-      "id": "4Ss4Q7SL49y5fSR07CBdHG",
-      "images": [{
-        "height": None,
-        "url": "https://i.scdn.co/image/ab67706c0000bebbaee735f6ba3ab3c43828c89a",
-        "width": None
-      }],
-      "name": "A Love Song for Latasha Soundtrack 2020",
-      "owner": {
-        "display_name": "Xiaopi",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/rkvo4kefpee8g307myovuwhvi"
-        },
-        "href": "https://api.spotify.com/v1/users/rkvo4kefpee8g307myovuwhvi",
-        "id": "rkvo4kefpee8g307myovuwhvi",
-        "type": "user",
-        "uri": "spotify:user:rkvo4kefpee8g307myovuwhvi"
-      },
-      "primary_color": None,
-      "public": True,
-      "snapshot_id": "NixmZjU1Y2NmN2U4ZjFiZWFiODgwMjY0ZWZlMmQ1ZmI2MTY5MGE2ZjFm",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/4Ss4Q7SL49y5fSR07CBdHG/tracks",
-        "total": 51
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:4Ss4Q7SL49y5fSR07CBdHG"
-    }],
-    "limit": 20,
-    "next": "https://api.spotify.com/v1/users/rkvo4kefpee8g307myovuwhvi/playlists?offset=20&limit=20",
-    "offset": 0,
-    "previous": None,
-    "total": 89
-  }
+  "id": 4,
+  "Amount": "80",
+  "location": "Argentina",
+  "playlist link": "RAP EN INGLÉS ",
+  "curator contact": "@paolitomas"
+}, {
+  "id": 5,
+  "Amount": "120",
+  "location": "USA",
+  "playlist link": "TRAP YANKEE 🇺🇸",
+  "curator contact": "@facumurilloo"
+}, {
+  "id": 6,
+  "Amount": "80",
+  "location": "USA",
+  "playlist link": "Top 100 most streamed songs on Spotify",
+  "curator contact": "@norenholgersson"
+}, {
+  "id": 7,
+  "Amount": "$150",
+  "location": "Europe",
+  "playlist link": "RAP US 2022 💸 [ 100% HITS ] ",
+  "curator contact": "@spoti.nath"
+}, {
+  "id": 8,
+  "Amount": "200",
+  "location": "Brazil",
+  "playlist link": "Black Antigos (SÓ RELÍQUIA)",
+  "curator contact": "@fabio92ti"
+}, {
+  "id": 9,
+  "Amount": "60",
+  "location": "USA",
+  "playlist link": "Hype Gym Bangers",
+  "curator contact": "@camden.walsh"
+}, {
+  "id": 10,
+  "Amount": "200",
+  "location": "Europe",
+  "playlist link": "tiktok songs slowed + reverb",
+  "curator contact": "@maeveplaylist"
+}, {
+  "id": 11,
+  "Amount": "110",
+  "location": "USA",
+  "playlist link": "American Rap 2022",
+  "curator contact": "@americaraplist"
+}, {
+  "id": 12,
+  "Amount": "200",
+  "location": "Brazil",
+  "playlist link": "Hip Hop 90s & 2000s - Classics",
+  "curator contact": "@bgabraga"
+}, {
+  "id": 13,
+  "Amount": "30",
+  "location": "Brazil",
+  "playlist link": "Fast and Furious (The best of)",
+  "curator contact": "@helder_monteiro97"
+}, {
+  "id": 14,
+  "Amount": "30",
+  "location": "Mexico",
+  "playlist link": "GYM MODO BESTIA 💪🏻",
+  "curator contact": "@bernardo.reynose"
+}, {
+  "id": 15,
+  "Amount": "65",
+  "location": "Great Britain",
+  "playlist link": "Throwback Bangers 🔥🔥🔥",
+  "curator contact": "@chris.simpson99"
+}, {
+  "id": 16,
+  "Amount": "100",
+  "location": "Germany",
+  "playlist link": "RNB MUSIC",
+  "curator contact": "@volupmusic"
+}, {
+  "id": 17,
+  "Amount": "147",
+  "location": "Germany",
+  "playlist link": "RAP INTERNATIONAL",
+  "curator contact": "@volupmusic"
+}, {
+  "id": 18,
+  "Amount": "35",
+  "location": "Italy",
+  "playlist link": "Best English Rap/Hip Pop🔥",
+  "curator contact": "@serafinialessandro0_"
+}, {
+  "id": 19,
+  "Amount": "25",
+  "location": "Europe",
+  "playlist link": "want me - cl4pers",
+  "curator contact": "@ola.wav"
+}, {
+  "id": 20,
+  "Amount": "25",
+  "location": "Europe",
+  "playlist link": "Nemzzz - 2MS",
+  "curator contact": "@ola.wav"
+}, {
+  "id": 21,
+  "Amount": "60",
+  "location": "USA",
+  "playlist link": "foolin around yvngxchris (unreleased)",
+  "curator contact": "@codymgmt"
+}, {
+  "id": 22,
+  "Amount": "50",
+  "location": "USA",
+  "playlist link": "f*ck me like you want me",
+  "curator contact": "@codymgmt"
+}, {
+  "id": 23,
+  "Amount": "35",
+  "location": "USA",
+  "playlist link": "TRAP GRINGO HITS 2022 🦉",
+  "curator contact": "@eipify"
+}, {
+  "id": 24,
+  "Amount": "40",
+  "location": "Europe",
+  "playlist link": "🦅",
+  "curator contact": "@varestheproducer"
+}, {
+  "id": 25,
+  "Amount": "30",
+  "location": "Europe",
+  "playlist link": "Sing Along Bangers😜",
+  "curator contact": "natashapatelxox"
+}, {
+  "id": 26,
+  "Amount": "250",
+  "location": "USA",
+  "playlist link": "Rap Hits (2010 - 2022)",
+  "curator contact": "@membrivess"
+}, {
+  "id": 27,
+  "Amount": "100",
+  "location": "USA",
+  "playlist link": "ULTIMATE GYM RAP 2021 💪🏼",
+  "curator contact": "@azarrella9"
+}, {
+  "id": 28,
+  "Amount": "40",
+  "location": "England",
+  "playlist link": "Gaming Music 2022 HipHop Rap",
+  "curator contact": "@Coby#1542 (discord)"
+}, {
+  "id": 29,
+  "Amount": "140",
+  "location": "Spain",
+  "playlist link": "RUNNING RAP MUSIC 2022🏃🏾🎶",
+  "curator contact": "@playlists.ifmmusic"
+}, {
+  "id": 30,
+  "Amount": "45",
+  "location": "Spain",
+  "playlist link": "POP SONGS 2022 🎶 💃",
+  "curator contact": "@playlists.ifmmusic"
+}, {
+  "id": 31,
+  "Amount": "100",
+  "location": "USA",
+  "playlist link": "Hard Rap 🔥",
+  "curator contact": "502alexhunter@gmail.com"
+}, {
+  "id": 32,
+  "Amount": "45",
+  "location": "USA",
+  "playlist link": "run :",
+  "curator contact": "cuteplaylists@gmail.com"
+}, {
+  "id": 33,
+  "Amount": "45",
+  "location": "USA",
+  "playlist link": "[hip-hop]",
+  "curator contact": "cuteplaylists@gmail.com"
 }]

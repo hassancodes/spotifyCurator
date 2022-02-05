@@ -31,7 +31,9 @@ def displaylists():
 def displayppt():
     file_loc  =  "maindata/potentialplaylists.json"
     exist = os.path.exists(file_loc)
+
     if exist == False:
+        # if file doesnot exist, then create a file.
         with open(file_loc, "r+") as file:
             pass
     elif exist==True:
@@ -44,7 +46,11 @@ def displayppt():
                 if len(data)<1:
                     return {}
                 else:
-                    return data["Potential Playlists"]
+                    # return data["Potential Playlists"]
+                    sorted_dictionary = data["Potential Playlists"]
+                    return sorted(sorted_dictionary, key=lambda x: int(x['Amount']))
+
+
 
 # print(displayppt())
 

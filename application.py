@@ -80,37 +80,67 @@ def handle_data():
 # # handling the submission of potential PlayList
 @application.route("/handle_ppt", methods=['POST'])
 def handle_ppt():
+    formation = request.args.get("sort")
+    if formation == "descending":
+        return "LOL"
+    else:
 
-    index =get_indexppt()
-    file_loc = "maindata/potentialplaylists.json"
-    data = {
-        "id" : index+1 ,
-        "Amount" : request.form["amount"],
-        "location" : request.form["location"],
-        "playlist link" : getplaylistname(request.form["playlistlink"]),
-        "curator contact" : request.form["curatorcontact"]
-        }
+        # if conditions for formating based on the Amount value
+        index =get_indexppt()
+        file_loc = "maindata/potentialplaylists.json"
+        data = {
+            "id" : index+1 ,
+            "Amount" : int(request.form["amount"]),
+            "location" : request.form["location"],
+            "playlist link" : getplaylistname(request.form["playlistlink"]),
+            "curator contact" : request.form["curatorcontact"]
+            }
 
-    with open(file_loc , "r+") as ppt:
-        # working on presistent data in add playlist.json
-        mydict = OrderedDict()
-        ls = []
-        jsonsize = os.path.getsize(file_loc)
-        if jsonsize ==0:
-            ls.append(data)
-            mydict["Potential Playlists"] = ls
-            json.dump(mydict,ppt)
-            # changed
-            return redirect(url_for("pplaylists"))
-        elif jsonsize!=0:
+        with open(file_loc , "r+") as ppt:
+            # working on presistent data in add playlist.json
+            mydict = OrderedDict()
+            ls = []
+            jsonsize = os.path.getsize(file_loc)
+            if jsonsize ==0:
+                ls.append(data)
+                mydict["Potential Playlists"] = ls
+                json.dump(mydict,ppt)
+                # changed
+                return redirect(url_for("pplaylists"))
+            elif jsonsize!=0:
 
-            file_data = json.load(ppt)
-            file_data["Potential Playlists"].append(data)
-            ppt.seek(0)
-            json.dump(file_data,ppt, indent = 4)
+                file_data = json.load(ppt)
+                file_data["Potential Playlists"].append(data)
+                ppt.seek(0)
+                json.dump(file_data,ppt, indent = 4)
+        # redirecting after adding the data to the form
+        return redirect(url_for("pplaylists"))
 
-    # redirecting after adding the data to the form
-    return redirect(url_for("pplaylists"))
+
+# Seperate script for checking potential playlists.
+var = "main"
+@application.route("/potentialplaylists",methods= ["GET", "POST"])
+def pplaylists():
+    pptdata  = displayppt()
+    for i in range(len(pptdata)):
+        pptdata[i]["id"] = i+1
+        pptdata[i]["Amount"] = f"${pptdata[i]['Amount']}"
+
+    return render_template("potentialplaylists.html", pptdata = pptdata ,var=var)
+
+
+# this function is for descending playlist.
+var = "main"
+@application.route("/potentialplaylists/descending",methods= ["GET", "POST"])
+def descending():
+        pptdata  = displayppt()[::-1]
+        for i in range(len(pptdata)):
+            pptdata[i]["id"] = i+1
+            pptdata[i]["Amount"] = f"${pptdata[i]['Amount']}"
+
+        return render_template("descending.html", pptdata = pptdata ,var=var)
+
+
 
 
 
@@ -181,12 +211,21 @@ def addplaylist():
     return render_template("addplaylists.html", var=var,pldata=pldata)
 
 
-# Seperate script for checking potential playlists.
-var = "main"
-@application.route("/potentialplaylists")
-def pplaylists():
-    pptdata  = displayppt()
-    return render_template("potentialplaylists.html", pptdata = pptdata ,var=var)
+# # Seperate script for checking potential playlists.
+# var = "main"
+# @application.route("/potentialplaylists",methods= ["GET", "POST"])
+# def pplaylists():
+#     pptdata  = displayppt()
+#     for i in range(len(pptdata)):
+#         pptdata[i]["id"] = i+1
+#         pptdata[i]["Amount"] = f"${pptdata[i]['Amount']}"
+#
+#     return render_template("potentialplaylists.html", pptdata = pptdata ,var=var)
+#
+
+
+
+
 
 
 var = "main"
