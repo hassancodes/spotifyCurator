@@ -230,6 +230,20 @@
             "location": "USA",
             "playlist link": "[hip-hop]",
             "curator contact": "cuteplaylists@gmail.com"
+        },
+        {
+            "id": 34,
+            "Amount": 70,
+            "location": "USA",
+            "playlist link": "depressed af \ud83d\udc89\ud83d\udd2a",
+            "curator contact": "@billy.shanks"
+        },
+        {
+            "id": 35,
+            "Amount": 58,
+            "location": "USA",
+            "playlist link": "TURN IT UP / FLOATING",
+            "curator contact": "@alexgray11"
         }
     ]
 }
