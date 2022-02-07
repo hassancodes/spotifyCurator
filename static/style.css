@@ -15,6 +15,7 @@
   /* --color4 : ; */
 }
 
+
 body {
   padding-bottom: 50px;
 }
@@ -124,9 +125,7 @@ div .nav-ul {
   width: 9.5%;
 }
 
-/* .playlisttable th:nth-child(4) {
-  width: 19%;
-} */
+
 .playlisttable div {
   display: inline-block;
   position: relative;
@@ -191,9 +190,10 @@ div .nav-ul {
 .card-columns a {
   color: white;
 }
+/* ###################################### blacklist page design Ends Here############################################# */
 
 /* ######################################### login page design starts from here ##################################### */
-/* ##################################################################################################################### */
+
 .login__body {
   /* background-image:linear-gradient(#c29200,#d7a100); */
   background-image: url("/static/img/headphone.jpg");
@@ -251,9 +251,9 @@ div .nav-ul {
   width: 250px;
   height: 40px;
 }
+/* ##############################################Login page design ends here########################################## */
 
-
-/* ############################################################################################# */
+/* ############################################# Fileters Designs start Here ##################################### */
 .arrow {
   border: solid black;
   border-width: 0 3px 3px 0;
@@ -280,3 +280,4 @@ div .nav-ul {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+/* ############################################# Fileters Designs Ends Here ##################################### */
