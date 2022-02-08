@@ -12,6 +12,12 @@ import os
 application = Flask(__name__)
 
 
+################################################ GLOBAL VARIABLES ###############################################
+countrylist = None
+
+
+
+
 ############################### Opening data files here to create variable for templates ######################
 file = open("scrapejson/tedays.json", "r", encoding="utf-8")
 jData = json.load(file)
@@ -122,24 +128,64 @@ var = "main"
 @application.route("/potentialplaylists",methods= ["GET", "POST"])
 def pplaylists():
     pptdata  = displayppt()
+    countrynames = []
     for i in range(len(pptdata)):
         pptdata[i]["id"] = i+1
         pptdata[i]["Amount"] = f"${pptdata[i]['Amount']}"
+        countrynames.append(pptdata[i]["location"])
 
-    return render_template("potentialplaylists.html", pptdata = pptdata ,var=var)
+    global countrylist
+    countrylist = list(set(countrynames))
+    print(countrylist)
+
+
+    return render_template("potentialplaylists.html", pptdata = pptdata ,var=var,countrylist=list(set(countrylist)) )
 
 
 # this function is for descending playlist.
 var = "main"
 @application.route("/potentialplaylists/descending",methods= ["GET", "POST"])
 def descending():
-        pptdata  = displayppt()[::-1]
-        for i in range(len(pptdata)):
-            pptdata[i]["id"] = i+1
-            pptdata[i]["Amount"] = f"${pptdata[i]['Amount']}"
+    rcountrylist = []
 
-        return render_template("descending.html", pptdata = pptdata ,var=var)
+    pptdata  = displayppt()[::-1]
+    for i in range(len(pptdata)):
+        pptdata[i]["id"] = i+1
+        pptdata[i]["Amount"] = f"${pptdata[i]['Amount']}"
+        rcountrylist.append(pptdata[i]['location'])
+    fcountrylist = list(set(rcountrylist))
 
+    return render_template("descending.html", pptdata = pptdata ,var=var, countrylist=list(set(fcountrylist)))
+
+
+
+var="main"
+@application.route("/<string:countryname>")
+def getcountrylist(countryname):
+    selectedCountry = countryname
+    filterlist = []
+    pptdata  = displayppt()
+    countrynames = []
+    # setting the counter for the filterlist
+    # this take care of the index of the new filter list with random indexes.
+    counter = 1
+    for i in range(len(pptdata)):
+        if pptdata[i]["location"]==countryname:
+            pptdata[i]["id"] = counter
+            filterlist.append(pptdata[i])
+            counter +=1
+        else:
+            pass
+
+
+    countrylist.append("Location")
+    # print(filterlist)
+    # print(countrylist)
+
+
+
+
+    return render_template("potentialplaylists.html", pptdata = filterlist ,var=var,countrylist=list(set(countrylist)) ,selectedCountry=selectedCountry)
 
 
 
@@ -210,18 +256,6 @@ def addplaylist():
     pldata = displaylists()
     return render_template("addplaylists.html", var=var,pldata=pldata)
 
-
-# # Seperate script for checking potential playlists.
-# var = "main"
-# @application.route("/potentialplaylists",methods= ["GET", "POST"])
-# def pplaylists():
-#     pptdata  = displayppt()
-#     for i in range(len(pptdata)):
-#         pptdata[i]["id"] = i+1
-#         pptdata[i]["Amount"] = f"${pptdata[i]['Amount']}"
-#
-#     return render_template("potentialplaylists.html", pptdata = pptdata ,var=var)
-#
 
 
 

@@ -20,7 +20,31 @@
         <tr class="tableheadcenter">
           <th>Index</th>
           <th onclick="forward()">Amount ($)&nbsp;&nbsp;<i class="arrow down"></i></th>
-          <th>Location</th>
+          <!-- <th>Location</th> -->
+
+          <th><select name="Location" id="ppt__navbar" onchange="javascript:handleSelect(this)" class="drop__down">Location
+            {% if selectedCountry%}
+            <!-- potential playlist navbar to remove its border -->
+            <option value="/" id="ppt__navbar"><strong>{{selectedCountry}}</strong></option>
+            {% else %}
+            <option value="/"><strong>Location</strong></option>
+            {% endif %}
+              <!-- write a loop here to generate a list of all the available country in the database -->
+              {% for country in countrylist %}
+              {% if country == "Location" %}
+              <option value="/potentialplaylists">{{country}}</option>
+              {% else %}
+              <option value="/{{country}}">{{country}}</option>
+              {% endif %}
+
+              {% endfor %}
+            </select></th>
+
+
+
+
+
+
           <th>Playlist Link</th>
           <th>Curator Contact🗣️</th>
         </tr>

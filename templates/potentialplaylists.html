@@ -23,9 +23,28 @@
               <polygon points="12 18 6 8 18 8 12 18" fill="#181818" fill-rule="evenodd"></polygon>
             </svg>Amount ($)</th> -->
 
-            <th onclick="reverse()">Amount ($)&nbsp;&nbsp;<i class="arrow up"></i></th>
+          <th onclick="reverse()">Amount ($)&nbsp;&nbsp;<i class="arrow up"></i></th>
           <!-- <th>Amount</th> -->
-          <th>Location</th>
+          <!-- <th>Location</th> -->
+          <th><select id="ppt__navbar" name="Location" id="location" onchange="javascript:handleSelect(this)" class="drop__down">Location
+              {% if selectedCountry%}
+              <!-- potential playlist navbar to remove its border -->
+              <option value="/" >{{selectedCountry}}</option>
+              {% else %}
+              <option value="/">Location</option>
+              {% endif %}
+              <!-- write a loop here to generate a list of all the available country in the database -->
+              {% for country in countrylist %}
+              {% if country == "Location" %}
+              <option value="/potentialplaylists">{{country}}</option>
+              {% else %}
+              <option value={{country}} >{{country}}</option>
+
+              {% endif %}
+              {% endfor %}
+            </select></th>
+
+
           <th>Playlist Link</th>
           <th>Curator Contact🗣️</th>
         </tr>
