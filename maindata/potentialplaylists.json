@@ -244,6 +244,27 @@
             "location": "USA",
             "playlist link": "TURN IT UP / FLOATING",
             "curator contact": "@alexgray11"
+        },
+        {
+            "id": 36,
+            "Amount": 40,
+            "location": "USA",
+            "playlist link": "Chicago Drill",
+            "curator contact": "@Carteralv"
+        },
+        {
+            "id": 37,
+            "Amount": 60,
+            "location": "USA",
+            "playlist link": "Chill Songs 2022",
+            "curator contact": "@vibesetter_"
+        },
+        {
+            "id": 38,
+            "Amount": 60,
+            "location": "USA",
+            "playlist link": "Dangerously In Love (772 Love Pt. 2) \u2013 YNW Melly",
+            "curator contact": "@niqfilms"
         }
     ]
 }
