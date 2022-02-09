@@ -29,16 +29,18 @@
           <th><select id="ppt__navbar" name="Location" id="location" onchange="javascript:handleSelect(this)" class="drop__down">Location
               {% if selectedCountry%}
               <!-- potential playlist navbar to remove its border -->
-              <option value="/" >{{selectedCountry}}</option>
+              <option value="/">{{selectedCountry}}</option>
               {% else %}
               <option value="/">Location</option>
               {% endif %}
+
+
               <!-- write a loop here to generate a list of all the available country in the database -->
               {% for country in countrylist %}
               {% if country == "Location" %}
               <option value="/potentialplaylists">{{country}}</option>
               {% else %}
-              <option value={{country}} >{{country}}</option>
+              <option value={{country}}>{{country}}</option>
 
               {% endif %}
               {% endfor %}
@@ -50,17 +52,37 @@
         </tr>
       </thead>
       <tbody id="potentialplaylisttbl">
+
+        <!-- setting a variable for total -->
+        {% set TotalAmount = [] %}
         {% for dict in pptdata %}
+
+
         <tr>
           {% for key,value in dict.items() %}
+          {% if loop.index == 2 %}
+          {% set __ =  TotalAmount.append(value | replace('$','') | int) %}
           <td contenteditable="true">
-            <div>{{value}}</div>
+              <div>{{value}}</div>
           </td>
-          {% endfor %}
+          {% else %}
+          <td contenteditable="true">
+              <div>{{value}}</div>
+          </td>
+          {% endif %}
 
+          {% endfor %}
         </tr> <!-- the table will  be added here by javascript -->
         <!-- </tbody> -->
         {% endfor %}
+
+        <tr>
+          <td><b>TOTAL</b></td>
+          <td><b>${{TotalAmount | sum}}</b></td>
+          <td>--</td>
+          <td>--</td>
+          <td>--</td>
+        </tr>
     </table>
     <!-- ################################################################################ -->
   </div>

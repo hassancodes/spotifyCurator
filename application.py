@@ -36,10 +36,10 @@ tfData = json.load(tffile)
 
 
 # Home Route
-ab = "tutorial"
+
 @application.route("/")
 def main():
-    return render_template("index.html" , jData=jData, var=ab)
+    return render_template("index.html" , jData=jData)
 
 ###############################################GOD Function ########################################################
 # handling the add playlist submission data
@@ -278,10 +278,6 @@ def ratepps():
 #################################### Endpoints below require more work ########################################
 # miscellaneous
 # about, main
-var = "main"
-@application.route("/tutorial")
-def tut():
-    return render_template("tutorial.html", var=var)
 
 
 
