@@ -272,6 +272,13 @@
             "location": "USA",
             "playlist link": "Dirty Songs \ud83d\ude0f\ud83d\udc8b\ud83d\ude08",
             "curator contact": "@ktsanxietywrld"
+        },
+        {
+            "id": 40,
+            "Amount": 20,
+            "location": "Denmark",
+            "playlist link": "Freaky mood\ud83d\udc40\ud83d\udca6",
+            "curator contact": "@astrid.fabech"
         }
     ]
 }
