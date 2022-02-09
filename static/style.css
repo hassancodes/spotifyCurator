@@ -67,32 +67,58 @@ body {
 }
 
 /* COMMON */
-.navbar {
+
+
+nav .nav__link{
+  transition: 0.3s ease;
+  /* background: #3fa46a; */
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  padding-left: 10px;
+  padding-right :10px;
+  margin: 0 5px;
+  font-size: 17px;
+}
+.nav__link:hover {
+  border-top: 4px solid #fdce4b;
+  border-bottom: 4px solid #fdce4b;
+  padding: 6px 0;
+}
+
+
+.dropdown:hover {
+  color: black !important;
+
+}
+/* .navbar {
   background-color: var(--primary-color);
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-}
+} */
 
-div .nav-ul {
+/* div .nav-ul {
   list-style-type: none;
   display: inline-block;
   display: flex;
   color: white;
-}
+} */
 
-.nav-li {
+/* .nav-li {
   display: inline;
-  /* border: 1px solid grey; */
+  border: 1px solid grey;
   padding: 2px 10px 2px 10px;
   border-radius: 10px;
   margin-left: 10px;
   margin-right: 10px;
   flex-grow: 1;
-}
+} */
 
-.nav-li:hover {
+/* .nav-li:hover {
   background-color: var(--color3);
-}
+} */
 
 /* ######################Fixing the long playlist names######################### */
 #playlist-name {
@@ -108,7 +134,7 @@ div .nav-ul {
 
 /* ######################Fixing the long spotify link ######################### */
 .playlisttable {
-  /* table-layout: fixed; */
+  table-layout: fixed;
   width: 100px;
   border-collapse: collapse;
 }
@@ -142,22 +168,6 @@ div .nav-ul {
   background-color: #FFFFCC;
 }
 
-/* footer and its contents starts from here */
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: var(--primary-color);
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
-  color: black;
-  text-align: center;
-}
-
-.footer li {
-  list-style: none;
-}
 
 /* ###################################### blacklist page design ############################################# */
 .blacklist__class {
@@ -316,3 +326,40 @@ outline:0px;
   -webkit-transform: rotate(45deg);
 }
 /* ############################################# Fileters Designs Ends Here ##################################### */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############################################# Footer starts from Here ##################################### */
+
+/* footer and its contents starts from here */
+/* .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  color: black;
+  text-align: center;
+}
+
+.footer li {
+  list-style: none;
+} */
