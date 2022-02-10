@@ -17,7 +17,7 @@
 
 
 body {
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 }
 
 /* Drop is only present on main page for 24,7 and 28 days data */
@@ -327,7 +327,9 @@ outline:0px;
 }
 /* ############################################# Fileters Designs Ends Here ##################################### */
 footer{
-    /* position: absolute; */
+    position: ;
+    margin-bottom: 0px;
+    margin-top : 50px;
     bottom: 0;
     left: 0;
     right: 0;
