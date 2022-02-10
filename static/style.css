@@ -16,7 +16,7 @@
 }
 
 body {
-  padding-bottom: 0px;
+  padding-bottom: 100px;
 }
 
 /* Drop is only present on main page for 24,7 and 28 days data */
@@ -355,7 +355,7 @@ footer {
 .footer-bottom {
   background: #191919;
   /* width: 100vw; */
-  padding: 20px;
+  padding: 10px;
   padding-bottom: 40px;
   text-align: center;
 }
