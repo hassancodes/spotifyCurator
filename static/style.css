@@ -15,7 +15,6 @@
   /* --color4 : ; */
 }
 
-
 body {
   padding-bottom: 0px;
 }
@@ -67,9 +66,7 @@ body {
 }
 
 /* COMMON */
-
-
-nav .nav__link{
+nav .nav__link {
   transition: 0.3s ease;
   /* background: #3fa46a; */
   color: white;
@@ -78,34 +75,32 @@ nav .nav__link{
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
   padding-left: 10px;
-  padding-right :10px;
+  padding-right: 10px;
   margin: 0 5px;
   font-size: 17px;
 }
+
 .nav__link:hover {
   border-top: 4px solid #fdce4b;
   border-bottom: 4px solid #fdce4b;
   padding: 6px 0;
 }
 
-
 .dropdown:hover {
   color: black !important;
-
 }
+
 /* .navbar {
   background-color: var(--primary-color);
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
 } */
-
 /* div .nav-ul {
   list-style-type: none;
   display: inline-block;
   display: flex;
   color: white;
 } */
-
 /* .nav-li {
   display: inline;
   border: 1px solid grey;
@@ -115,11 +110,9 @@ nav .nav__link{
   margin-right: 10px;
   flex-grow: 1;
 } */
-
 /* .nav-li:hover {
   background-color: var(--color3);
 } */
-
 /* ######################Fixing the long playlist names######################### */
 #playlist-name {
   white-space: nowrap;
@@ -151,7 +144,6 @@ nav .nav__link{
   width: 9.5%;
 }
 
-
 .playlisttable div {
   display: inline-block;
   position: relative;
@@ -168,7 +160,6 @@ nav .nav__link{
   background-color: #FFFFCC;
 }
 
-
 /* ###################################### blacklist page design ############################################# */
 .blacklist__class {
   text-align: center;
@@ -180,8 +171,6 @@ nav .nav__link{
   background-size: cover;
   text-align: center;
 }
-
-
 
 .card-columns {
   display: grid !important;
@@ -200,9 +189,8 @@ nav .nav__link{
 .card-columns a {
   color: white;
 }
+
 /* ###################################### blacklist page design Ends Here############################################# */
-
-
 /* ###################################### Potential playlist page design Starts from Here############################################# */
 /* #ppt__navbar{
 
@@ -227,18 +215,17 @@ nav .nav__link{
   white-space: nowrap;
 }
 /*  */
-#ppt__navbar{
-border:0px;
-outline:0px;
+#ppt__navbar {
+  border: 0px;
+  outline: 0px;
 }
-.drop__down{
+
+.drop__down {
   font-weight: 700;
 }
 
 /* ###################################### Potential playlist page design Ends Here############################################# */
-
 /* ######################################### login page design starts from here ##################################### */
-
 .login__body {
   /* background-image:linear-gradient(#c29200,#d7a100); */
   background-image: url("/static/img/headphone.jpg");
@@ -296,8 +283,8 @@ outline:0px;
   width: 250px;
   height: 40px;
 }
-/* ##############################################Login page design ends here########################################## */
 
+/* ##############################################Login page design ends here########################################## */
 /* ############################################# Fileters Designs start Here ##################################### */
 .arrow {
   border: solid black;
@@ -325,105 +312,99 @@ outline:0px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+
 /* ############################################# Fileters Designs Ends Here ##################################### */
-footer{
-    position: ;
-    margin-bottom: 0px;
-    margin-top : 50px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #111;
-    height: auto;
-    /* width: 100vw; */
-    padding-top: 40px;
-    color: #fff;
+/* ############################################# Footer starts from Here ##################################### */
+footer {
+  position:fixed ;
+  margin-bottom: 0px;
+  margin-top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #191919;
+  height: auto;
+  /* width: 100vw; */
+  /* padding-top: 40px; */
+  color: #fff;
 }
 
-
-.footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
-.footer-content h3{
-    font-size: 2.1rem;
-    font-weight: 500;
-    text-transform: capitalize;
-    line-height: 3rem;
-}
-.footer-content p{
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 14px;
-    color: #cacdd2;
+.footer-content h3 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
 }
 
-
-.footer-bottom{
-    background: #000;
-    /* width: 100vw; */
-    padding: 20px;
-    padding-bottom: 40px;
-    text-align: center;
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #cacdd2;
 }
 
-.footer-bottom p{
-   float: left;
-   font-size: 14px;
-   word-spacing: 2px;
-   text-transform: capitalize;
+.footer-bottom {
+  background: #191919;
+  /* width: 100vw; */
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
 }
-.footer-bottom p a{
-  color:#44bae8;
+
+.footer-bottom p {
+  float: left;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom p a {
+  color: #44bae8;
   font-size: 16px;
   text-decoration: none;
 }
-.footer-bottom span{
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
 }
 
-
-.footer-menu{
+.footer-menu {
   float: right;
 }
 
-.footer-menu ul{
+.footer-menu ul {
   display: flex;
 }
 
-.footer-menu ul li{
-padding-right: 10px;
-display: block;
+.footer-menu ul li {
+  padding-right: 10px;
+  display: block;
 }
 
-.footer-menu ul li a{
+.footer-menu ul li a {
   color: #cfd2d6;
   text-decoration: none;
 }
 
-.footer-menu ul li a:hover{
+.footer-menu ul li a:hover {
   color: #27bcda;
 }
+
 @media (max-width:500px) {
-.footer-menu ul{
-  display: flex;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  .footer-menu ul {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
 }
-}
-
-
-
-
-
-
-
-
-/* ############################################# Footer starts from Here ##################################### */
