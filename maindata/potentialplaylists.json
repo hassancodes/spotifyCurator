@@ -279,6 +279,34 @@
             "location": "Denmark",
             "playlist link": "Freaky mood\ud83d\udc40\ud83d\udca6",
             "curator contact": "@astrid.fabech"
+        },
+        {
+            "id": 41,
+            "Amount": 20,
+            "location": "USA",
+            "playlist link": "RNB \ud83e\udd8b",
+            "curator contact": "@bhadvic_"
+        },
+        {
+            "id": 42,
+            "Amount": 150,
+            "location": "USA",
+            "playlist link": "BEST OF JUICE WRLD \ud83c\udf0e\ud83d\udd4a",
+            "curator contact": "@hiphopheavensvpply"
+        },
+        {
+            "id": 43,
+            "Amount": 15,
+            "location": "Brazil",
+            "playlist link": "Dirty South 2000's",
+            "curator contact": "@loocarbel"
+        },
+        {
+            "id": 44,
+            "Amount": 35,
+            "location": "NewZealand",
+            "playlist link": "SAD TRAP 2022 \ud83d\udd25",
+            "curator contact": "@sad.trap2021"
         }
     ]
 }
