@@ -307,6 +307,20 @@
             "location": "NewZealand",
             "playlist link": "SAD TRAP 2022 \ud83d\udd25",
             "curator contact": "@sad.trap2021"
+        },
+        {
+            "id": 45,
+            "Amount": 45,
+            "location": "USA",
+            "playlist link": "Cardio - Hip Hop",
+            "curator contact": "@rikkeadstofte"
+        },
+        {
+            "id": 46,
+            "Amount": 40,
+            "location": "USA",
+            "playlist link": "Trap Music 2022 \ud83d\ude08\ud83d\udd25\ud83d\udcaf",
+            "curator contact": "@polar_altercation"
         }
     ]
 }
