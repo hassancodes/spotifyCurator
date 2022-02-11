@@ -66,8 +66,8 @@ def curdate():
 
 # dbhandle()
 # # main call start fron here
-longTermData()
-dbhandle()
+# longTermData()
+# dbhandle()
 
 
 
