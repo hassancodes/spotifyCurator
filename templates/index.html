@@ -12,6 +12,7 @@
       <option value="/">28 Days</option>
       <option value="sevendays">7days</option>
       <option value="24hours">24 hours</option>
+      <option value="alltime">All Time</option>
     </select>
     <!-- </form> -->
   </div>
@@ -20,8 +21,8 @@
 </div>
 
 </div>
-
-<div class="table-responsive">
+<!--  -->
+<div class="table-bordered table-responsive table-hover indextable">
   <table class="table mb-0">
     <thead>
       <tr>
@@ -53,11 +54,12 @@
       {% endfor %}
 
       <tr>
-        <td>Rank</td>
-        <td>TotalMoney</td>
-        <td id="playlist-name">Playlist Name</td>
-        <td>{{ totalStreams | sum }}</td>
-        <td><span class="label label-danger"></span>${{totalRevenue | sum | round(2,'floor')}}</td>
+        <!-- <td>{{ totalplaylists | length }}</td> -->
+        <td><b>index</b></td>
+        <td><b>TotalMoney</b></td>
+        <td id="playlist-name"><b>------</b></td>
+        <td><b>Streams : {{ totalStreams | sum }} </b></td>
+        <td><span class="label label-danger"></span><b>${{totalRevenue | sum | round(2,'floor')}}</b></td>
       </tr>
 
     </tbody>

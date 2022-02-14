@@ -18,6 +18,7 @@ def dbhandle():
     tfhours = dbname["tfhourscol"]
     sevendays = dbname["sevendayscol"]
     tedays = dbname["tedayscol"]
+    alltime = dbname["alltimecol"]
 
 
     with open("scrapejson/tfhours.json" ,"r") as tf:
@@ -35,7 +36,11 @@ def dbhandle():
         sdData = json.loads(sd.read())
         sevendays.delete_many({})
         sevendays.insert_one(sdData)
-
+        # all time data
+    with open("scrapejson/alltime.json" ,"r") as atd:
+        atData = json.loads(atd.read())
+        alltime.delete_many({})
+        alltime.insert_one(atData)
 
 # this function stores the 24 hours data on regular basics
 def longTermData():
@@ -53,9 +58,6 @@ def longTermData():
 
 
 
-
-
-
 def curdate():
     year = datetime.now().year
     day = datetime.now().day
@@ -63,12 +65,6 @@ def curdate():
 
     x =datetime(year,month,day)
     return x.strftime("%b %d %Y")
-
-# dbhandle()
-# # main call start fron here
-# longTermData()
-# dbhandle()
-
 
 
 # A universal function to insert data in the give database collection.
@@ -96,3 +92,6 @@ def dbfetch(dbname,dbcollection):
     return data
 
 # dbfetch("miscellaneous", "blacklist")
+# # main call start fron here
+# longTermData()
+# dbhandle()

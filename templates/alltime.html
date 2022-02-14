@@ -9,10 +9,10 @@
     <label for="timeframe"></label>
     <!-- for is used to connect lable with id -->
     <select name="tf" id="timeframe" onchange="javascript:handleSelect(this)">
+      <option value="alltime">All Time</option>
       <option value="sevendays">7days</option>
       <option value="/">28 Days</option>
       <option value="24hours">24 hours</option>
-      <option value="alltime">All Time</option>
 
     </select>
     <!-- </form> -->
@@ -40,19 +40,19 @@
       {% set totalStreams = [] %}
       {% set totalplaylists = [] %}
       {% set totalRevenue = [] %}
-      {% for key,value in sdData.items() %}
+      {% for key,value in alltimeData.items() %}
       <tr>
-        <td>{{sdData[key]["rank"]}}</td>
+        <td>{{alltimeData[key]["rank"]}}</td>
         <td>input money</td>
-        <td id="playlist-name">{{sdData[key]["playlistname"]}}</td>
-        <td>{{sdData[key]["streams"]}}</td>
-        <td><span class="label label-danger">${{sdData[key]["revenue"]}}</span></td>
+        <td id="playlist-name">{{alltimeData[key]["playlistname"]}}</td>
+        <td>{{alltimeData[key]["streams"]}}</td>
+        <td><span class="label label-danger">${{alltimeData[key]["revenue"]}}</span></td>
 
         <!-- Below I have added the streams and revenue to jinja variables so I use it at the end of the table -->
-        {% set __ = totalplaylists.append( sdData[key]["rank"] | int) %}
-        {% set __ = totalRevenue.append( sdData[key]["revenue"]) %}
+        {% set __ = totalplaylists.append( alltimeData[key]["rank"] | int) %}
+        {% set __ = totalRevenue.append( alltimeData[key]["revenue"]) %}
         <!-- replace the commas from the string integers and then storing them into the list -->
-        {% set __ = totalStreams.append( sdData[key]["streams"] | replace(',','') | int) %}
+        {% set __ = totalStreams.append( alltimeData[key]["streams"] | replace(',','') | int) %}
       </tr>
       {% endfor %}
 

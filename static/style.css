@@ -19,6 +19,11 @@ body {
   padding-bottom: 100px;
 }
 
+
+
+.indextable th:nth-child(1) {
+  width: 5%;
+}
 /* Drop is only present on main page for 24,7 and 28 days data */
 .dropdown {
   display: inline;

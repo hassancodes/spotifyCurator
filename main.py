@@ -33,6 +33,7 @@ def createDict(ls):
     counter =0
     for k,v in maindata.items():
         if counter ==7:
+            # add country prices later.
             maindata[k] = round((int(maindata["streams"].replace(",",'')) * 0.006),2)
         else:
 
@@ -137,7 +138,7 @@ def main(email,pw,loginOpt):
     # Now I will target the 7 day link and store that body of that page
     driver.implicitly_wait(10)
 
-############################Fetching Seven days data######################################
+    ############################    Fetching Seven days data    ######################################
     # getting the seven days data.
     driver.get("https://artists.spotify.com/c/artist/7KzG8dszzwlSDGEsCbzANz/music/playlists?time-filter=7day")
     driver.implicitly_wait(10)
@@ -179,8 +180,33 @@ def main(email,pw,loginOpt):
         file.write(f"{tfbody}")
         print("Successfully data written to tfhours.html")
 
-# ###################################Seven days fetching ends here###############################
-#
+#################################### Seven days fetching ends here ###############################
+
+####################################  All time data ##################################################
+
+    driver.get("https://artists.spotify.com/c/artist/7KzG8dszzwlSDGEsCbzANz/music/playlists?time-filter=last5years")
+    driver.implicitly_wait(10)
+    time.sleep(5)
+    driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+    print("worked")
+    driver.implicitly_wait(4)
+    # searching for show more button.
+    driver.find_element_by_xpath("//*[contains(text(),'Show More')]").click()
+    print("Found the button")
+    driver.implicitly_wait(4)
+    func()
+    alltimestats = driver.find_element_by_tag_name("body")
+    alltimebody = BeautifulSoup(alltimestats.get_attribute("innerHTML"), "lxml")
+
+    # add in data to html file
+    with open("scrapehtml/alltime.html", "w",encoding="utf-8") as file:
+        file.write(f"{alltimebody}")
+        print("Successfully data written to alltime.html")
+
+
+
+#################################### All time data ##################################################
+
     return mbody
 
 #################################### ADDing to HTML FILE ###################################
@@ -246,7 +272,7 @@ parsefunc("tedays")
 time.sleep(10)
 # print(pprint.pprint(dictionary))
 
-######################################seven days creating json ########################################
+###################################### seven days creating json ########################################
 # initializing the dictionary again to store the seven data from start
 dictionary = OrderedDict()
 time.sleep(10)
@@ -255,11 +281,20 @@ time.sleep(10)
 # print(pprint.pprint(dictionary))
 
 
-######################################24 hours creating json ########################################
+###################################### 24 hours creating json ########################################
 # initializing the dictionary again to store the seven data from start
 dictionary = OrderedDict()
 time.sleep(10)
 parsefunc("tfhours")
+time.sleep(10)
+# print(pprint.pprint(dictionary))
+
+
+###################################### All time stats ########################################
+# initializing the dictionary again to store the seven data from start
+dictionary = OrderedDict()
+time.sleep(10)
+parsefunc("alltime")
 time.sleep(10)
 # print(pprint.pprint(dictionary))
 

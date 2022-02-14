@@ -30,6 +30,9 @@ sdData = json.load(sdfile)
 tffile = open("scrapejson/tfhours.json", "r", encoding="utf-8")
 tfData = json.load(tffile)
 
+#all time data
+alltimefile = open("scrapejson/alltime.json", "r", encoding="utf-8")
+alltimeData = json.load(alltimefile)
 
 
 
@@ -181,10 +184,6 @@ def getcountrylist(countryname):
     countrylist.append("Location")
     # print(filterlist)
     # print(countrylist)
-
-
-
-
     return render_template("potentialplaylists.html", pptdata = filterlist ,var=var,countrylist=list(set(countrylist)) ,selectedCountry=selectedCountry)
 
 
@@ -246,6 +245,12 @@ def seven_days():
 @application.route("/24hours")
 def tf_hours():
     return render_template("tfhours.html" ,tfData =tfData)
+
+@application.route("/alltime")
+def alltimestats():
+    return render_template("alltime.html" ,alltimeData = alltimeData)
+
+
 
 # Work Here
 
