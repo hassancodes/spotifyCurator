@@ -367,6 +367,30 @@
             "playlist link": "Trap Music 2022 \ud83d\ude08\ud83d\udd25\ud83d\udcaf",
             "genre": "HipHop/Rap",
             "curator contact": "@polar_altercation"
+        },
+        {
+            "id": 47,
+            "Amount": 30,
+            "location": "USA",
+            "playlist link": "FUCK SHIT HARD RAW DISTORTED MEME TIKTOK NEW TRAP MUSIC \ud83d\ude21",
+            "Genre": "HipHop/Rap",
+            "curator contact": "@damnshawrty"
+        },
+        {
+            "id": 48,
+            "Amount": 250,
+            "location": "USA",
+            "playlist link": "Rap 2022\ud83e\udd75\ud83d\udc0d\ud83d\udd25",
+            "Genre": "Rap",
+            "curator contact": "@mariahlove._"
+        },
+        {
+            "id": 49,
+            "Amount": 35,
+            "location": "Italy",
+            "playlist link": "Rap Hits 2022",
+            "Genre": "HipHop/Rap",
+            "curator contact": "@playlistgenius"
         }
     ]
 }

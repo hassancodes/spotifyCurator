@@ -176,7 +176,7 @@ def getcountrylist(countryname):
     for i in range(len(pptdata)):
         if pptdata[i]["location"]==countryname:
             pptdata[i]["id"] = counter
-            pptdata[i]["amount"] == f"${pptdata[i]['Amount']}"
+            pptdata[i]["Amount"] == f"${pptdata[i]['Amount']}"
             filterlist.append(pptdata[i])
             counter +=1
         else:
