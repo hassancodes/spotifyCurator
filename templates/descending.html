@@ -61,11 +61,11 @@
           {% for key,value in dict.items() %}
           {% if loop.index == 2 %}
           {% set __ =  TotalAmount.append(value | replace('$','') | int) %}
-          <td contenteditable="true">
+          <td id="shortpp__name" contenteditable="true">
               <div>{{value}}</div>
           </td>
           {% else %}
-          <td contenteditable="true">
+          <td id="shortpp__name" contenteditable="true">
               <div>{{value}}</div>
           </td>
           {% endif %}
