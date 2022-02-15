@@ -102,6 +102,7 @@ def handle_ppt():
             "Amount" : int(request.form["amount"]),
             "location" : request.form["location"],
             "playlist link" : getplaylistname(request.form["playlistlink"]),
+            "Genre" : request.form["genre"],
             "curator contact" : request.form["curatorcontact"]
             }
 
@@ -175,6 +176,7 @@ def getcountrylist(countryname):
     for i in range(len(pptdata)):
         if pptdata[i]["location"]==countryname:
             pptdata[i]["id"] = counter
+            pptdata[i]["amount"] == f"${pptdata[i]['Amount']}"
             filterlist.append(pptdata[i])
             counter +=1
         else:

@@ -289,6 +289,7 @@ function addpp() {
   <td><input type=text name="amount"></td>
   <td><input type=text name="location"></td>
   <td><input type="text" name="playlistlink"></td>
+    <td><input type="text" name="genre"></td>
   <td><input type="text" name="curatorcontact"></td>
   <td style="display:none;"><input type="submit"></td>
 </tr>
