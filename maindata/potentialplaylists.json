@@ -391,6 +391,22 @@
             "playlist link": "Rap Hits 2022",
             "Genre": "HipHop/Rap",
             "curator contact": "@playlistgenius"
+        },
+        {
+            "id": 50,
+            "Amount": 10,
+            "location": "Spain",
+            "playlist link": "shower rap \ud83c\udfa4\ud83d\udebf",
+            "Genre": "Rap",
+            "curator contact": "@hxnryswrld"
+        },
+        {
+            "id": 51,
+            "Amount": 100,
+            "location": "England",
+            "playlist link": "Throwback (2000-2012)",
+            "Genre": "HipHop/Rap",
+            "curator contact": "@harry_lewin"
         }
     ]
 }
