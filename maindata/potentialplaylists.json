@@ -13,6 +13,7 @@
             "Amount": 100,
             "location": "USA",
             "playlist link": "Radio Hits 2010-2021",
+            "genre": "Pop",
             "curator contact": "@sherlymadrid"
         },
         {
@@ -20,6 +21,7 @@
             "Amount": 150,
             "location": "Netherland",
             "playlist link": "Hiphop 90\u2019s",
+            "genre":"HipHop/Rap",
             "curator contact": "@spotify.hiphop90s"
         },
         {
@@ -27,6 +29,7 @@
             "Amount": 80,
             "location": "Argentina",
             "playlist link": "RAP EN INGL\u00c9S ",
+            "genre" : "Rap",
             "curator contact": "@paolitomas"
         },
         {
@@ -34,6 +37,7 @@
             "Amount": 120,
             "location": "USA",
             "playlist link": "TRAP YANKEE \ud83c\uddfa\ud83c\uddf8",
+            "genre": "Trap",
             "curator contact": "@facumurilloo"
         },
         {
@@ -49,6 +53,7 @@
             "Amount": 150,
             "location": "Europe",
             "playlist link": "RAP US 2022 \ud83d\udcb8 [ 100% HITS ] ",
+            "genre":"Pop/Rap",
             "curator contact": "@spoti.nath"
         },
         {
@@ -56,6 +61,7 @@
             "Amount": 250,
             "location": "Brazil",
             "playlist link": "Black Antigos (S\u00d3 REL\u00cdQUIA)",
+            "genre": "Rap",
             "curator contact": "@fabio92ti"
         },
         {
@@ -71,6 +77,7 @@
             "Amount": 100,
             "location": "Europe",
             "playlist link": "tiktok songs slowed + reverb",
+            "genre": "Slowed",
             "curator contact": "@maeveplaylist"
         },
         {
@@ -78,6 +85,7 @@
             "Amount": 110,
             "location": "USA",
             "playlist link": "American Rap 2022",
+            "genre":"Rap",
             "curator contact": "@americaraplist"
         },
         {
@@ -85,6 +93,7 @@
             "Amount": 200,
             "location": "Brazil",
             "playlist link": "Hip Hop 90s & 2000s - Classics",
+            "genre":"HipHop/Rap",
             "curator contact": "@bgabraga"
         },
         {
@@ -116,6 +125,7 @@
             "Amount": 100,
             "location": "Germany",
             "playlist link": "RNB MUSIC",
+            "genre": "RnB",
             "curator contact": "@volupmusic"
         },
         {
@@ -123,6 +133,7 @@
             "Amount": 147,
             "location": "Germany",
             "playlist link": "RAP INTERNATIONAL",
+            "genre": "HipHop/Rap",
             "curator contact": "@volupmusic"
         },
         {
@@ -194,6 +205,7 @@
             "Amount": 250,
             "location": "USA",
             "playlist link": "Rap Hits (2010 - 2022)",
+            "genre":"HipHop/Trap/Rap",
             "curator contact": "@membrivess"
         },
         {
@@ -201,6 +213,7 @@
             "Amount": 100,
             "location": "USA",
             "playlist link": "ULTIMATE GYM RAP 2021 \ud83d\udcaa\ud83c\udffc",
+            "genre": "HipHop/Rap",
             "curator contact": "@azarrella9"
         },
         {
@@ -216,6 +229,7 @@
             "Amount": 150,
             "location": "Spain",
             "playlist link": "RUNNING RAP MUSIC 2022\ud83c\udfc3\ud83c\udffe\ud83c\udfb6",
+            "genre":"HipHop/Rap",
             "curator contact": "@playlists.ifmmusic"
         },
         {
@@ -231,6 +245,7 @@
             "Amount": 100,
             "location": "USA",
             "playlist link": "Hard Rap \ud83d\udd25",
+            "genre":"Rap",
             "curator contact": "502alexhunter@gmail.com"
         },
         {
@@ -318,6 +333,7 @@
             "Amount": 150,
             "location": "USA",
             "playlist link": "BEST OF JUICE WRLD \ud83c\udf0e\ud83d\udd4a",
+            "genre":"HipHop/Rap",
             "curator contact": "@hiphopheavensvpply"
         },
         {
