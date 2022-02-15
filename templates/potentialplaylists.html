@@ -47,7 +47,7 @@
             </select></th>
 
 
-          <th>Playlist Link</th>
+          <th id="shortpp__name">Playlist Link</th>
           <th>Genre</th>
           <th>Curator Contact🗣️</th>
         </tr>
@@ -63,11 +63,12 @@
           {% for key,value in dict.items() %}
           {% if loop.index == 2 %}
           {% set __ =  TotalAmount.append(value | replace('$','') | int) %}
-          <td contenteditable="true">
+
+          <td id="shortpp__name" contenteditable="true">
               <div>{{value}}</div>
           </td>
           {% else %}
-          <td contenteditable="true">
+          <td id="shortpp__name" contenteditable="true">
               <div>{{value}}</div>
           </td>
           {% endif %}
