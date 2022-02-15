@@ -407,6 +407,30 @@
             "playlist link": "Throwback (2000-2012)",
             "Genre": "HipHop/Rap",
             "curator contact": "@harry_lewin"
+        },
+        {
+            "id": 52,
+            "Amount": 40,
+            "location": "USA",
+            "playlist link": "tik tok songs that are actually good",
+            "Genre": "Pop",
+            "curator contact": "@alanadov"
+        },
+        {
+            "id": 53,
+            "Amount": 50,
+            "location": "Austria",
+            "playlist link": "Meme Songs 1985-2022",
+            "Genre": "Pop",
+            "curator contact": "@bluew.music"
+        },
+        {
+            "id": 54,
+            "Amount": 100,
+            "location": "England",
+            "playlist link": "alexa demie yo voy vibes",
+            "Genre": "Pop/Rnb",
+            "curator contact": "@gabslevanzin"
         }
     ]
 }
