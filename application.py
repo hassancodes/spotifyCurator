@@ -13,7 +13,7 @@ application = Flask(__name__)
 
 
 ################################################ GLOBAL VARIABLES ###############################################
-countrylist = None
+countrylist = []
 
 
 

@@ -43,7 +43,7 @@
         {
             "id": 6,
             "Amount": 80,
-            "location": "USA",
+            "location": "Sweden",
             "playlist link": "Top 100 most streamed songs on Spotify",
             "Genre": "Pop / Dance",
             "curator contact": "@norenholgersson"
@@ -355,7 +355,7 @@
         {
             "id": 45,
             "Amount": 45,
-            "location": "USA",
+            "location": "Denmark",
             "playlist link": "Cardio - Hip Hop",
             "genre": "HipHop-Rap / Energy",
             "curator contact": "@rikkeadstofte"
@@ -371,7 +371,7 @@
         {
             "id": 47,
             "Amount": 30,
-            "location": "USA",
+            "location": "Canada",
             "playlist link": "FUCK SHIT HARD RAW DISTORTED MEME TIKTOK NEW TRAP MUSIC \ud83d\ude21",
             "Genre": "HipHop-Rap / Dance",
             "curator contact": "@damnshawrty"
@@ -431,6 +431,46 @@
             "playlist link": "alexa demie yo voy vibes",
             "Genre": "Pop / Happy",
             "curator contact": "@gabslevanzin"
+        },
+        {
+            "id": 55,
+            "Amount": 25,
+            "location": "Netherlands",
+            "playlist link": "Sad Songs For The Boys\u2764\ufe0f\u200d\ud83e\ude79\ud83d\udc94",
+            "Genre": "HipHop-Rap / Dance",
+            "curator contact": "@max.zoetendaal"
+        },
+        {
+            "id": 56,
+            "Amount": 100,
+            "location": "USA",
+            "playlist link": "Sad Vibes",
+            "Genre": "Rap / Dance",
+            "curator contact": "@iamxinclair"
+        },
+        {
+            "id": 57,
+            "Amount": 37,
+            "location": "USA",
+            "playlist link": "Weekend Mood",
+            "Genre": "Pop / Dance",
+            "curator contact": "@moods.network"
+        },
+        {
+            "id": 58,
+            "Amount": 20,
+            "location": "Colombia",
+            "playlist link": "sad alternative",
+            "Genre": "HipHop / Sad",
+            "curator contact": "@xinalbis"
+        },
+        {
+            "id": 59,
+            "Amount": 215,
+            "location": "Netherlands",
+            "playlist link": "TikTok Songs 2022\u26a1\ufe0f| Sugar TikTok | Go little rockstar tiktok | abcdefu tiktok | Swim TikTok Remix",
+            "Genre": "HipHop / Dance",
+            "curator contact": "@musicup2date"
         }
     ]
 }
