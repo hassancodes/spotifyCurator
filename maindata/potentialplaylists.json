@@ -11,7 +11,7 @@
         {
             "id": 2,
             "Amount": 100,
-            "location": "USA",
+            "location": "Honduras",
             "playlist link": "Radio Hits 2010-2021",
             "genre": "Pop / Energy",
             "curator contact": "@sherlymadrid"
@@ -35,7 +35,7 @@
         {
             "id": 5,
             "Amount": 120,
-            "location": "USA",
+            "location": "Unknown",
             "playlist link": "TRAP YANKEE \ud83c\uddfa\ud83c\uddf8",
             "genre": "HipHop-Rap / Dance",
             "curator contact": "@facumurilloo"
@@ -182,7 +182,7 @@
             "location": "USA",
             "playlist link": "TRAP GRINGO HITS 2022 \ud83e\udd89",
             "genre": "HipHop-Rap / Energy",
-            "curator contact": "@eipify"
+            "curator contact": "@pifytv"
         },
         {
             "id": 24,
@@ -251,7 +251,7 @@
         {
             "id": 32,
             "Amount": 45,
-            "location": "USA",
+            "location": "Europe",
             "playlist link": "run :",
             "genre": "HipHop / Dance",
             "curator contact": "cuteplaylists@gmail.com"
@@ -259,7 +259,7 @@
         {
             "id": 33,
             "Amount": 45,
-            "location": "USA",
+            "location": "Europe",
             "playlist link": "[hip-hop]",
             "genre": "HipHop-Rap / Dance",
             "curator contact": "cuteplaylists@gmail.com"
@@ -291,7 +291,7 @@
         {
             "id": 37,
             "Amount": 60,
-            "location": "USA",
+            "location": "Unknown",
             "playlist link": "Chill Songs 2022",
             "genre": "Pop / Energy",
             "curator contact": "@vibesetter_"
@@ -323,7 +323,7 @@
         {
             "id": 41,
             "Amount": 20,
-            "location": "USA",
+            "location": "Unknown",
             "playlist link": "RNB \ud83e\udd8b",
             "genre": "RnB / Dance",
             "curator contact": "@bhadvic_"
