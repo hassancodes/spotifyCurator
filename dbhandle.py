@@ -93,5 +93,5 @@ def dbfetch(dbname,dbcollection):
 
 # dbfetch("miscellaneous", "blacklist")
 # # main call start fron here
-# longTermData()
-# dbhandle()
+longTermData()
+dbhandle()
