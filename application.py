@@ -50,6 +50,10 @@ def main():
 def handle_data():
     # this is the current data the user will input
     index = get_index()
+# using the help function that will retrieve us the playlist name
+    playlist_name = getplaylistname(request.form["playlistlink"])
+
+
     data = {
     "id" : index+1,
     "amount_paid":request.form["amount_paid"],
