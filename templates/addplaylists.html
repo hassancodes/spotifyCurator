@@ -32,11 +32,14 @@
         {% for dict in pldata %}
         <tr>
           {% for key,value in dict.items() %}
-          <td contenteditable="true">
-            <div>{{value}}</div>
-          </td>
+          <!-- if condition starts here.  -->
+          {% if key == "playlistlink" %}
+          <td><a href="{{value['link']}}">{{value['name']}}</a></td>
+          {% else %}
+          <td>{{value}}</td>
+          {% endif %}
+          <!-- if conditions end here -->
           {% endfor %}
-
         </tr> <!-- the table will  be added here by javascript -->
         <!-- </tbody> -->
         {% endfor %}

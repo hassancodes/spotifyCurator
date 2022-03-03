@@ -51,13 +51,19 @@ def handle_data():
     # this is the current data the user will input
     index = get_index()
 # using the help function that will retrieve us the playlist name
+
     playlist_name = getplaylistname(request.form["playlistlink"])
+    playlist_link = request.form["playlistlink"]
+    print("PLaylist Name" , playlist_name)
 
 
     data = {
     "id" : index+1,
     "amount_paid":request.form["amount_paid"],
-    "playlistlink":request.form["playlistlink"],
+    "playlistlink":{
+        "link" : playlist_link,
+        "name" : playlist_name
+    },
     "insta": request.form["insta"],
     "noofsongs": request.form["noofsongs"],
     "noofplaylist": request.form["noofplaylist"],
@@ -66,6 +72,7 @@ def handle_data():
     "end_date":request.form["end_date"]
     }
 
+    print(data)
     with open("addplaylist.json" , "r+") as file:
 
         # working on presistent data in add playlist.json

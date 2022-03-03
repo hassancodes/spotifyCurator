@@ -1,5 +1,144 @@
 {
     "PlayList Data": [
-
+        {
+            "id": 1,
+            "amount_paid": "$100",
+            "playlistlink": {
+                "link": "https://open.spotify.com/playlist/2IA9YYZHnxZ7gSMeCMDI3K",
+                "name": "BEST OF JUICE WRLD \ud83c\udf0e\ud83d\udd4a"
+            },
+            "insta": "@hiphopheavensvpply",
+            "noofsongs": "1",
+            "noofplaylist": "1",
+            "country": "USA",
+            "start_date": "2022-02-21",
+            "end_date": "2022-03-23"
+        },
+        {
+            "id": 2,
+            "amount_paid": "$50",
+            "playlistlink": {
+                "link": "https://open.spotify.com/playlist/1oEt1DnoZQdT29l2OsdtqN",
+                "name": "Dangerously In Love (772 Love Pt. 2) \u2013 YNW Melly"
+            },
+            "insta": "@niqfilms",
+            "noofsongs": "1",
+            "noofplaylist": "1",
+            "country": "USA",
+            "start_date": "2022-02-22",
+            "end_date": "2022-03-24"
+        },
+        {
+            "id": 3,
+            "amount_paid": "$40",
+            "playlistlink": {
+                "link": "https://open.spotify.com/playlist/70o7CfKYkXqw122pBDGusi",
+                "name": "TRAP YANKEE \ud83c\uddfa\ud83c\uddf8"
+            },
+            "insta": "@facumurilloo",
+            "noofsongs": "1",
+            "noofplaylist": "1",
+            "country": "None",
+            "start_date": "2022-02-20",
+            "end_date": "2022-03-20"
+        },
+        {
+            "id": 4,
+            "amount_paid": "$10",
+            "playlistlink": {
+                "link": "https://open.spotify.com/playlist/6Iw6A3Yt1YAEiWAQDHbQSw",
+                "name": "Dirty Songs \ud83d\ude0f\ud83d\ude08\ud83d\udc8b"
+            },
+            "insta": "@ktsanxietywrld",
+            "noofsongs": "1",
+            "noofplaylist": "1",
+            "country": "USA",
+            "start_date": "2022-02-22",
+            "end_date": "2022-03-22"
+        },
+        {
+            "id": 5,
+            "amount_paid": "$35",
+            "playlistlink": {
+                "link": "https://open.spotify.com/playlist/68PbMiU12ssvm5UAHsqqOi",
+                "name": "Trap Music 2022 \ud83d\ude08\ud83d\udd25\ud83d\udcaf"
+            },
+            "insta": "@polar_altercation",
+            "noofsongs": "1",
+            "noofplaylist": "1",
+            "country": "USA",
+            "start_date": "2022-02-21",
+            "end_date": "2022-03-23"
+        },
+        {
+            "id": 6,
+            "amount_paid": "$200",
+            "playlistlink": {
+                "link": "https://open.spotify.com/playlist/0oFPjAVmGPNAJjSl7dMdCE",
+                "name": "Sad Vibes"
+            },
+            "insta": "@iamxinclair",
+            "noofsongs": "1",
+            "noofplaylist": "2",
+            "country": "USA",
+            "start_date": "2022-02-21",
+            "end_date": "2022-03-23"
+        },
+        {
+            "id": 7,
+            "amount_paid": "$40",
+            "playlistlink": {
+                "link": "https://open.spotify.com/playlist/6Yj0a0pgYQbE6ltMoRtcrN",
+                "name": "Sad Like Bart"
+            },
+            "insta": "@vibesetter_",
+            "noofsongs": "1",
+            "noofplaylist": "2",
+            "country": "USA",
+            "start_date": "2022-02-22",
+            "end_date": "2022-03-24"
+        },
+        {
+            "id": 8,
+            "amount_paid": "$130",
+            "playlistlink": {
+                "link": "https://open.spotify.com/playlist/4mogKU8upWyHhfw2StZp5j",
+                "name": "f*ck me like you want me"
+            },
+            "insta": "@codymgmt",
+            "noofsongs": "1",
+            "noofplaylist": "3",
+            "country": "United States of America",
+            "start_date": "2022-02-21",
+            "end_date": "2022-03-23"
+        },
+        {
+            "id": 9,
+            "amount_paid": "$40",
+            "playlistlink": {
+                "link": "https://open.spotify.com/playlist/2EESCqeJsTOGwOSEMvwW3z",
+                "name": "tik tok songs that are actually good"
+            },
+            "insta": "@alanadov ",
+            "noofsongs": "1",
+            "noofplaylist": "1",
+            "country": "United States of America",
+            "start_date": "2022-02-19",
+            "end_date": "2022-03-20"
+        },
+        {
+            "id": 10,
+            "amount_paid": "$40",
+            "playlistlink": {
+                "link": "https://open.spotify.com/playlist/6D0bEPmnluaWDGvGX04CXA",
+                "name": "Chicago Drill"
+            },
+            "insta": "@carteralv",
+            "noofsongs": "1",
+            "noofplaylist": "1",
+            "country": "United States of America",
+            "start_date": "2022-02-21",
+            "end_date": "2022-03-23"
+        }
     ]
 }
