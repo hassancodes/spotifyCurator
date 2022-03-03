@@ -61,7 +61,7 @@ def main(email,pw,loginOpt):
 
 
     op = Options()
-    op.add_argument('--headless')
+    # op.add_argument('--headless')
     op.add_argument("window-size=1920,1080")
     op.add_experimental_option("excludeSwitches", ["enable-automation"])
     op.add_experimental_option('useAutomationExtension', False)
@@ -113,7 +113,8 @@ def main(email,pw,loginOpt):
 # from here the process is same for all login
     driver.get("https://artists.spotify.com/c/artist/7KzG8dszzwlSDGEsCbzANz/music/songs")
     # musicbtn = driver.find_element_by_xpath("//a[@title='Music']")
-    time.sleep(4)
+    # time.sleep(4)
+    driver.implicitly_wait(20)
 
     # this get the 28 days data
     # /html/body/div[2]/div/div/div/div/div/main/div/div/div/div[2]/section[1]/ul/li[3]/a
@@ -141,7 +142,7 @@ def main(email,pw,loginOpt):
     ############################    Fetching Seven days data    ######################################
     # getting the seven days data.
     driver.get("https://artists.spotify.com/c/artist/7KzG8dszzwlSDGEsCbzANz/music/playlists?time-filter=7day")
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(20)
     time.sleep(5)
     driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
     print("worked")
@@ -162,7 +163,7 @@ def main(email,pw,loginOpt):
 ############################24 days data######################################
     # getting the seven days data.
     driver.get("https://artists.spotify.com/c/artist/7KzG8dszzwlSDGEsCbzANz/music/playlists?time-filter=1day")
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(20)
     time.sleep(5)
     driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
     print("worked")
@@ -185,7 +186,7 @@ def main(email,pw,loginOpt):
 ####################################  All time data ##################################################
 
     driver.get("https://artists.spotify.com/c/artist/7KzG8dszzwlSDGEsCbzANz/music/playlists?time-filter=last5years")
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(20)
     time.sleep(5)
     driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
     print("worked")
