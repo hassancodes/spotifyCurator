@@ -9,7 +9,7 @@ from helpfunc import getplaylistname, blacklistus
 from dbhandle import dbfetch
 import os
 
-application = Flask(__name__)
+app = Flask(__name__)
 ################################################ GLOBAL VARIABLES ###############################################
 countrylist = []
 
@@ -38,13 +38,13 @@ alltimeData = json.load(alltimefile)
 
 # Home Route
 
-@application.route("/")
+@app.route("/")
 def main():
     return render_template("index.html" , jData=jData)
 
 ###############################################GOD Function ########################################################
 # handling the add playlist submission data
-@application.route('/handle_data', methods=['POST'])
+@app.route('/handle_data', methods=['POST'])
 def handle_data():
     # this is the current data the user will input
     index = get_index()
@@ -96,7 +96,7 @@ def handle_data():
 
 #######################################################################################################
 # # handling the submission of potential PlayList
-@application.route("/handle_ppt", methods=['POST'])
+@app.route("/handle_ppt", methods=['POST'])
 def handle_ppt():
     formation = request.args.get("sort")
     if formation == "descending":
@@ -138,7 +138,7 @@ def handle_ppt():
 
 # Seperate script for checking potential playlists.
 var = "main"
-@application.route("/potentialplaylists",methods= ["GET", "POST"])
+@app.route("/potentialplaylists",methods= ["GET", "POST"])
 def pplaylists():
     pptdata  = displayppt()
     countrynames = []
@@ -157,7 +157,7 @@ def pplaylists():
 
 # this function is for descending playlist.
 var = "main"
-@application.route("/potentialplaylists/descending",methods= ["GET", "POST"])
+@app.route("/potentialplaylists/descending",methods= ["GET", "POST"])
 def descending():
     rcountrylist = []
 
@@ -173,7 +173,7 @@ def descending():
 
 
 var="main"
-@application.route("/<string:countryname>")
+@app.route("/<string:countryname>")
 def getcountrylist(countryname):
     selectedCountry = countryname
     filterlist = []
@@ -202,7 +202,7 @@ def getcountrylist(countryname):
 
 
 # this blacklist handle
-@application.route("/handle_blacklist", methods=["POST"])
+@app.route("/handle_blacklist", methods=["POST"])
 def handle_blacklist():
     data_dict = {}
     link = request.form["blacklist"]
@@ -214,7 +214,7 @@ def handle_blacklist():
 
 # actual blacklist endpoint
 var = "main"
-@application.route("/blacklist")
+@app.route("/blacklist")
 def blacklist():
     data = dbfetch("miscellaneous", "blacklist")
     # list that contains all the clean dictionaries
@@ -248,16 +248,16 @@ def blacklist():
 
 
 #############################seven days endpoint #################################
-@application.route("/sevendays")
+@app.route("/sevendays")
 def seven_days():
     return render_template("sevendays.html" ,sdData =sdData)
 
 ##############################24 hours end point######################################
-@application.route("/24hours")
+@app.route("/24hours")
 def tf_hours():
     return render_template("tfhours.html" ,tfData =tfData)
 
-@application.route("/alltime")
+@app.route("/alltime")
 def alltimestats():
     return render_template("alltime.html" ,alltimeData = alltimeData)
 
@@ -267,7 +267,7 @@ def alltimestats():
 
 # this the main functionality endpoint.(Adds data)
 var = "main"
-@application.route("/addplaylists")
+@app.route("/addplaylists")
 def addplaylist():
     pldata = displaylists()
     return render_template("addplaylists.html", var=var,pldata=pldata)
@@ -281,7 +281,7 @@ def addplaylist():
 var = "main"
 ratepps = pps()
 data = dict(ratepps)
-@application.route("/ratepps")
+@app.route("/ratepps")
 def ratepps():
     return render_template("rate.html", data=data, var =var)
 
@@ -297,15 +297,15 @@ def ratepps():
 
 
 
-@application.route("/login")
+@app.route("/login")
 def login():
     return render_template("login.html")
 
 
 # function to display error pages
-@application.route("/<random>")
+@app.route("/<random>")
 def error(random):
     return "Page not found!"
 
 if __name__ == "__main__":
-    application.run()
+    app.run()
