@@ -2,13 +2,13 @@ import pymongo
 from pymongo import MongoClient
 import urllib
 import json
-from decouple import config
+# from decouple import config
 from datetime import datetime
 import pprint
 
 
-userID = config('id',default='')
-password = config('password',default='')
+# userID = config('id',default='')
+# password = config('password',default='')
 client = MongoClient("mongodb+srv://muhammadhassan:" + urllib.parse.quote("mongodbevjr3303@A") + "@cluster0.tsgul.mongodb.net/testdatabase?retryWrites=true&w=majority")
 
 def dbhandle():

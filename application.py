@@ -10,8 +10,6 @@ from dbhandle import dbfetch
 import os
 
 application = Flask(__name__)
-
-
 ################################################ GLOBAL VARIABLES ###############################################
 countrylist = []
 
