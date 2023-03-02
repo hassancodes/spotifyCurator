@@ -36,4 +36,4 @@
 -   Working with tables to show the db data🔃
 -   get the target playlists (working)🔃
 
-"GET IT done by the end of December. Period"
+"GET IT done by the end of December. Period".
