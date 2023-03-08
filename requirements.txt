@@ -108,7 +108,6 @@ pytweening==1.0.4
 pytz==2022.1
 PyWavelets==1.4.1
 PyYAML==6.0
-rasterio @ file:///C:/Users/hassa/Downloads/rasterio-1.2.10-cp310-cp310-win_amd64.whl
 redis==4.3.4
 requests==2.27.1
 requests-html==0.10.0
