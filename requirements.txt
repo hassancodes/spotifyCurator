@@ -33,7 +33,6 @@ et-xmlfile==1.1.0
 fake-useragent==0.1.11
 Flask==2.1.1
 fonttools==4.33.3
-GDAL @ file:///C:/Users/hassa/Downloads/GDAL-3.4.2-cp310-cp310-win_amd64.whl
 google-api-core==2.11.0
 google-api-python-client==2.70.0
 google-auth==2.15.0
