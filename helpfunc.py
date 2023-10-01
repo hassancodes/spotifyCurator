@@ -1,11 +1,10 @@
-import pprint
+
 import json
 import os
 import requests
 from bs4 import BeautifulSoup
 from spotipy import util
 from bs4 import BeautifulSoup
-import pprint
 # non-native functions
 from dbhandle import dbinsert
 

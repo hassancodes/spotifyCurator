@@ -1,4 +1,3 @@
-import flask
 from flask import *
 import json
 from collections import OrderedDict
