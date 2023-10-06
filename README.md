@@ -39,3 +39,5 @@
 "GET IT done by the end of December. Period".
 "Thats all"
 
+# done - not updating anymore
+
