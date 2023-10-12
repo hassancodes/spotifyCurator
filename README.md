@@ -17,7 +17,7 @@
 
 -   add a page for potential playlists to target for future.
 -   Dash board for Songs
--   Grab all the data from Spotify.
+-   Grab all the data from Spotify for artists.
 
 # Advance improvements
 
