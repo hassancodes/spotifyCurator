@@ -39,10 +39,10 @@
 "GET IT done by the end of December. Period".
 "Thats all"
 
-# done - not updating anymore
-# just taking care of my streak
-# doing it again
-# still figuring out how to host this?
+- done - not updating anymore
+- just taking care of my streak
+- doing it again
+- still figuring out how to host this?
 #
 
 
