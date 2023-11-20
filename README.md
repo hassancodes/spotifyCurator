@@ -11,7 +11,7 @@
 
 -   28 days playlist data.✅
 -   7 days playlist data.✅
--   Potential playlist.
+-   Potential playlist..
 
 # Extra:
 
